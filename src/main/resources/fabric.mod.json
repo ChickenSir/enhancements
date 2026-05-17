@@ -19,7 +19,7 @@
 			"com.enhancements.Enhancements"
 		],
 		"client": [
-			"com.enhancements.EnhancementsClient"
+			"com.enhancements.client.EnhancementsClient"
 		],
 		"fabric-datagen": [
 			"com.enhancements.client.datagen.EnhancementsDataGenerator"

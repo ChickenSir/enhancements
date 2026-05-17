@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "vanilla-additions:block/granite_bricks"
+    "model": "enhancements:block/granite_bricks"
   }
 }

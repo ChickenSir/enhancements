@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "vanilla-additions:block/smooth_granite"
+      "model": "enhancements:block/smooth_granite"
     }
   }
 }

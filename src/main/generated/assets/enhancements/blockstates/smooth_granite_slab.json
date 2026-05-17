@@ -1,13 +1,13 @@
 {
   "variants": {
     "type=bottom": {
-      "model": "vanilla-additions:block/smooth_granite_slab"
+      "model": "enhancements:block/smooth_granite_slab"
     },
     "type=double": {
-      "model": "vanilla-additions:block/smooth_granite"
+      "model": "enhancements:block/smooth_granite"
     },
     "type=top": {
-      "model": "vanilla-additions:block/smooth_granite_slab_top"
+      "model": "enhancements:block/smooth_granite_slab_top"
     }
   }
 }

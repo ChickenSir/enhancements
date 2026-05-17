@@ -1,13 +1,13 @@
 {
   "variants": {
     "type=bottom": {
-      "model": "vanilla-additions:block/cobbled_granite_slab"
+      "model": "enhancements:block/cobbled_granite_slab"
     },
     "type=double": {
-      "model": "vanilla-additions:block/cobbled_granite"
+      "model": "enhancements:block/cobbled_granite"
     },
     "type=top": {
-      "model": "vanilla-additions:block/cobbled_granite_slab_top"
+      "model": "enhancements:block/cobbled_granite_slab_top"
     }
   }
 }

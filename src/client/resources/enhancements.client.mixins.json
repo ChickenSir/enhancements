@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "com.vanillaadditions.client.mixin",
+	"package": "com.enhancements.client.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"client": [
 		"ExampleClientMixin"

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "vanilla-additions:block/cobbled_granite"
+    "all": "enhancements:block/cobbled_granite"
   }
 }

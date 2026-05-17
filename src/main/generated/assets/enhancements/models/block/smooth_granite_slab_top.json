@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/slab_top",
   "textures": {
-    "bottom": "vanilla-additions:block/smooth_granite",
-    "side": "vanilla-additions:block/smooth_granite",
-    "top": "vanilla-additions:block/smooth_granite"
+    "bottom": "enhancements:block/smooth_granite",
+    "side": "enhancements:block/smooth_granite",
+    "top": "enhancements:block/smooth_granite"
   }
 }

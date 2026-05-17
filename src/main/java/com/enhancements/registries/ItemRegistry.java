@@ -19,7 +19,7 @@ public class ItemRegistry {
     public static final ResourceKey<CreativeModeTab> VA_ITEM_GROUP_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), ResourceLocation.fromNamespaceAndPath(Enhancements.modID, "va_item_group"));
     public static final CreativeModeTab VA_ITEM_GROUP = FabricItemGroup.builder()
     .icon(() -> new ItemStack(BlockRegistry.GRANITE_BRICKS.asItem()))
-    .title(Component.translatable("vanilla-additions.item_group"))
+    .title(Component.translatable("enhancements.item_group"))
     .build();
     
     public static Item register(Item.Properties settings, String name) {

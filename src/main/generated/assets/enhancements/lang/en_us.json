@@ -1,12 +1,12 @@
 {
-  "item.vanilla-additions.cobbled_granite": "Cobbled Granite",
-  "item.vanilla-additions.cobbled_granite_slab": "Cobbled Granite Slab",
-  "item.vanilla-additions.cobbled_granite_stairs": "Cobbled Granite Stairs",
-  "item.vanilla-additions.granite_brick_slab": "Granite Brick Slab",
-  "item.vanilla-additions.granite_brick_stairs": "Granite Brick Stairs",
-  "item.vanilla-additions.granite_bricks": "Granite Bricks",
-  "item.vanilla-additions.smooth_granite": "Smooth Granite",
-  "item.vanilla-additions.smooth_granite_slab": "Smooth Granite Slab",
-  "item.vanilla-additions.smooth_granite_stairs": "Smooth Granite Stairs",
-  "vanilla-additions.item_group": "Vanilla Additions"
+  "enhancements.item_group": "Enhancements",
+  "item.enhancements.cobbled_granite": "Cobbled Granite",
+  "item.enhancements.cobbled_granite_slab": "Cobbled Granite Slab",
+  "item.enhancements.cobbled_granite_stairs": "Cobbled Granite Stairs",
+  "item.enhancements.granite_brick_slab": "Granite Brick Slab",
+  "item.enhancements.granite_brick_stairs": "Granite Brick Stairs",
+  "item.enhancements.granite_bricks": "Granite Bricks",
+  "item.enhancements.smooth_granite": "Smooth Granite",
+  "item.enhancements.smooth_granite_slab": "Smooth Granite Slab",
+  "item.enhancements.smooth_granite_stairs": "Smooth Granite Stairs"
 }
