@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "vanilla-additions:block/cobbled_granite",
+    "side": "vanilla-additions:block/cobbled_granite",
+    "top": "vanilla-additions:block/cobbled_granite"
+  }
+}

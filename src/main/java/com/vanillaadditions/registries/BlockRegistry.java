@@ -1,5 +1,7 @@
 package com.vanillaadditions.registries;
 
+import java.util.function.Function;
+
 import com.vanillaadditions.VanillaAdditions;
 
 import net.minecraft.core.Registry;
@@ -10,17 +12,24 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SlabBlock;
+import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 
 public class BlockRegistry {
 
-    public static final Block TEST_BLOCK = register(BlockBehaviour.Properties.of(), "test_block", true);
+    // Granite Set
+    public static final Block COBBLED_GRANITE = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.GRANITE), "cobbled_granite", true);
+    public static final Block COBBLED_GRANITE_STAIRS = registerStair(COBBLED_GRANITE, "cobbled_granite_stairs");
+    public static final Block COBBLED_GRANITE_SLAB = register(SlabBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.GRANITE_SLAB), "cobbled_granite_slab", true);
     
-    public static Block register(BlockBehaviour.Properties settings, String name, boolean registerItem) {
+    public static Block register(Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties settings, String name, boolean registerItem) {
         // Create block resource key
         ResourceKey<Block> blockKey = ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(VanillaAdditions.modID, name));
 
-        Block block = new Block(settings.setId(blockKey));
+        Block block = blockFactory.apply(settings.setId(blockKey));
 
         if (registerItem) {
             // Create item resource key
@@ -35,6 +44,11 @@ public class BlockRegistry {
 
         // Register block
         return Registry.register(BuiltInRegistries.BLOCK, blockKey, block);
+    }
+
+    public static Block registerStair(Block block, String name) {
+        // Register stair block
+        return register((properties) -> new StairBlock(block.defaultBlockState(), properties), Properties.ofFullCopy(block), name, true);
     }
 
     public static void registerBlocks() {}
