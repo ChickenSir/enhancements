@@ -6,6 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.vanillaadditions.registries.BlockRegistry;
+import com.vanillaadditions.registries.ItemRegistry;
 
 public class VanillaAdditions implements ModInitializer {
 	public static final String modID = "vanilla-additions";
@@ -17,5 +18,9 @@ public class VanillaAdditions implements ModInitializer {
 		// Register Blocks
 		BlockRegistry.registerBlocks();
 		LOGGER.info("Registering Blocks!");
+
+		// Register Items
+		ItemRegistry.registerItems();
+		LOGGER.info("Registering Items!");
 	}
 }
