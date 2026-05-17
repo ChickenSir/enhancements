@@ -18,6 +18,10 @@ public class VAModelProvider extends FabricModelProvider {
         blockStateModelGenerator.family(BlockRegistry.COBBLED_GRANITE)
             .stairs(BlockRegistry.COBBLED_GRANITE_STAIRS)
             .slab(BlockRegistry.COBBLED_GRANITE_SLAB);
+
+        blockStateModelGenerator.family(BlockRegistry.SMOOTH_GRANITE)
+            .stairs(BlockRegistry.SMOOTH_GRANITE_STAIRS)
+            .slab(BlockRegistry.SMOOTH_GRANITE_SLAB);
     }
 
     @Override

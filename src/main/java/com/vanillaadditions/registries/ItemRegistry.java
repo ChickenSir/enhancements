@@ -42,6 +42,9 @@ public class ItemRegistry {
             itemGroup.accept(BlockRegistry.COBBLED_GRANITE.asItem());
             itemGroup.accept(BlockRegistry.COBBLED_GRANITE_STAIRS.asItem());
             itemGroup.accept(BlockRegistry.COBBLED_GRANITE_SLAB.asItem());
+            itemGroup.accept(BlockRegistry.SMOOTH_GRANITE.asItem());
+            itemGroup.accept(BlockRegistry.SMOOTH_GRANITE_STAIRS.asItem());
+            itemGroup.accept(BlockRegistry.SMOOTH_GRANITE_SLAB.asItem());
         });
     }
 }

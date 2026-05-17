@@ -19,6 +19,9 @@ public class VALangProvider extends FabricLanguageProvider {
         translationBuilder.add("item.vanilla-additions.cobbled_granite", "Cobbled Granite");
         translationBuilder.add("item.vanilla-additions.cobbled_granite_stairs", "Cobbled Granite Stairs");
         translationBuilder.add("item.vanilla-additions.cobbled_granite_slab", "Cobbled Granite Slab");
+        translationBuilder.add("item.vanilla-additions.smooth_granite", "Smooth Granite");
+        translationBuilder.add("item.vanilla-additions.smooth_granite_stairs", "Smooth Granite Stairs");
+        translationBuilder.add("item.vanilla-additions.smooth_granite_slab", "Smooth Granite Slab");
     }
     
 }
