@@ -1,11 +1,11 @@
 {
 	"schemaVersion": 1,
 	"id": "vanilla-additions",
-	"version": "${version}",
+	"version": "${1.0.0}",
 	"name": "Vanilla Additions",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Adds new blocks, items and structures that match the Vanilla style",
 	"authors": [
-		"Me!"
+		"ChickenSir"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
