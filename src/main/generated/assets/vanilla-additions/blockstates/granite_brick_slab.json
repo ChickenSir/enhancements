@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "vanilla-additions:block/granite_brick_slab"
+    },
+    "type=double": {
+      "model": "vanilla-additions:block/granite_bricks"
+    },
+    "type=top": {
+      "model": "vanilla-additions:block/granite_brick_slab_top"
+    }
+  }
+}

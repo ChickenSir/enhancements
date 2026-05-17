@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "vanilla-additions:block/granite_bricks",
+    "side": "vanilla-additions:block/granite_bricks",
+    "top": "vanilla-additions:block/granite_bricks"
+  }
+}

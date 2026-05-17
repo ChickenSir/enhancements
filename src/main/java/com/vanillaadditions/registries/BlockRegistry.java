@@ -28,6 +28,10 @@ public class BlockRegistry {
     public static final Block SMOOTH_GRANITE = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.GRANITE), "smooth_granite", true);
     public static final Block SMOOTH_GRANITE_STAIRS = registerStair(SMOOTH_GRANITE, "smooth_granite_stairs");
     public static final Block SMOOTH_GRANITE_SLAB = register(SlabBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.GRANITE_SLAB), "smooth_granite_slab", true);
+
+    public static final Block GRANITE_BRICKS = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.GRANITE), "granite_bricks", true);
+    public static final Block GRANITE_BRICK_STAIRS = registerStair(GRANITE_BRICKS, "granite_brick_stairs");
+    public static final Block GRANITE_BRICK_SLAB = register(SlabBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.GRANITE_SLAB), "granite_brick_slab", true);
     
     public static Block register(Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties settings, String name, boolean registerItem) {
         // Create block resource key

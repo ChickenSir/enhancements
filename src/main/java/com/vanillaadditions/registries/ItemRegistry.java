@@ -18,7 +18,7 @@ public class ItemRegistry {
 
     public static final ResourceKey<CreativeModeTab> VA_ITEM_GROUP_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), ResourceLocation.fromNamespaceAndPath(VanillaAdditions.modID, "va_item_group"));
     public static final CreativeModeTab VA_ITEM_GROUP = FabricItemGroup.builder()
-    .icon(() -> new ItemStack(BlockRegistry.COBBLED_GRANITE.asItem()))
+    .icon(() -> new ItemStack(BlockRegistry.GRANITE_BRICKS.asItem()))
     .title(Component.translatable("vanilla-additions.item_group"))
     .build();
     
@@ -45,6 +45,9 @@ public class ItemRegistry {
             itemGroup.accept(BlockRegistry.SMOOTH_GRANITE.asItem());
             itemGroup.accept(BlockRegistry.SMOOTH_GRANITE_STAIRS.asItem());
             itemGroup.accept(BlockRegistry.SMOOTH_GRANITE_SLAB.asItem());
+            itemGroup.accept(BlockRegistry.GRANITE_BRICKS.asItem());
+            itemGroup.accept(BlockRegistry.GRANITE_BRICK_STAIRS.asItem());
+            itemGroup.accept(BlockRegistry.GRANITE_BRICK_SLAB.asItem());
         });
     }
 }
