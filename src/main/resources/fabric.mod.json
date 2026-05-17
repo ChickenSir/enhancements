@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "vanilla-additions",
+	"version": "${version}",
+	"name": "Vanilla Additions",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/vanilla-additions/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.vanillaadditions.VanillaAdditions"
+		],
+		"client": [
+			"com.vanillaadditions.client.VanillaAdditionsClient"
+		],
+		"fabric-datagen": [
+			"com.vanillaadditions.client.VanillaAdditionsDataGenerator"
+		]
+	},
+	"mixins": [
+		"vanilla-additions.mixins.json",
+		{
+			"config": "vanilla-additions.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
