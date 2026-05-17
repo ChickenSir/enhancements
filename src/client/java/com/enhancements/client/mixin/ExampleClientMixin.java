@@ -1,4 +1,4 @@
-package com.vanillaadditions.client.mixin;
+package com.enhancements.client.mixin;
 
 import net.minecraft.client.Minecraft;
 import org.spongepowered.asm.mixin.Mixin;

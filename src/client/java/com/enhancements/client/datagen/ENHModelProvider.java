@@ -1,15 +1,15 @@
-package com.vanillaadditions.client.datagen;
+package com.enhancements.client.datagen;
 
-import com.vanillaadditions.registries.BlockRegistry;
+import com.enhancements.registries.BlockRegistry;
 
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 
-public class VAModelProvider extends FabricModelProvider {
+public class ENHModelProvider extends FabricModelProvider {
 
-    public VAModelProvider(FabricDataOutput output) {
+    public ENHModelProvider(FabricDataOutput output) {
         super(output);
     }
 

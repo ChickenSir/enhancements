@@ -1,6 +1,6 @@
-package com.vanillaadditions.registries;
+package com.enhancements.registries;
 
-import com.vanillaadditions.VanillaAdditions;
+import com.enhancements.Enhancements;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -16,7 +16,7 @@ import net.minecraft.world.item.ItemStack;
 
 public class ItemRegistry {
 
-    public static final ResourceKey<CreativeModeTab> VA_ITEM_GROUP_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), ResourceLocation.fromNamespaceAndPath(VanillaAdditions.modID, "va_item_group"));
+    public static final ResourceKey<CreativeModeTab> VA_ITEM_GROUP_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), ResourceLocation.fromNamespaceAndPath(Enhancements.modID, "va_item_group"));
     public static final CreativeModeTab VA_ITEM_GROUP = FabricItemGroup.builder()
     .icon(() -> new ItemStack(BlockRegistry.GRANITE_BRICKS.asItem()))
     .title(Component.translatable("vanilla-additions.item_group"))
@@ -24,7 +24,7 @@ public class ItemRegistry {
     
     public static Item register(Item.Properties settings, String name) {
         // Create the item key
-        ResourceKey<Item> itemKey = ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(VanillaAdditions.modID, name));
+        ResourceKey<Item> itemKey = ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Enhancements.modID, name));
 
         // Create the item
         Item item = new Item(settings.setId(itemKey));

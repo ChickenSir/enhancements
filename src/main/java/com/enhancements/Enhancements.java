@@ -1,16 +1,16 @@
-package com.vanillaadditions;
+package com.enhancements;
 
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.vanillaadditions.registries.BlockRegistry;
-import com.vanillaadditions.registries.ItemRegistry;
+import com.enhancements.registries.BlockRegistry;
+import com.enhancements.registries.ItemRegistry;
 
-public class VanillaAdditions implements ModInitializer {
-	public static final String modID = "vanilla-additions";
-	public static final String modName = "Vanilla Additions";
+public class Enhancements implements ModInitializer {
+	public static final String modID = "enhancements";
+	public static final String modName = "Enhancements";
 	public static final Logger LOGGER = LoggerFactory.getLogger(modID);
 
 	@Override

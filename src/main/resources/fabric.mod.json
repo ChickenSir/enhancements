@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "vanilla-additions",
+	"id": "enhancements",
 	"version": "${version}",
-	"name": "Vanilla Additions",
+	"name": "Enhancements",
 	"description": "Adds new blocks, items and structures that match the Vanilla style",
 	"authors": [
 		"ChickenSir"
@@ -12,23 +12,23 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/vanilla-additions/icon.png",
+	"icon": "assets/enhancements/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.vanillaadditions.VanillaAdditions"
+			"com.enhancements.Enhancements"
 		],
 		"client": [
-			"com.vanillaadditions.client.VanillaAdditionsClient"
+			"com.enhancements.EnhancementsClient"
 		],
 		"fabric-datagen": [
-			"com.vanillaadditions.client.datagen.VanillaAdditionsDataGenerator"
+			"com.enhancements.client.datagen.EnhancementsDataGenerator"
 		]
 	},
 	"mixins": [
-		"vanilla-additions.mixins.json",
+		"enhancements.mixins.json",
 		{
-			"config": "vanilla-additions.client.mixins.json",
+			"config": "enhancements.client.mixins.json",
 			"environment": "client"
 		}
 	],

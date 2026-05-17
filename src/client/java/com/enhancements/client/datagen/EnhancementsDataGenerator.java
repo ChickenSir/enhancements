@@ -1,14 +1,14 @@
-package com.vanillaadditions.client.datagen;
+package com.enhancements.client.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 
-public class VanillaAdditionsDataGenerator implements DataGeneratorEntrypoint {
+public class EnhancementsDataGenerator implements DataGeneratorEntrypoint {
 	@Override
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
-		pack.addProvider(VAModelProvider::new);
-		pack.addProvider(VALangProvider::new);
+		pack.addProvider(ENHModelProvider::new);
+		pack.addProvider(ENHLangProvider::new);
 	}
 }

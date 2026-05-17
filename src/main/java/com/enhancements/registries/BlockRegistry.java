@@ -1,8 +1,8 @@
-package com.vanillaadditions.registries;
+package com.enhancements.registries;
 
 import java.util.function.Function;
 
-import com.vanillaadditions.VanillaAdditions;
+import com.enhancements.Enhancements;
 
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -35,13 +35,13 @@ public class BlockRegistry {
     
     public static Block register(Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties settings, String name, boolean registerItem) {
         // Create block resource key
-        ResourceKey<Block> blockKey = ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(VanillaAdditions.modID, name));
+        ResourceKey<Block> blockKey = ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(Enhancements.modID, name));
 
         Block block = blockFactory.apply(settings.setId(blockKey));
 
         if (registerItem) {
             // Create item resource key
-            ResourceKey<Item> itemKey = ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(VanillaAdditions.modID, name));
+            ResourceKey<Item> itemKey = ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Enhancements.modID, name));
 
             // Create block item
             BlockItem blockItem = new BlockItem(block, new Item.Properties().setId(itemKey));
