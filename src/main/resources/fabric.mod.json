@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "vanilla-additions",
-	"version": "${1.0.0}",
+	"version": "${version}",
 	"name": "Vanilla Additions",
 	"description": "Adds new blocks, items and structures that match the Vanilla style",
 	"authors": [
