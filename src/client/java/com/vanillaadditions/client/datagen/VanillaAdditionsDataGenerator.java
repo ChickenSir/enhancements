@@ -9,5 +9,6 @@ public class VanillaAdditionsDataGenerator implements DataGeneratorEntrypoint {
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
 		pack.addProvider(VAModelProvider::new);
+		pack.addProvider(VALangProvider::new);
 	}
 }
