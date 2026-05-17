@@ -22,7 +22,7 @@
 			"com.vanillaadditions.client.VanillaAdditionsClient"
 		],
 		"fabric-datagen": [
-			"com.vanillaadditions.client.VanillaAdditionsDataGenerator"
+			"com.vanillaadditions.client.datagen.VanillaAdditionsDataGenerator"
 		]
 	},
 	"mixins": [
