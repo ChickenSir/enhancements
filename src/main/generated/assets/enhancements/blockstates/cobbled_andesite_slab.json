@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "enhancements:block/cobbled_andesite_slab"
+    },
+    "type=double": {
+      "model": "enhancements:block/cobbled_andesite"
+    },
+    "type=top": {
+      "model": "enhancements:block/cobbled_andesite_slab_top"
+    }
+  }
+}

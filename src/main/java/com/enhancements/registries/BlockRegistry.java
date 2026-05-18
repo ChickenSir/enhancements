@@ -32,6 +32,32 @@ public class BlockRegistry {
     public static final Block GRANITE_BRICKS = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.GRANITE), "granite_bricks", true);
     public static final Block GRANITE_BRICK_STAIRS = registerStair(GRANITE_BRICKS, "granite_brick_stairs");
     public static final Block GRANITE_BRICK_SLAB = register(SlabBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.GRANITE_SLAB), "granite_brick_slab", true);
+
+    // Diorite Set
+    public static final Block COBBLED_DIORITE = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.DIORITE), "cobbled_diorite", true);
+    public static final Block COBBLED_DIORITE_STAIRS = registerStair(COBBLED_DIORITE, "cobbled_diorite_stairs");
+    public static final Block COBBLED_DIORITE_SLAB = register(SlabBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.DIORITE_SLAB), "cobbled_diorite_slab", true);
+
+    public static final Block SMOOTH_DIORITE = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.DIORITE), "smooth_diorite", true);
+    public static final Block SMOOTH_DIORITE_STAIRS = registerStair(SMOOTH_DIORITE, "smooth_diorite_stairs");
+    public static final Block SMOOTH_DIORITE_SLAB = register(SlabBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.DIORITE_SLAB), "smooth_diorite_slab", true);
+
+    public static final Block DIORITE_BRICKS = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.DIORITE), "diorite_bricks", true);
+    public static final Block DIORITE_BRICK_STAIRS = registerStair(DIORITE_BRICKS, "diorite_brick_stairs");
+    public static final Block DIORITE_BRICK_SLAB = register(SlabBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.DIORITE_SLAB), "diorite_brick_slab", true);
+
+    // Andesite Set
+    public static final Block COBBLED_ANDESITE = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.ANDESITE), "cobbled_andesite", true);
+    public static final Block COBBLED_ANDESITE_STAIRS = registerStair(COBBLED_ANDESITE, "cobbled_andesite_stairs");
+    public static final Block COBBLED_ANDESITE_SLAB = register(SlabBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.ANDESITE_SLAB), "cobbled_andesite_slab", true);
+
+    public static final Block SMOOTH_ANDESITE = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.ANDESITE), "smooth_andesite", true);
+    public static final Block SMOOTH_ANDESITE_STAIRS = registerStair(SMOOTH_ANDESITE, "smooth_andesite_stairs");
+    public static final Block SMOOTH_ANDESITE_SLAB = register(SlabBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.ANDESITE_SLAB), "smooth_andesite_slab", true);
+
+    public static final Block ANDESITE_BRICKS = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.ANDESITE), "andesite_bricks", true);
+    public static final Block ANDESITE_BRICK_STAIRS = registerStair(ANDESITE_BRICKS, "andesite_brick_stairs");
+    public static final Block ANDESITE_BRICK_SLAB = register(SlabBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.ANDESITE_SLAB), "andesite_brick_slab", true);
     
     public static Block register(Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties settings, String name, boolean registerItem) {
         // Create block resource key

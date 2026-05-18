@@ -15,6 +15,7 @@ public class ENHModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockStateModelGenerator) {
+        // Granite Set
         blockStateModelGenerator.family(BlockRegistry.COBBLED_GRANITE)
             .stairs(BlockRegistry.COBBLED_GRANITE_STAIRS)
             .slab(BlockRegistry.COBBLED_GRANITE_SLAB);
@@ -26,6 +27,32 @@ public class ENHModelProvider extends FabricModelProvider {
         blockStateModelGenerator.family(BlockRegistry.GRANITE_BRICKS)
             .stairs(BlockRegistry.GRANITE_BRICK_STAIRS)
             .slab(BlockRegistry.GRANITE_BRICK_SLAB);
+
+        // Diorite Set
+        blockStateModelGenerator.family(BlockRegistry.COBBLED_DIORITE)
+            .stairs(BlockRegistry.COBBLED_DIORITE_STAIRS)
+            .slab(BlockRegistry.COBBLED_DIORITE_SLAB);
+
+        blockStateModelGenerator.family(BlockRegistry.SMOOTH_DIORITE)
+            .stairs(BlockRegistry.SMOOTH_DIORITE_STAIRS)
+            .slab(BlockRegistry.SMOOTH_DIORITE_SLAB);
+
+        blockStateModelGenerator.family(BlockRegistry.DIORITE_BRICKS)
+            .stairs(BlockRegistry.DIORITE_BRICK_STAIRS)
+            .slab(BlockRegistry.DIORITE_BRICK_SLAB);
+
+        // Andesite Set
+        blockStateModelGenerator.family(BlockRegistry.COBBLED_ANDESITE)
+            .stairs(BlockRegistry.COBBLED_ANDESITE_STAIRS)
+            .slab(BlockRegistry.COBBLED_ANDESITE_SLAB);
+
+        blockStateModelGenerator.family(BlockRegistry.SMOOTH_ANDESITE)
+            .stairs(BlockRegistry.SMOOTH_ANDESITE_STAIRS)
+            .slab(BlockRegistry.SMOOTH_ANDESITE_SLAB);
+
+        blockStateModelGenerator.family(BlockRegistry.ANDESITE_BRICKS)
+            .stairs(BlockRegistry.ANDESITE_BRICK_STAIRS)
+            .slab(BlockRegistry.ANDESITE_BRICK_SLAB);
     }
 
     @Override

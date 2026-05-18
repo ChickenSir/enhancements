@@ -18,7 +18,7 @@ public class ItemRegistry {
 
     public static final ResourceKey<CreativeModeTab> VA_ITEM_GROUP_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), ResourceLocation.fromNamespaceAndPath(Enhancements.modID, "va_item_group"));
     public static final CreativeModeTab VA_ITEM_GROUP = FabricItemGroup.builder()
-    .icon(() -> new ItemStack(BlockRegistry.GRANITE_BRICKS.asItem()))
+    .icon(() -> new ItemStack(BlockRegistry.ANDESITE_BRICKS.asItem()))
     .title(Component.translatable("enhancements.item_group"))
     .build();
     
@@ -39,6 +39,7 @@ public class ItemRegistry {
 
         // Add items to item group
         ItemGroupEvents.modifyEntriesEvent(VA_ITEM_GROUP_KEY).register(itemGroup -> {
+            // Granite Set
             itemGroup.accept(BlockRegistry.COBBLED_GRANITE.asItem());
             itemGroup.accept(BlockRegistry.COBBLED_GRANITE_STAIRS.asItem());
             itemGroup.accept(BlockRegistry.COBBLED_GRANITE_SLAB.asItem());
@@ -48,6 +49,28 @@ public class ItemRegistry {
             itemGroup.accept(BlockRegistry.GRANITE_BRICKS.asItem());
             itemGroup.accept(BlockRegistry.GRANITE_BRICK_STAIRS.asItem());
             itemGroup.accept(BlockRegistry.GRANITE_BRICK_SLAB.asItem());
+
+            // Diorite Set
+            itemGroup.accept(BlockRegistry.COBBLED_DIORITE.asItem());
+            itemGroup.accept(BlockRegistry.COBBLED_DIORITE_STAIRS.asItem());
+            itemGroup.accept(BlockRegistry.COBBLED_DIORITE_SLAB.asItem());
+            itemGroup.accept(BlockRegistry.SMOOTH_DIORITE.asItem());
+            itemGroup.accept(BlockRegistry.SMOOTH_DIORITE_STAIRS.asItem());
+            itemGroup.accept(BlockRegistry.SMOOTH_DIORITE_SLAB.asItem());
+            itemGroup.accept(BlockRegistry.DIORITE_BRICKS.asItem());
+            itemGroup.accept(BlockRegistry.DIORITE_BRICK_STAIRS.asItem());
+            itemGroup.accept(BlockRegistry.DIORITE_BRICK_SLAB.asItem());
+
+            // Andesite Set
+            itemGroup.accept(BlockRegistry.COBBLED_ANDESITE.asItem());
+            itemGroup.accept(BlockRegistry.COBBLED_ANDESITE_STAIRS.asItem());
+            itemGroup.accept(BlockRegistry.COBBLED_ANDESITE_SLAB.asItem());
+            itemGroup.accept(BlockRegistry.SMOOTH_ANDESITE.asItem());
+            itemGroup.accept(BlockRegistry.SMOOTH_ANDESITE_STAIRS.asItem());
+            itemGroup.accept(BlockRegistry.SMOOTH_ANDESITE_SLAB.asItem());
+            itemGroup.accept(BlockRegistry.ANDESITE_BRICKS.asItem());
+            itemGroup.accept(BlockRegistry.ANDESITE_BRICK_STAIRS.asItem());
+            itemGroup.accept(BlockRegistry.ANDESITE_BRICK_SLAB.asItem());
         });
     }
 }
