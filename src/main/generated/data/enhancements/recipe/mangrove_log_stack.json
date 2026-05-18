@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "l": "minecraft:mangrove_log",
+    "s": "minecraft:stick"
+  },
+  "pattern": [
+    "lsl",
+    "s s",
+    "lsl"
+  ],
+  "result": {
+    "count": 8,
+    "id": "enhancements:mangrove_log_stack"
+  }
+}

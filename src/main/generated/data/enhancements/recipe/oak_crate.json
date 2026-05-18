@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "i": "minecraft:iron_ingot",
+    "p": "minecraft:oak_planks"
+  },
+  "pattern": [
+    "ipi",
+    "ppp",
+    "ipi"
+  ],
+  "result": {
+    "count": 8,
+    "id": "enhancements:oak_crate"
+  }
+}

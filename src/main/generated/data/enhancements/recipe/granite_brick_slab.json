@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "g": "enhancements:granite_bricks"
+  },
+  "pattern": [
+    "ggg"
+  ],
+  "result": {
+    "count": 6,
+    "id": "enhancements:granite_brick_slab"
+  }
+}

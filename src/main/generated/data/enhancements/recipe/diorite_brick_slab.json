@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "d": "enhancements:diorite_bricks"
+  },
+  "pattern": [
+    "ddd"
+  ],
+  "result": {
+    "count": 6,
+    "id": "enhancements:diorite_brick_slab"
+  }
+}

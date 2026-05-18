@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "enhancements:granite_bricks",
+  "result": {
+    "count": 1,
+    "id": "enhancements:granite_brick_stairs"
+  }
+}

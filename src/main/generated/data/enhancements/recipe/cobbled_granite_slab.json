@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "g": "enhancements:cobbled_granite"
+  },
+  "pattern": [
+    "ggg"
+  ],
+  "result": {
+    "count": 6,
+    "id": "enhancements:cobbled_granite_slab"
+  }
+}

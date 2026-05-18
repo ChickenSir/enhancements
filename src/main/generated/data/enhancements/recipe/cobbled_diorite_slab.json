@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "d": "enhancements:cobbled_diorite"
+  },
+  "pattern": [
+    "ddd"
+  ],
+  "result": {
+    "count": 6,
+    "id": "enhancements:cobbled_diorite_slab"
+  }
+}

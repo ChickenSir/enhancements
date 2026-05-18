@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "enhancements:cobbled_andesite",
+  "result": {
+    "count": 1,
+    "id": "enhancements:smooth_andesite_stairs"
+  }
+}

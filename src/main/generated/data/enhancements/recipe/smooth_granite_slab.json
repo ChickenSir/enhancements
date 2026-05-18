@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "s": "enhancements:smooth_granite"
+  },
+  "pattern": [
+    "sss"
+  ],
+  "result": {
+    "count": 6,
+    "id": "enhancements:smooth_granite_slab"
+  }
+}
