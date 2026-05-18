@@ -71,6 +71,20 @@ public class ItemRegistry {
             itemGroup.accept(BlockRegistry.ANDESITE_BRICKS.asItem());
             itemGroup.accept(BlockRegistry.ANDESITE_BRICK_STAIRS.asItem());
             itemGroup.accept(BlockRegistry.ANDESITE_BRICK_SLAB.asItem());
+
+            // Log Stack Set
+            itemGroup.accept(BlockRegistry.OAK_LOG_STACK.asItem());
+            itemGroup.accept(BlockRegistry.BIRCH_LOG_STACK.asItem());
+            itemGroup.accept(BlockRegistry.SPRUCE_LOG_STACK.asItem());
+            itemGroup.accept(BlockRegistry.JUNGLE_LOG_STACK.asItem());
+            itemGroup.accept(BlockRegistry.ACACIA_LOG_STACK.asItem());
+            itemGroup.accept(BlockRegistry.DARK_OAK_LOG_STACK.asItem());
+            itemGroup.accept(BlockRegistry.CHERRY_LOG_STACK.asItem());
+            itemGroup.accept(BlockRegistry.MANGROVE_LOG_STACK.asItem());
+            itemGroup.accept(BlockRegistry.PALE_OAK_LOG_STACK.asItem());
+            itemGroup.accept(BlockRegistry.BAMBOO_STACK.asItem());
+            itemGroup.accept(BlockRegistry.CRIMSON_STEM_STACK.asItem());
+            itemGroup.accept(BlockRegistry.WARPED_STEM_STACK.asItem());
         });
     }
 }

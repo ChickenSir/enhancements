@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "enhancements:block/jungle_log_stack"
+    }
+  }
+}

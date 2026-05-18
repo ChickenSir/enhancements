@@ -48,6 +48,20 @@ public class ENHLangProvider extends FabricLanguageProvider {
         translationBuilder.add("item.enhancements.andesite_bricks", "Andesite Bricks");
         translationBuilder.add("item.enhancements.andesite_brick_stairs", "Andesite Brick Stairs");
         translationBuilder.add("item.enhancements.andesite_brick_slab", "Andesite Brick Slab");
+
+        // Log Stack Set
+        translationBuilder.add("item.enhancements.oak_log_stack", "Oak Log Stack");
+        translationBuilder.add("item.enhancements.birch_log_stack", "Birch Log Stack");
+        translationBuilder.add("item.enhancements.spruce_log_stack", "Spruce Log Stack");
+        translationBuilder.add("item.enhancements.jungle_log_stack", "Jungle Log Stack");
+        translationBuilder.add("item.enhancements.acacia_log_stack", "Acacia Log Stack");
+        translationBuilder.add("item.enhancements.dark_oak_log_stack", "Dark Oak Log Stack");
+        translationBuilder.add("item.enhancements.cherry_log_stack", "Cherry Log Stack");
+        translationBuilder.add("item.enhancements.mangrove_log_stack", "Mangrove Log Stack");
+        translationBuilder.add("item.enhancements.pale_oak_log_stack", "Pale Oak Log Stack");
+        translationBuilder.add("item.enhancements.bamboo_stack", "Bamboo Stack");
+        translationBuilder.add("item.enhancements.crimson_stem_stack", "Crimson Stem Stack");
+        translationBuilder.add("item.enhancements.warped_stem_stack", "Warped Stem Stack");
     }
     
 }

@@ -3,6 +3,7 @@ package com.enhancements.registries;
 import java.util.function.Function;
 
 import com.enhancements.Enhancements;
+import com.enhancements.block.LogStackBlock;
 
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -58,6 +59,20 @@ public class BlockRegistry {
     public static final Block ANDESITE_BRICKS = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.ANDESITE), "andesite_bricks", true);
     public static final Block ANDESITE_BRICK_STAIRS = registerStair(ANDESITE_BRICKS, "andesite_brick_stairs");
     public static final Block ANDESITE_BRICK_SLAB = register(SlabBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.ANDESITE_SLAB), "andesite_brick_slab", true);
+
+    // Log Stack Set
+    public static final Block OAK_LOG_STACK = register(LogStackBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).noOcclusion(), "oak_log_stack", true);
+    public static final Block BIRCH_LOG_STACK = register(LogStackBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.BIRCH_PLANKS).noOcclusion(), "birch_log_stack", true);
+    public static final Block SPRUCE_LOG_STACK = register(LogStackBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_PLANKS).noOcclusion(), "spruce_log_stack", true);
+    public static final Block JUNGLE_LOG_STACK = register(LogStackBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.JUNGLE_PLANKS).noOcclusion(), "jungle_log_stack", true);
+    public static final Block ACACIA_LOG_STACK = register(LogStackBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_PLANKS).noOcclusion(), "acacia_log_stack", true);
+    public static final Block DARK_OAK_LOG_STACK = register(LogStackBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.DARK_OAK_PLANKS).noOcclusion(), "dark_oak_log_stack", true);
+    public static final Block CHERRY_LOG_STACK = register(LogStackBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_PLANKS).noOcclusion(), "cherry_log_stack", true);
+    public static final Block MANGROVE_LOG_STACK = register(LogStackBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.MANGROVE_PLANKS).noOcclusion(), "mangrove_log_stack", true);
+    public static final Block PALE_OAK_LOG_STACK = register(LogStackBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.PALE_OAK_PLANKS).noOcclusion(), "pale_oak_log_stack", true);
+    public static final Block BAMBOO_STACK = register(LogStackBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.BAMBOO_PLANKS).noOcclusion(), "bamboo_stack", true);
+    public static final Block CRIMSON_STEM_STACK = register(LogStackBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.CRIMSON_PLANKS).noOcclusion(), "crimson_stem_stack", true);
+    public static final Block WARPED_STEM_STACK = register(LogStackBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_PLANKS).noOcclusion(), "warped_stem_stack", true);
     
     public static Block register(Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties settings, String name, boolean registerItem) {
         // Create block resource key
