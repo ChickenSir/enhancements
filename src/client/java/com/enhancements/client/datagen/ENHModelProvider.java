@@ -53,6 +53,20 @@ public class ENHModelProvider extends FabricModelProvider {
         blockStateModelGenerator.family(BlockRegistry.ANDESITE_BRICKS)
             .stairs(BlockRegistry.ANDESITE_BRICK_STAIRS)
             .slab(BlockRegistry.ANDESITE_BRICK_SLAB);
+
+        // Crate Set
+        blockStateModelGenerator.createTrivialCube(BlockRegistry.OAK_CRATE);
+        blockStateModelGenerator.createTrivialCube(BlockRegistry.BIRCH_CRATE);
+        blockStateModelGenerator.createTrivialCube(BlockRegistry.SPRUCE_CRATE);
+        blockStateModelGenerator.createTrivialCube(BlockRegistry.JUNGLE_CRATE);
+        blockStateModelGenerator.createTrivialCube(BlockRegistry.ACACIA_CRATE);
+        blockStateModelGenerator.createTrivialCube(BlockRegistry.DARK_OAK_CRATE);
+        blockStateModelGenerator.createTrivialCube(BlockRegistry.CHERRY_CRATE);
+        blockStateModelGenerator.createTrivialCube(BlockRegistry.MANGROVE_CRATE);
+        blockStateModelGenerator.createTrivialCube(BlockRegistry.PALE_OAK_CRATE);
+        blockStateModelGenerator.createTrivialCube(BlockRegistry.BAMBOO_CRATE);
+        blockStateModelGenerator.createTrivialCube(BlockRegistry.CRIMSON_CRATE);
+        blockStateModelGenerator.createTrivialCube(BlockRegistry.WARPED_CRATE);
     }
 
     @Override

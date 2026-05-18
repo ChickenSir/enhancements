@@ -62,6 +62,20 @@ public class ENHLangProvider extends FabricLanguageProvider {
         translationBuilder.add("item.enhancements.bamboo_stack", "Bamboo Stack");
         translationBuilder.add("item.enhancements.crimson_stem_stack", "Crimson Stem Stack");
         translationBuilder.add("item.enhancements.warped_stem_stack", "Warped Stem Stack");
+
+        // Crate Set
+        translationBuilder.add("item.enhancements.oak_crate", "Oak Crate");
+        translationBuilder.add("item.enhancements.birch_crate", "Birch Crate");
+        translationBuilder.add("item.enhancements.spruce_crate", "Spruce Crate");
+        translationBuilder.add("item.enhancements.jungle_crate", "Jungle Crate");
+        translationBuilder.add("item.enhancements.acacia_crate", "Acacia Crate");
+        translationBuilder.add("item.enhancements.dark_oak_crate", "Dark Oak Crate");
+        translationBuilder.add("item.enhancements.cherry_crate", "Cherry Crate");
+        translationBuilder.add("item.enhancements.mangrove_crate", "Mangrove Crate");
+        translationBuilder.add("item.enhancements.pale_oak_crate", "Pale Oak Crate");
+        translationBuilder.add("item.enhancements.bamboo_crate", "Bamboo Crate");
+        translationBuilder.add("item.enhancements.crimson_crate", "Crimson Crate");
+        translationBuilder.add("item.enhancements.warped_crate", "Warped Crate");
     }
     
 }

@@ -85,6 +85,20 @@ public class ItemRegistry {
             itemGroup.accept(BlockRegistry.BAMBOO_STACK.asItem());
             itemGroup.accept(BlockRegistry.CRIMSON_STEM_STACK.asItem());
             itemGroup.accept(BlockRegistry.WARPED_STEM_STACK.asItem());
+
+            // Crate Set
+            itemGroup.accept(BlockRegistry.OAK_CRATE.asItem());
+            itemGroup.accept(BlockRegistry.BIRCH_CRATE.asItem());
+            itemGroup.accept(BlockRegistry.SPRUCE_CRATE.asItem());
+            itemGroup.accept(BlockRegistry.JUNGLE_CRATE.asItem());
+            itemGroup.accept(BlockRegistry.ACACIA_CRATE.asItem());
+            itemGroup.accept(BlockRegistry.DARK_OAK_CRATE.asItem());
+            itemGroup.accept(BlockRegistry.CHERRY_CRATE.asItem());
+            itemGroup.accept(BlockRegistry.MANGROVE_CRATE.asItem());
+            itemGroup.accept(BlockRegistry.PALE_OAK_CRATE.asItem());
+            itemGroup.accept(BlockRegistry.BAMBOO_CRATE.asItem());
+            itemGroup.accept(BlockRegistry.CRIMSON_CRATE.asItem());
+            itemGroup.accept(BlockRegistry.WARPED_CRATE.asItem());
         });
     }
 }

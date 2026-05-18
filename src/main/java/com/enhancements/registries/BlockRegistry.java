@@ -15,6 +15,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SlabBlock;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
@@ -73,6 +74,20 @@ public class BlockRegistry {
     public static final Block BAMBOO_STACK = register(LogStackBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.BAMBOO_PLANKS).noOcclusion(), "bamboo_stack", true);
     public static final Block CRIMSON_STEM_STACK = register(LogStackBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.CRIMSON_PLANKS).noOcclusion(), "crimson_stem_stack", true);
     public static final Block WARPED_STEM_STACK = register(LogStackBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_PLANKS).noOcclusion(), "warped_stem_stack", true);
+
+    // Crate Set
+    public static final Block OAK_CRATE = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).sound(SoundType.STONE), "oak_crate", true);
+    public static final Block BIRCH_CRATE = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.BIRCH_PLANKS).sound(SoundType.STONE), "birch_crate", true);
+    public static final Block SPRUCE_CRATE = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_PLANKS).sound(SoundType.STONE), "spruce_crate", true);
+    public static final Block JUNGLE_CRATE = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.JUNGLE_PLANKS).sound(SoundType.STONE), "jungle_crate", true);
+    public static final Block ACACIA_CRATE = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_PLANKS).sound(SoundType.STONE), "acacia_crate", true);
+    public static final Block DARK_OAK_CRATE = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.DARK_OAK_PLANKS).sound(SoundType.STONE), "dark_oak_crate", true);
+    public static final Block CHERRY_CRATE = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_PLANKS).sound(SoundType.STONE), "cherry_crate", true);
+    public static final Block MANGROVE_CRATE = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.MANGROVE_PLANKS).sound(SoundType.STONE), "mangrove_crate", true);
+    public static final Block PALE_OAK_CRATE = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.PALE_OAK_PLANKS).sound(SoundType.STONE), "pale_oak_crate", true);
+    public static final Block BAMBOO_CRATE = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.BAMBOO_PLANKS).sound(SoundType.STONE), "bamboo_crate", true);
+    public static final Block CRIMSON_CRATE = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.CRIMSON_PLANKS).sound(SoundType.STONE), "crimson_crate", true);
+    public static final Block WARPED_CRATE = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_PLANKS).sound(SoundType.STONE), "warped_crate", true);
     
     public static Block register(Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties settings, String name, boolean registerItem) {
         // Create block resource key
