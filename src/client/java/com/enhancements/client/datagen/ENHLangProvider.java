@@ -76,6 +76,10 @@ public class ENHLangProvider extends FabricLanguageProvider {
         translationBuilder.add("item.enhancements.bamboo_crate", "Bamboo Crate");
         translationBuilder.add("item.enhancements.crimson_crate", "Crimson Crate");
         translationBuilder.add("item.enhancements.warped_crate", "Warped Crate");
+
+        // Mob Head Set
+        translationBuilder.add("item.enhancements.allay_head", "Allay Head");
+        translationBuilder.add("item.enhancements.iron_golem_head", "Iron Golem Head");
     }
     
 }

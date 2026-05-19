@@ -99,6 +99,10 @@ public class ItemRegistry {
             itemGroup.accept(BlockRegistry.BAMBOO_CRATE.asItem());
             itemGroup.accept(BlockRegistry.CRIMSON_CRATE.asItem());
             itemGroup.accept(BlockRegistry.WARPED_CRATE.asItem());
+
+            // Mob Head Set
+            itemGroup.accept(BlockRegistry.ALLAY_HEAD.asItem());
+            itemGroup.accept(BlockRegistry.IRON_GOLEM_HEAD.asItem());
         });
     }
 }

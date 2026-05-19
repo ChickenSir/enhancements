@@ -14,18 +14,19 @@ import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class LogStackBlock extends Block {
-    public static final VoxelShape blockShape = Block.box(0, 0, 0, 16, 8, 16);
+public class CustomMobHeadBlock extends Block {
     public static final EnumProperty<Direction> FACING;
+    public VoxelShape blockShape;
 
-    public LogStackBlock(Properties properties) {
+    public CustomMobHeadBlock(Properties properties, float x, float y, float z) {
         super(properties);
+        blockShape = column(x, y, z);
         this.registerDefaultState((BlockState)((BlockState)this.stateDefinition.any()).setValue(FACING, Direction.NORTH));
     }
 
     public BlockState getStateForPlacement(BlockPlaceContext blockPlaceContext) {
         // Returns the block state from the blocks placement direction
-        return (BlockState)this.defaultBlockState().setValue(FACING, blockPlaceContext.getHorizontalDirection().getClockWise());
+        return (BlockState)this.defaultBlockState().setValue(FACING, blockPlaceContext.getHorizontalDirection().getOpposite().getClockWise());
     }
     
     protected VoxelShape getShape(BlockState state, BlockGetter getter, BlockPos pos, CollisionContext collisionContext) {

@@ -3,6 +3,7 @@ package com.enhancements.registries;
 import java.util.function.Function;
 
 import com.enhancements.Enhancements;
+import com.enhancements.block.CustomMobHeadBlock;
 import com.enhancements.block.LogStackBlock;
 
 import net.minecraft.core.Registry;
@@ -10,6 +11,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -19,6 +21,8 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.PushReaction;
 
 public class BlockRegistry {
 
@@ -88,6 +92,10 @@ public class BlockRegistry {
     public static final Block BAMBOO_CRATE = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.BAMBOO_PLANKS).sound(SoundType.STONE), "bamboo_crate", true);
     public static final Block CRIMSON_CRATE = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.CRIMSON_PLANKS).sound(SoundType.STONE), "crimson_crate", true);
     public static final Block WARPED_CRATE = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_PLANKS).sound(SoundType.STONE), "warped_crate", true);
+
+    // Mod Head Set
+    public static final Block ALLAY_HEAD = registerMobHead("allay_head", 5, 0, 5);
+    public static final Block IRON_GOLEM_HEAD = registerMobHead("iron_golem_head", 8, 0, 10);
     
     public static Block register(Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties settings, String name, boolean registerItem) {
         // Create block resource key
@@ -113,6 +121,28 @@ public class BlockRegistry {
     public static Block registerStair(Block block, String name) {
         // Register stair block
         return register((properties) -> new StairBlock(block.defaultBlockState(), properties), Properties.ofFullCopy(block), name, true);
+    }
+
+    public static Block registerMobHead(String name, int x, int y, int z) {
+        // Create block resource key
+        ResourceKey<Block> blockKey = ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(Enhancements.modID, name));
+
+        // Create block properties and mob head block
+        BlockBehaviour.Properties settings = Properties.of().setId(blockKey).instrument(NoteBlockInstrument.ZOMBIE).strength(1.0f).pushReaction(PushReaction.DESTROY);
+        CustomMobHeadBlock block = new CustomMobHeadBlock(settings, x, y, z);
+
+        // Create item resource key
+        ResourceKey<Item> itemKey = ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Enhancements.modID, name));
+
+        // Create block item
+        Item.Properties itemSettings = new Item.Properties().setId(itemKey).equippableUnswappable(EquipmentSlot.HEAD);
+        BlockItem blockItem = new BlockItem(block, itemSettings);
+
+        // Register block item
+        Registry.register(BuiltInRegistries.ITEM, itemKey, blockItem);
+
+        // Register block
+        return Registry.register(BuiltInRegistries.BLOCK, blockKey, block);
     }
 
     public static void registerBlocks() {}
