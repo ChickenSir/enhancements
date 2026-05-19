@@ -102,7 +102,19 @@ public class ItemRegistry {
 
             // Mob Head Set
             itemGroup.accept(BlockRegistry.ALLAY_HEAD.asItem());
+            itemGroup.accept(BlockRegistry.BEE_HEAD.asItem());
+            itemGroup.accept(BlockRegistry.BREEZE_HEAD.asItem());
+            itemGroup.accept(BlockRegistry.BROWN_MOOSHROOM_HEAD.asItem());
+            itemGroup.accept(BlockRegistry.CAMEL_HEAD.asItem());
+            itemGroup.accept(BlockRegistry.COLD_CHICKEN_HEAD.asItem());
+            itemGroup.accept(BlockRegistry.COLD_COW_HEAD.asItem());
             itemGroup.accept(BlockRegistry.IRON_GOLEM_HEAD.asItem());
+            itemGroup.accept(BlockRegistry.POLARBEAR_HEAD.asItem());
+            itemGroup.accept(BlockRegistry.RED_MOOSHROOM_HEAD.asItem());
+            itemGroup.accept(BlockRegistry.TEMPERATE_CHICKEN_HEAD.asItem());
+            itemGroup.accept(BlockRegistry.TEMPERATE_COW_HEAD.asItem());
+            itemGroup.accept(BlockRegistry.WARM_CHICKEN_HEAD.asItem());
+            itemGroup.accept(BlockRegistry.WARM_COW_HEAD.asItem());
         });
     }
 }

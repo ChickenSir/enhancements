@@ -9,6 +9,7 @@ import net.minecraft.client.renderer.RenderType;
 public class EnhancementsClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
-		BlockRenderLayerMap.INSTANCE.putBlock(BlockRegistry.OAK_LOG_STACK, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(BlockRegistry.BREEZE_HEAD, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(BlockRegistry.COLD_CHICKEN_HEAD, RenderType.cutout());
 	}
 }

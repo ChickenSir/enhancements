@@ -1,0 +1,106 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"texture_size": [28, 17],
+	"textures": {
+		"particle": "minecraft:block/soul_sand",
+		"1_0": "enhancements:block/cold_chicken_head"
+	},
+	"elements": [
+		{
+			"name": "head",
+			"from": [6, 0, 6],
+			"to": [10, 6, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [6, 0, 6]},
+			"faces": {
+				"north": {"uv": [1.71429, 2.82353, 4, 8.47059], "texture": "#1_0"},
+				"east": {"uv": [0, 2.82353, 1.71429, 8.47059], "texture": "#1_0"},
+				"south": {"uv": [5.71429, 2.82353, 8, 8.47059], "texture": "#1_0"},
+				"west": {"uv": [4, 2.82353, 5.71429, 8.47059], "texture": "#1_0"},
+				"up": {"uv": [1.71429, 0, 4, 2.82353], "rotation": 180, "texture": "#1_0"},
+				"down": {"uv": [4, 0, 6.28571, 2.82353], "texture": "#1_0"}
+			}
+		},
+		{
+			"name": "beak",
+			"from": [6, 2, 4],
+			"to": [10, 4, 6],
+			"rotation": {"angle": 0, "axis": "y", "origin": [6, 2, 4]},
+			"faces": {
+				"north": {"uv": [1.14286, 10.35294, 3.42857, 12.23529], "texture": "#1_0"},
+				"east": {"uv": [0, 10.35294, 1.14286, 12.23529], "texture": "#1_0"},
+				"south": {"uv": [3.42857, 8.47059, 5.71429, 10.35294], "texture": "#1_0"},
+				"west": {"uv": [3.42857, 10.35294, 4.57143, 12.23529], "texture": "#1_0"},
+				"up": {"uv": [1.14286, 8.47059, 3.42857, 10.35294], "rotation": 180, "texture": "#1_0"},
+				"down": {"uv": [4.57143, 10.35294, 6.85714, 12.23529], "texture": "#1_0"}
+			}
+		},
+		{
+			"name": "under_beak",
+			"from": [7, 0, 5],
+			"to": [9, 2, 6],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 0, 5]},
+			"faces": {
+				"north": {"uv": [1.14286, 14.11765, 2.28571, 16], "texture": "#1_0"},
+				"east": {"uv": [0.57143, 14.11765, 1.14286, 16], "texture": "#1_0"},
+				"south": {"uv": [3.42857, 14.11765, 4.57143, 16], "texture": "#1_0"},
+				"west": {"uv": [2.28571, 14.11765, 2.85714, 16], "texture": "#1_0"},
+				"up": {"uv": [1.14286, 13.17647, 2.28571, 14.11765], "texture": "#1_0"},
+				"down": {"uv": [2.28571, 13.17647, 3.42857, 14.11765], "texture": "#1_0"}
+			}
+		},
+		{
+			"name": "mohawk",
+			"from": [5, 4, 5.75],
+			"to": [11, 7, 9.75],
+			"rotation": {"angle": 0, "axis": "y", "origin": [5, 4, 5.75]},
+			"faces": {
+				"north": {"uv": [10.28571, 5.64706, 13.71429, 8.47059], "texture": "#1_0"},
+				"east": {"uv": [8, 5.64706, 10.28571, 8.47059], "texture": "#1_0"},
+				"south": {"uv": [10.28571, 9.41176, 13.71429, 12.23529], "texture": "#1_0"},
+				"west": {"uv": [13.71429, 5.64706, 16, 8.47059], "texture": "#1_0"},
+				"up": {"uv": [10.28571, 1.88235, 13.71429, 5.64706], "rotation": 180, "texture": "#1_0"},
+				"down": {"uv": [10.85714, 12.23529, 10.85714, 12.23529], "rotation": 180, "texture": "#1_0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [70, 45, 0],
+			"translation": [0, 3.75, 3.5],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [70, 45, 0],
+			"translation": [0, 3.75, 3.5],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"firstperson_righthand": {
+			"translation": [-2, 6, 3],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"firstperson_lefthand": {
+			"translation": [-2, 6, 3],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"ground": {
+			"translation": [0, 3, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"gui": {
+			"rotation": [30, 135, 0],
+			"translation": [0.5, 0.5, 0],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"head": {
+			"translation": [0, 9.5, 0],
+			"scale": [2, 2, 2]
+		},
+		"fixed": {
+			"translation": [0, 2, -2]
+		},
+		"on_shelf": {
+			"rotation": [0, -180, 0]
+		}
+	}
+}

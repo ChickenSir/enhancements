@@ -1,0 +1,23 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "enhancements:block/cold_cow_head",
+      "uvlock": false,
+      "y": 270
+    },
+    "facing=east": {
+      "model": "enhancements:block/cold_cow_head",
+      "uvlock": true
+    },
+    "facing=south": {
+      "model": "enhancements:block/cold_cow_head",
+      "uvlock": false,
+      "y": 90
+    },
+    "facing=west": {
+      "model": "enhancements:block/cold_cow_head",
+      "uvlock": false,
+      "y": 180
+    }
+  }
+}

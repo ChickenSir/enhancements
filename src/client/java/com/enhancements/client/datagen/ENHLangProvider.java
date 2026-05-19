@@ -79,7 +79,19 @@ public class ENHLangProvider extends FabricLanguageProvider {
 
         // Mob Head Set
         translationBuilder.add("item.enhancements.allay_head", "Allay Head");
+        translationBuilder.add("item.enhancements.bee_head", "Bee Head");
+        translationBuilder.add("item.enhancements.breeze_head", "Breeze Head");
+        translationBuilder.add("item.enhancements.brown_mooshroom_head", "Brown Mooshroom Head");
+        translationBuilder.add("item.enhancements.camel_head", "Camel Head");
+        translationBuilder.add("item.enhancements.cold_chicken_head", "Cold Chicken Head");
+        translationBuilder.add("item.enhancements.cold_cow_head", "Cold Cow Head");
         translationBuilder.add("item.enhancements.iron_golem_head", "Iron Golem Head");
+        translationBuilder.add("item.enhancements.polarbear_head", "Polar Bear Head");
+        translationBuilder.add("item.enhancements.red_mooshroom_head", "Red Mooshroom Head");
+        translationBuilder.add("item.enhancements.temperate_chicken_head", "Chicken Head");
+        translationBuilder.add("item.enhancements.temperate_cow_head", "Cow Head");
+        translationBuilder.add("item.enhancements.warm_chicken_head", "Warm Chicken Head");
+        translationBuilder.add("item.enhancements.warm_cow_head", "Warm Cow Head");
     }
     
 }
