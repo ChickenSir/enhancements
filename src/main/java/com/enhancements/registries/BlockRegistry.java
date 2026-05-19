@@ -72,8 +72,8 @@ public class BlockRegistry {
     public static final Block MANGROVE_LOG_STACK = register(LogStackBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.MANGROVE_PLANKS).noOcclusion(), "mangrove_log_stack", true);
     public static final Block PALE_OAK_LOG_STACK = register(LogStackBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.PALE_OAK_PLANKS).noOcclusion(), "pale_oak_log_stack", true);
     public static final Block BAMBOO_STACK = register(LogStackBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.BAMBOO_PLANKS).noOcclusion(), "bamboo_stack", true);
-    public static final Block CRIMSON_STEM_STACK = register(LogStackBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.CRIMSON_PLANKS).noOcclusion(), "crimson_stem_stack", true);
-    public static final Block WARPED_STEM_STACK = register(LogStackBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_PLANKS).noOcclusion(), "warped_stem_stack", true);
+    public static final Block CRIMSON_STEM_STACK = register(LogStackBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.CRIMSON_PLANKS).noOcclusion().sound(SoundType.STEM), "crimson_stem_stack", true);
+    public static final Block WARPED_STEM_STACK = register(LogStackBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_PLANKS).noOcclusion().sound(SoundType.STEM), "warped_stem_stack", true);
 
     // Crate Set
     public static final Block OAK_CRATE = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).sound(SoundType.STONE), "oak_crate", true);
