@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "c": "minecraft:cobblestone",
+    "s": "minecraft:stick"
+  },
+  "pattern": [
+    "ccc",
+    "csc",
+    " s "
+  ],
+  "result": {
+    "count": 1,
+    "id": "enhancements:stone_hammer"
+  }
+}

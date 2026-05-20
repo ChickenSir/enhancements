@@ -1,6 +1,9 @@
 package com.enhancements.registries;
 
+import java.util.function.Function;
+
 import com.enhancements.Enhancements;
+import com.enhancements.item.HammerItem;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -13,6 +16,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.ToolMaterial;
 
 public class ItemRegistry {
 
@@ -21,13 +25,20 @@ public class ItemRegistry {
     .icon(() -> new ItemStack(BlockRegistry.ANDESITE_BRICKS.asItem()))
     .title(Component.translatable("enhancements.item_group"))
     .build();
+
+    public static final Item WOODEN_HAMMER = register((settings) -> new HammerItem(ToolMaterial.WOOD, 6.0f, -3.2f, settings), new Item.Properties(), "wooden_hammer");
+    public static final Item STONE_HAMMER = register((settings) -> new HammerItem(ToolMaterial.STONE, 7.0f, -3.2f, settings), new Item.Properties(), "stone_hammer");
+    public static final Item IRON_HAMMER = register((settings) -> new HammerItem(ToolMaterial.IRON, 6.0f, -3.1f, settings), new Item.Properties(), "iron_hammer");
+    public static final Item GOLDEN_HAMMER = register((settings) -> new HammerItem(ToolMaterial.GOLD, 6.0f, -3.0f, settings), new Item.Properties(), "golden_hammer");
+    public static final Item DIAMOND_HAMMER = register((settings) -> new HammerItem(ToolMaterial.DIAMOND, 5.0f, -3.0f, settings), new Item.Properties(), "diamond_hammer");
+    public static final Item NETHERITE_HAMMER = register((settings) -> new HammerItem(ToolMaterial.NETHERITE, 5.0f, -3.0f, settings), new Item.Properties().fireResistant(), "netherite_hammer");
     
-    public static Item register(Item.Properties settings, String name) {
+    public static Item register(Function<Item.Properties, Item> itemFactory, Item.Properties settings, String name) {
         // Create the item key
         ResourceKey<Item> itemKey = ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Enhancements.modID, name));
 
         // Create the item
-        Item item = new Item(settings.setId(itemKey));
+        Item item = itemFactory.apply(settings.setId(itemKey));
 
         // Register the item
         return Registry.register(BuiltInRegistries.ITEM, itemKey, item);
@@ -115,6 +126,14 @@ public class ItemRegistry {
             itemGroup.accept(BlockRegistry.TEMPERATE_COW_HEAD.asItem());
             itemGroup.accept(BlockRegistry.WARM_CHICKEN_HEAD.asItem());
             itemGroup.accept(BlockRegistry.WARM_COW_HEAD.asItem());
+
+            // Hammer Set
+            itemGroup.accept(WOODEN_HAMMER);
+            itemGroup.accept(STONE_HAMMER);
+            itemGroup.accept(IRON_HAMMER);
+            itemGroup.accept(GOLDEN_HAMMER);
+            itemGroup.accept(DIAMOND_HAMMER);
+            itemGroup.accept(NETHERITE_HAMMER);
         });
     }
 }

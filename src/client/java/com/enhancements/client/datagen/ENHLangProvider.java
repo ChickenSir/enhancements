@@ -92,6 +92,14 @@ public class ENHLangProvider extends FabricLanguageProvider {
         translationBuilder.add("item.enhancements.temperate_cow_head", "Cow Head");
         translationBuilder.add("item.enhancements.warm_chicken_head", "Warm Chicken Head");
         translationBuilder.add("item.enhancements.warm_cow_head", "Warm Cow Head");
+
+        // Hammer Set
+        translationBuilder.add("item.enhancements.wooden_hammer", "Wooden Hammer");
+        translationBuilder.add("item.enhancements.stone_hammer", "Stone Hammer");
+        translationBuilder.add("item.enhancements.iron_hammer", "Iron Hammer");
+        translationBuilder.add("item.enhancements.golden_hammer", "Golden Hammer");
+        translationBuilder.add("item.enhancements.diamond_hammer", "Diamond Hammer");
+        translationBuilder.add("item.enhancements.netherite_hammer", "Netherite Hammer");
     }
     
 }

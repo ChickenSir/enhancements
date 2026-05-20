@@ -3,6 +3,7 @@ package com.enhancements.client.datagen;
 import java.util.concurrent.CompletableFuture;
 
 import com.enhancements.registries.BlockRegistry;
+import com.enhancements.registries.ItemRegistry;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
@@ -12,6 +13,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
@@ -386,6 +388,49 @@ public class ENHRecipeProvider extends FabricRecipeProvider {
                     .unlockedBy(getHasName(Blocks.WARPED_PLANKS.asItem()), has(Blocks.WARPED_PLANKS.asItem()))
                     .save(output);
 
+                // Hammer Set
+                shaped(RecipeCategory.TOOLS, ItemRegistry.WOODEN_HAMMER, 1)
+                    .pattern("ppp")
+                    .pattern("psp")
+                    .pattern(" s ")
+                    .define('p', ItemTags.PLANKS)
+                    .define('s', Items.STICK)
+                    .unlockedBy(getHasName(Blocks.OAK_PLANKS.asItem()), has(Blocks.OAK_PLANKS.asItem()))
+                    .save(output);
+                shaped(RecipeCategory.TOOLS, ItemRegistry.STONE_HAMMER, 1)
+                    .pattern("ccc")
+                    .pattern("csc")
+                    .pattern(" s ")
+                    .define('c', Items.COBBLESTONE)
+                    .define('s', Items.STICK)
+                    .unlockedBy(getHasName(Blocks.COBBLESTONE.asItem()), has(Blocks.COBBLESTONE.asItem()))
+                    .save(output);
+                shaped(RecipeCategory.TOOLS, ItemRegistry.IRON_HAMMER, 1)
+                    .pattern("iii")
+                    .pattern("isi")
+                    .pattern(" s ")
+                    .define('i', Items.IRON_INGOT)
+                    .define('s', Items.STICK)
+                    .unlockedBy(getHasName(Items.IRON_INGOT.asItem()), has(Items.IRON_INGOT.asItem()))
+                    .save(output);
+                shaped(RecipeCategory.TOOLS, ItemRegistry.GOLDEN_HAMMER, 1)
+                    .pattern("ggg")
+                    .pattern("gsg")
+                    .pattern(" s ")
+                    .define('g', Items.GOLD_INGOT)
+                    .define('s', Items.STICK)
+                    .unlockedBy(getHasName(Items.GOLD_INGOT.asItem()), has(Items.GOLD_INGOT.asItem()))
+                    .save(output);
+                shaped(RecipeCategory.TOOLS, ItemRegistry.DIAMOND_HAMMER, 1)
+                    .pattern("ddd")
+                    .pattern("dsd")
+                    .pattern(" s ")
+                    .define('d', Items.DIAMOND)
+                    .define('s', Items.STICK)
+                    .unlockedBy(getHasName(Items.DIAMOND.asItem()), has(Items.DIAMOND.asItem()))
+                    .save(output);
+
+                netheriteSmithing(ItemRegistry.DIAMOND_HAMMER, RecipeCategory.TOOLS, ItemRegistry.NETHERITE_HAMMER);
             }
         };
     }
