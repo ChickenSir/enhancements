@@ -3,7 +3,7 @@ package com.enhancements.registries;
 import java.util.function.Function;
 
 import com.enhancements.Enhancements;
-import com.enhancements.block.CustomMobHeadBlock;
+import com.enhancements.block.MobHeadBlock;
 import com.enhancements.block.LogStackBlock;
 
 import net.minecraft.core.Registry;
@@ -94,20 +94,20 @@ public class BlockRegistry {
     public static final Block WARPED_CRATE = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_PLANKS).sound(SoundType.STONE), "warped_crate", true);
 
     // Mod Head Set
-    public static final Block ALLAY_HEAD = registerMobHead("allay_head", 5, 0, 5, true);
-    public static final Block BEE_HEAD = registerMobHead("bee_head", 7, 0, 7, true);
-    public static final Block BREEZE_HEAD = registerMobHead("breeze_head", 8, 0, 8, true);
-    public static final Block BROWN_MOOSHROOM_HEAD = registerMobHead("brown_mooshroom_head", 6, 0, 8, false);
-    public static final Block CAMEL_HEAD = registerMobHead("camel_head", 7, 0, 14, true);
-    public static final Block COLD_CHICKEN_HEAD = registerMobHead("cold_chicken_head", 4, 0, 6, false);
-    public static final Block COLD_COW_HEAD = registerMobHead("cold_cow_head", 6, 0, 8, false);
-    public static final Block IRON_GOLEM_HEAD = registerMobHead("iron_golem_head", 8, 0, 10, true);
-    public static final Block POLARBEAR_HEAD = registerMobHead("polarbear_head", 7, 0, 7, true);
-    public static final Block RED_MOOSHROOM_HEAD = registerMobHead("red_mooshroom_head", 6, 0, 8, false);
-    public static final Block TEMPERATE_CHICKEN_HEAD = registerMobHead("temperate_chicken_head", 4, 0, 6, false);
-    public static final Block TEMPERATE_COW_HEAD = registerMobHead("temperate_cow_head", 6, 0, 8, false);
-    public static final Block WARM_CHICKEN_HEAD = registerMobHead("warm_chicken_head", 4, 0, 6, false);
-    public static final Block WARM_COW_HEAD = registerMobHead("warm_cow_head", 6, 0, 8, false);
+    public static final Block ALLAY_HEAD = registerMobHead("allay_head", 5, 5, 5, true);
+    public static final Block BEE_HEAD = registerMobHead("bee_head", 7, 7, 10, true);
+    public static final Block BREEZE_HEAD = registerMobHead("breeze_head", 8, 8, 8, true);
+    public static final Block BROWN_MOOSHROOM_HEAD = registerMobHead("brown_mooshroom_head", 8, 8, 6, false);
+    public static final Block CAMEL_HEAD = registerMobHead("camel_head", 7, 14, 7, true);
+    public static final Block COLD_CHICKEN_HEAD = registerMobHead("cold_chicken_head", 4, 6, 3, false);
+    public static final Block COLD_COW_HEAD = registerMobHead("cold_cow_head", 8, 8, 6, false);
+    public static final Block IRON_GOLEM_HEAD = registerMobHead("iron_golem_head", 8, 10, 8, true);
+    public static final Block POLARBEAR_HEAD = registerMobHead("polarbear_head", 7, 7, 7, true);
+    public static final Block RED_MOOSHROOM_HEAD = registerMobHead("red_mooshroom_head", 8, 8, 6, false);
+    public static final Block TEMPERATE_CHICKEN_HEAD = registerMobHead("temperate_chicken_head", 4,6, 3, false);
+    public static final Block TEMPERATE_COW_HEAD = registerMobHead("temperate_cow_head", 8, 8, 6, false);
+    public static final Block WARM_CHICKEN_HEAD = registerMobHead("warm_chicken_head", 4, 6, 3, false);
+    public static final Block WARM_COW_HEAD = registerMobHead("warm_cow_head", 8, 8, 6, false);
     
     public static Block register(Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties settings, String name, boolean registerItem) {
         // Create block resource key
@@ -135,13 +135,13 @@ public class BlockRegistry {
         return register((properties) -> new StairBlock(block.defaultBlockState(), properties), Properties.ofFullCopy(block), name, true);
     }
 
-    public static Block registerMobHead(String name, int x, int y, int z, boolean wearable) {
+    public static Block registerMobHead(String name, int w, int h, int d, boolean wearable) {
         // Create block resource key
         ResourceKey<Block> blockKey = ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(Enhancements.modID, name));
 
         // Create block properties and mob head block
         BlockBehaviour.Properties settings = Properties.of().setId(blockKey).instrument(NoteBlockInstrument.ZOMBIE).strength(1.0f).pushReaction(PushReaction.DESTROY);
-        CustomMobHeadBlock block = new CustomMobHeadBlock(settings, x, y, z);
+        MobHeadBlock block = new MobHeadBlock(settings, w, h, d);
 
         // Create item resource key
         ResourceKey<Item> itemKey = ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Enhancements.modID, name));

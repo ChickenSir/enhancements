@@ -14,19 +14,31 @@ import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class CustomMobHeadBlock extends Block {
+public class MobHeadBlock extends Block {
     public static final EnumProperty<Direction> FACING;
     public VoxelShape blockShape;
 
-    public CustomMobHeadBlock(Properties properties, float x, float y, float z) {
+    public MobHeadBlock(Properties properties, float w, float h, float d) {
         super(properties);
-        blockShape = column(x, y, z);
+        blockShape = calculateShape(w, h, d);
         this.registerDefaultState((BlockState)((BlockState)this.stateDefinition.any()).setValue(FACING, Direction.NORTH));
     }
 
     public BlockState getStateForPlacement(BlockPlaceContext blockPlaceContext) {
         // Returns the block state from the blocks placement direction
         return (BlockState)this.defaultBlockState().setValue(FACING, blockPlaceContext.getHorizontalDirection().getOpposite().getClockWise());
+    }
+
+    private VoxelShape calculateShape(float w, float h, float d) {
+        // The maximum size of a mob head
+        float size = 16;
+
+        // The position of the first corner of the mob head
+        float x1 = (size - w) / 2;
+        float z1 = (size - d) / 2;
+
+        // Return the final mob head outline shape
+        return box(x1, 0, z1, x1 + w, h, z1 + d);
     }
     
     protected VoxelShape getShape(BlockState state, BlockGetter getter, BlockPos pos, CollisionContext collisionContext) {
