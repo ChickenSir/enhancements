@@ -388,6 +388,108 @@ public class ENHRecipeProvider extends FabricRecipeProvider {
                     .unlockedBy(getHasName(Blocks.WARPED_PLANKS.asItem()), has(Blocks.WARPED_PLANKS.asItem()))
                     .save(output);
 
+                // Sandstone Set
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.COBBLED_SANDSTONE.asItem(), Blocks.SANDSTONE.asItem());
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.COBBLED_RED_SANDSTONE.asItem(), Blocks.RED_SANDSTONE.asItem());
+
+                // Reinforced Planks Set
+                shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.REINFORCED_OAK_PLANKS.asItem(), 4)
+                    .pattern("sss")
+                    .pattern("sps")
+                    .pattern("sss")
+                    .define('p', Blocks.OAK_PLANKS.asItem())
+                    .define('s', Items.STICK)
+                    .unlockedBy(getHasName(Blocks.OAK_PLANKS.asItem()), has(Blocks.OAK_PLANKS.asItem()))
+                    .save(output);
+                shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.REINFORCED_BIRCH_PLANKS.asItem(), 4)
+                    .pattern("sss")
+                    .pattern("sps")
+                    .pattern("sss")
+                    .define('p', Blocks.BIRCH_PLANKS.asItem())
+                    .define('s', Items.STICK)
+                    .unlockedBy(getHasName(Blocks.BIRCH_PLANKS.asItem()), has(Blocks.BIRCH_PLANKS.asItem()))
+                    .save(output);
+                shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.REINFORCED_SPRUCE_PLANKS.asItem(), 4)
+                    .pattern("sss")
+                    .pattern("sps")
+                    .pattern("sss")
+                    .define('p', Blocks.SPRUCE_PLANKS.asItem())
+                    .define('s', Items.STICK)
+                    .unlockedBy(getHasName(Blocks.SPRUCE_PLANKS.asItem()), has(Blocks.SPRUCE_PLANKS.asItem()))
+                    .save(output);
+                shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.REINFORCED_JUNGLE_PLANKS.asItem(), 4)
+                    .pattern("sss")
+                    .pattern("sps")
+                    .pattern("sss")
+                    .define('p', Blocks.JUNGLE_PLANKS.asItem())
+                    .define('s', Items.STICK)
+                    .unlockedBy(getHasName(Blocks.JUNGLE_PLANKS.asItem()), has(Blocks.JUNGLE_PLANKS.asItem()))
+                    .save(output);
+                shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.REINFORCED_ACACIA_PLANKS.asItem(), 4)
+                    .pattern("sss")
+                    .pattern("sps")
+                    .pattern("sss")
+                    .define('p', Blocks.ACACIA_PLANKS.asItem())
+                    .define('s', Items.STICK)
+                    .unlockedBy(getHasName(Blocks.ACACIA_PLANKS.asItem()), has(Blocks.ACACIA_PLANKS.asItem()))
+                    .save(output);
+                shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.REINFORCED_DARK_OAK_PLANKS.asItem(), 4)
+                    .pattern("sss")
+                    .pattern("sps")
+                    .pattern("sss")
+                    .define('p', Blocks.DARK_OAK_PLANKS.asItem())
+                    .define('s', Items.STICK)
+                    .unlockedBy(getHasName(Blocks.DARK_OAK_PLANKS.asItem()), has(Blocks.DARK_OAK_PLANKS.asItem()))
+                    .save(output);
+                shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.REINFORCED_CHERRY_PLANKS.asItem(), 4)
+                    .pattern("sss")
+                    .pattern("sps")
+                    .pattern("sss")
+                    .define('p', Blocks.CHERRY_PLANKS.asItem())
+                    .define('s', Items.STICK)
+                    .unlockedBy(getHasName(Blocks.CHERRY_PLANKS.asItem()), has(Blocks.CHERRY_PLANKS.asItem()))
+                    .save(output);
+                shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.REINFORCED_MANGROVE_PLANKS.asItem(), 4)
+                    .pattern("sss")
+                    .pattern("sps")
+                    .pattern("sss")
+                    .define('p', Blocks.MANGROVE_PLANKS.asItem())
+                    .define('s', Items.STICK)
+                    .unlockedBy(getHasName(Blocks.MANGROVE_PLANKS.asItem()), has(Blocks.MANGROVE_PLANKS.asItem()))
+                    .save(output);
+                shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.REINFORCED_PALE_OAK_PLANKS.asItem(), 4)
+                    .pattern("sss")
+                    .pattern("sps")
+                    .pattern("sss")
+                    .define('p', Blocks.PALE_OAK_PLANKS.asItem())
+                    .define('s', Items.STICK)
+                    .unlockedBy(getHasName(Blocks.PALE_OAK_PLANKS.asItem()), has(Blocks.PALE_OAK_PLANKS.asItem()))
+                    .save(output);
+                shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.REINFORCED_BAMBOO_PLANKS.asItem(), 4)
+                    .pattern("sss")
+                    .pattern("sps")
+                    .pattern("sss")
+                    .define('p', Blocks.BAMBOO_PLANKS.asItem())
+                    .define('s', Items.STICK)
+                    .unlockedBy(getHasName(Blocks.BAMBOO_PLANKS.asItem()), has(Blocks.BAMBOO_PLANKS.asItem()))
+                    .save(output);
+                shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.REINFORCED_CRIMSON_PLANKS.asItem(), 4)
+                    .pattern("sss")
+                    .pattern("sps")
+                    .pattern("sss")
+                    .define('p', Blocks.CRIMSON_PLANKS.asItem())
+                    .define('s', Items.STICK)
+                    .unlockedBy(getHasName(Blocks.CRIMSON_PLANKS.asItem()), has(Blocks.CRIMSON_PLANKS.asItem()))
+                    .save(output);
+                shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.REINFORCED_WARPED_PLANKS.asItem(), 4)
+                    .pattern("sss")
+                    .pattern("sps")
+                    .pattern("sss")
+                    .define('p', Blocks.WARPED_PLANKS.asItem())
+                    .define('s', Items.STICK)
+                    .unlockedBy(getHasName(Blocks.WARPED_PLANKS.asItem()), has(Blocks.WARPED_PLANKS.asItem()))
+                    .save(output);
+
                 // Hammer Set
                 shaped(RecipeCategory.TOOLS, ItemRegistry.WOODEN_HAMMER, 1)
                     .pattern("ppp")

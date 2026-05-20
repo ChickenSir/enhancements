@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "p": "minecraft:warped_planks",
+    "s": "minecraft:stick"
+  },
+  "pattern": [
+    "sss",
+    "sps",
+    "sss"
+  ],
+  "result": {
+    "count": 4,
+    "id": "enhancements:reinforced_warped_planks"
+  }
+}

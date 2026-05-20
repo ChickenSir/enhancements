@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_netherite_ingot": {
+    "has_cherry_planks": {
       "conditions": {
         "items": [
           {
-            "items": "#minecraft:netherite_tool_materials"
+            "items": "minecraft:cherry_planks"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "enhancements:diamond_hammer_smithing"
+        "recipe": "enhancements:reinforced_cherry_planks"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_netherite_ingot"
+      "has_cherry_planks"
     ]
   ],
   "rewards": {
     "recipes": [
-      "enhancements:diamond_hammer_smithing"
+      "enhancements:reinforced_cherry_planks"
     ]
   }
 }

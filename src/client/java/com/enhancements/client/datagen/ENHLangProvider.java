@@ -93,6 +93,24 @@ public class ENHLangProvider extends FabricLanguageProvider {
         translationBuilder.add("item.enhancements.warm_chicken_head", "Warm Chicken Head");
         translationBuilder.add("item.enhancements.warm_cow_head", "Warm Cow Head");
 
+        // Sandstone Set
+        translationBuilder.add("item.enhancements.cobbled_sandstone", "Cobbled Sandstone");
+        translationBuilder.add("item.enhancements.cobbled_red_sandstone", "Cobbled Red Sandstone");
+
+        // Reinforced Planks Set
+        translationBuilder.add("item.enhancements.reinforced_oak_planks", "Reinforced Oak Planks");
+        translationBuilder.add("item.enhancements.reinforced_birch_planks", "Reinforced Birch Planks");
+        translationBuilder.add("item.enhancements.reinforced_spruce_planks", "Reinforced Spruce Planks");
+        translationBuilder.add("item.enhancements.reinforced_jungle_planks", "Reinforced Jungle Planks");
+        translationBuilder.add("item.enhancements.reinforced_acacia_planks", "Reinforced Acacia Planks");
+        translationBuilder.add("item.enhancements.reinforced_dark_oak_planks", "Reinforced Dark Oak Planks");
+        translationBuilder.add("item.enhancements.reinforced_cherry_planks", "Reinforced Cherry Planks");
+        translationBuilder.add("item.enhancements.reinforced_mangrove_planks", "Reinforced Mangrove Planks");
+        translationBuilder.add("item.enhancements.reinforced_pale_oak_planks", "Reinforced Pale Oak Planks");
+        translationBuilder.add("item.enhancements.reinforced_bamboo_planks", "Reinforced Bamboo Planks");
+        translationBuilder.add("item.enhancements.reinforced_crimson_planks", "Reinforced Crimson Planks");
+        translationBuilder.add("item.enhancements.reinforced_warped_planks", "Reinforced Warped Planks");
+
         // Hammer Set
         translationBuilder.add("item.enhancements.wooden_hammer", "Wooden Hammer");
         translationBuilder.add("item.enhancements.stone_hammer", "Stone Hammer");

@@ -67,6 +67,24 @@ public class ENHModelProvider extends FabricModelProvider {
         blockStateModelGenerator.createTrivialCube(BlockRegistry.BAMBOO_CRATE);
         blockStateModelGenerator.createTrivialCube(BlockRegistry.CRIMSON_CRATE);
         blockStateModelGenerator.createTrivialCube(BlockRegistry.WARPED_CRATE);
+
+        // Sandstone Set
+        blockStateModelGenerator.createTrivialCube(BlockRegistry.COBBLED_SANDSTONE);
+        blockStateModelGenerator.createTrivialCube(BlockRegistry.COBBLED_RED_SANDSTONE);
+
+        // Reinforced Planks Set
+        blockStateModelGenerator.createTrivialCube(BlockRegistry.REINFORCED_OAK_PLANKS);
+        blockStateModelGenerator.createTrivialCube(BlockRegistry.REINFORCED_BIRCH_PLANKS);
+        blockStateModelGenerator.createTrivialCube(BlockRegistry.REINFORCED_SPRUCE_PLANKS);
+        blockStateModelGenerator.createTrivialCube(BlockRegistry.REINFORCED_JUNGLE_PLANKS);
+        blockStateModelGenerator.createTrivialCube(BlockRegistry.REINFORCED_ACACIA_PLANKS);
+        blockStateModelGenerator.createTrivialCube(BlockRegistry.REINFORCED_DARK_OAK_PLANKS);
+        blockStateModelGenerator.createTrivialCube(BlockRegistry.REINFORCED_CHERRY_PLANKS);
+        blockStateModelGenerator.createTrivialCube(BlockRegistry.REINFORCED_MANGROVE_PLANKS);
+        blockStateModelGenerator.createTrivialCube(BlockRegistry.REINFORCED_PALE_OAK_PLANKS);
+        blockStateModelGenerator.createTrivialCube(BlockRegistry.REINFORCED_BAMBOO_PLANKS);
+        blockStateModelGenerator.createTrivialCube(BlockRegistry.REINFORCED_CRIMSON_PLANKS);
+        blockStateModelGenerator.createTrivialCube(BlockRegistry.REINFORCED_WARPED_PLANKS);
     }
 
     @Override

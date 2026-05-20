@@ -134,6 +134,24 @@ public class ItemRegistry {
             itemGroup.accept(GOLDEN_HAMMER);
             itemGroup.accept(DIAMOND_HAMMER);
             itemGroup.accept(NETHERITE_HAMMER);
+
+            // Sandstone Set
+            itemGroup.accept(BlockRegistry.COBBLED_SANDSTONE.asItem());
+            itemGroup.accept(BlockRegistry.COBBLED_RED_SANDSTONE.asItem());
+
+            // Reinforced Planks Set
+            itemGroup.accept(BlockRegistry.REINFORCED_OAK_PLANKS.asItem());
+            itemGroup.accept(BlockRegistry.REINFORCED_BIRCH_PLANKS.asItem());
+            itemGroup.accept(BlockRegistry.REINFORCED_SPRUCE_PLANKS.asItem());
+            itemGroup.accept(BlockRegistry.REINFORCED_JUNGLE_PLANKS.asItem());
+            itemGroup.accept(BlockRegistry.REINFORCED_ACACIA_PLANKS.asItem());
+            itemGroup.accept(BlockRegistry.REINFORCED_DARK_OAK_PLANKS.asItem());
+            itemGroup.accept(BlockRegistry.REINFORCED_CHERRY_PLANKS.asItem());
+            itemGroup.accept(BlockRegistry.REINFORCED_MANGROVE_PLANKS.asItem());
+            itemGroup.accept(BlockRegistry.REINFORCED_PALE_OAK_PLANKS.asItem());
+            itemGroup.accept(BlockRegistry.REINFORCED_BAMBOO_PLANKS.asItem());
+            itemGroup.accept(BlockRegistry.REINFORCED_CRIMSON_PLANKS.asItem());
+            itemGroup.accept(BlockRegistry.REINFORCED_WARPED_PLANKS.asItem());
         });
     }
 }

@@ -108,6 +108,24 @@ public class BlockRegistry {
     public static final Block TEMPERATE_COW_HEAD = registerMobHead("temperate_cow_head", 8, 8, 6, false);
     public static final Block WARM_CHICKEN_HEAD = registerMobHead("warm_chicken_head", 4, 6, 3, false);
     public static final Block WARM_COW_HEAD = registerMobHead("warm_cow_head", 8, 8, 6, false);
+
+    // Sandstone Set
+    public static final Block COBBLED_SANDSTONE = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.SANDSTONE), "cobbled_sandstone", true);
+    public static final Block COBBLED_RED_SANDSTONE = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.RED_SANDSTONE), "cobbled_red_sandstone", true);
+
+    // Reinforced Planks Set
+    public static final Block REINFORCED_OAK_PLANKS = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS), "reinforced_oak_planks", true);
+    public static final Block REINFORCED_BIRCH_PLANKS = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.BIRCH_PLANKS), "reinforced_birch_planks", true);
+    public static final Block REINFORCED_SPRUCE_PLANKS = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_PLANKS), "reinforced_spruce_planks", true);
+    public static final Block REINFORCED_JUNGLE_PLANKS = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.JUNGLE_PLANKS), "reinforced_jungle_planks", true);
+    public static final Block REINFORCED_ACACIA_PLANKS = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_PLANKS), "reinforced_acacia_planks", true);
+    public static final Block REINFORCED_DARK_OAK_PLANKS = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.DARK_OAK_PLANKS), "reinforced_dark_oak_planks", true);
+    public static final Block REINFORCED_CHERRY_PLANKS = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_PLANKS), "reinforced_cherry_planks", true);
+    public static final Block REINFORCED_MANGROVE_PLANKS = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.MANGROVE_PLANKS), "reinforced_mangrove_planks", true);
+    public static final Block REINFORCED_PALE_OAK_PLANKS = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.PALE_OAK_PLANKS), "reinforced_pale_oak_planks", true);
+    public static final Block REINFORCED_BAMBOO_PLANKS = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.BAMBOO_PLANKS), "reinforced_bamboo_planks", true);
+    public static final Block REINFORCED_CRIMSON_PLANKS = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.CRIMSON_PLANKS), "reinforced_crimson_planks", true);
+    public static final Block REINFORCED_WARPED_PLANKS = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_PLANKS), "reinforced_warped_planks", true);
     
     public static Block register(Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties settings, String name, boolean registerItem) {
         // Create block resource key
