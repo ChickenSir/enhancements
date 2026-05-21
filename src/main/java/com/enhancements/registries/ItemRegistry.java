@@ -3,6 +3,7 @@ package com.enhancements.registries;
 import java.util.function.Function;
 
 import com.enhancements.Enhancements;
+import com.enhancements.item.CardboardBoxItem;
 import com.enhancements.item.HammerItem;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
@@ -26,12 +27,16 @@ public class ItemRegistry {
     .title(Component.translatable("enhancements.item_group"))
     .build();
 
+    // Hammer Set
     public static final Item WOODEN_HAMMER = register((settings) -> new HammerItem(ToolMaterial.WOOD, 6.0f, -3.2f, settings), new Item.Properties(), "wooden_hammer");
     public static final Item STONE_HAMMER = register((settings) -> new HammerItem(ToolMaterial.STONE, 7.0f, -3.2f, settings), new Item.Properties(), "stone_hammer");
     public static final Item IRON_HAMMER = register((settings) -> new HammerItem(ToolMaterial.IRON, 6.0f, -3.1f, settings), new Item.Properties(), "iron_hammer");
     public static final Item GOLDEN_HAMMER = register((settings) -> new HammerItem(ToolMaterial.GOLD, 6.0f, -3.0f, settings), new Item.Properties(), "golden_hammer");
     public static final Item DIAMOND_HAMMER = register((settings) -> new HammerItem(ToolMaterial.DIAMOND, 5.0f, -3.0f, settings), new Item.Properties(), "diamond_hammer");
     public static final Item NETHERITE_HAMMER = register((settings) -> new HammerItem(ToolMaterial.NETHERITE, 5.0f, -3.0f, settings), new Item.Properties().fireResistant(), "netherite_hammer");
+
+    // Cardboard Set
+    public static final Item CARDBOARD_BOX = register(CardboardBoxItem::new, new Item.Properties(), "cardboard_box");
     
     public static Item register(Function<Item.Properties, Item> itemFactory, Item.Properties settings, String name) {
         // Create the item key
@@ -127,14 +132,6 @@ public class ItemRegistry {
             itemGroup.accept(BlockRegistry.WARM_CHICKEN_HEAD.asItem());
             itemGroup.accept(BlockRegistry.WARM_COW_HEAD.asItem());
 
-            // Hammer Set
-            itemGroup.accept(WOODEN_HAMMER);
-            itemGroup.accept(STONE_HAMMER);
-            itemGroup.accept(IRON_HAMMER);
-            itemGroup.accept(GOLDEN_HAMMER);
-            itemGroup.accept(DIAMOND_HAMMER);
-            itemGroup.accept(NETHERITE_HAMMER);
-
             // Sandstone Set
             itemGroup.accept(BlockRegistry.COBBLED_SANDSTONE.asItem());
             itemGroup.accept(BlockRegistry.COBBLED_RED_SANDSTONE.asItem());
@@ -152,6 +149,14 @@ public class ItemRegistry {
             itemGroup.accept(BlockRegistry.REINFORCED_BAMBOO_PLANKS.asItem());
             itemGroup.accept(BlockRegistry.REINFORCED_CRIMSON_PLANKS.asItem());
             itemGroup.accept(BlockRegistry.REINFORCED_WARPED_PLANKS.asItem());
+
+            // Hammer Set
+            itemGroup.accept(WOODEN_HAMMER);
+            itemGroup.accept(STONE_HAMMER);
+            itemGroup.accept(IRON_HAMMER);
+            itemGroup.accept(GOLDEN_HAMMER);
+            itemGroup.accept(DIAMOND_HAMMER);
+            itemGroup.accept(NETHERITE_HAMMER);
         });
     }
 }
