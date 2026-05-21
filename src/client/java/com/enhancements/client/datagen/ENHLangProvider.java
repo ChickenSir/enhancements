@@ -111,6 +111,20 @@ public class ENHLangProvider extends FabricLanguageProvider {
         translationBuilder.add("item.enhancements.reinforced_crimson_planks", "Reinforced Crimson Planks");
         translationBuilder.add("item.enhancements.reinforced_warped_planks", "Reinforced Warped Planks");
 
+        // Chair Set
+        translationBuilder.add("item.enhancements.oak_chair", "Oak Chair");
+        translationBuilder.add("item.enhancements.birch_chair", "Birch Chair");
+        translationBuilder.add("item.enhancements.spruce_chair", "Spruce Chair");
+        translationBuilder.add("item.enhancements.jungle_chair", "Jungle Chair");
+        translationBuilder.add("item.enhancements.acacia_chair", "Acacia Chair");
+        translationBuilder.add("item.enhancements.dark_oak_chair", "Dark Oak Chair");
+        translationBuilder.add("item.enhancements.cherry_chair", "Cherry Chair");
+        translationBuilder.add("item.enhancements.mangrove_chair", "Mangrove Chair");
+        translationBuilder.add("item.enhancements.pale_oak_chair", "Pale Oak Chair");
+        translationBuilder.add("item.enhancements.bamboo_chair", "Bamboo Chair");
+        translationBuilder.add("item.enhancements.crimson_chair", "Crimson Chair");
+        translationBuilder.add("item.enhancements.warped_chair", "Warped Chair");
+
         // Hammer Set
         translationBuilder.add("item.enhancements.wooden_hammer", "Wooden Hammer");
         translationBuilder.add("item.enhancements.stone_hammer", "Stone Hammer");

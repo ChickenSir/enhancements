@@ -4,6 +4,7 @@ import java.util.function.Function;
 
 import com.enhancements.Enhancements;
 import com.enhancements.block.MobHeadBlock;
+import com.enhancements.block.ChairBlock;
 import com.enhancements.block.LogStackBlock;
 
 import net.minecraft.core.Registry;
@@ -126,6 +127,20 @@ public class BlockRegistry {
     public static final Block REINFORCED_BAMBOO_PLANKS = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.BAMBOO_PLANKS), "reinforced_bamboo_planks", true);
     public static final Block REINFORCED_CRIMSON_PLANKS = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.CRIMSON_PLANKS), "reinforced_crimson_planks", true);
     public static final Block REINFORCED_WARPED_PLANKS = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_PLANKS), "reinforced_warped_planks", true);
+
+    // Chair Set
+    public static final Block OAK_CHAIR = register(ChairBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS), "oak_chair", true);
+    public static final Block BIRCH_CHAIR = register(ChairBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.BIRCH_PLANKS), "birch_chair", true);
+    public static final Block SPRUCE_CHAIR = register(ChairBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_PLANKS), "spruce_chair", true);
+    public static final Block JUNGLE_CHAIR = register(ChairBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.JUNGLE_PLANKS), "jungle_chair", true);
+    public static final Block ACACIA_CHAIR = register(ChairBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_PLANKS), "acacia_chair", true);
+    public static final Block DARK_OAK_CHAIR = register(ChairBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.DARK_OAK_PLANKS), "dark_oak_chair", true);
+    public static final Block CHERRY_CHAIR = register(ChairBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_PLANKS), "cherry_chair", true);
+    public static final Block MANGROVE_CHAIR = register(ChairBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.MANGROVE_PLANKS), "mangrove_chair", true);
+    public static final Block PALE_OAK_CHAIR = register(ChairBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.PALE_OAK_PLANKS), "pale_oak_chair", true);
+    public static final Block BAMBOO_CHAIR = register(ChairBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.BAMBOO_PLANKS), "bamboo_chair", true);
+    public static final Block CRIMSON_CHAIR = register(ChairBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.CRIMSON_PLANKS), "crimson_chair", true);
+    public static final Block WARPED_CHAIR = register(ChairBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_PLANKS), "warped_chair", true);
     
     public static Block register(Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties settings, String name, boolean registerItem) {
         // Create block resource key

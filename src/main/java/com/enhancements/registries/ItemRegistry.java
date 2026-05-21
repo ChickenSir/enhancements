@@ -150,6 +150,20 @@ public class ItemRegistry {
             itemGroup.accept(BlockRegistry.REINFORCED_CRIMSON_PLANKS.asItem());
             itemGroup.accept(BlockRegistry.REINFORCED_WARPED_PLANKS.asItem());
 
+            // Chair Set
+            itemGroup.accept(BlockRegistry.OAK_CHAIR.asItem());
+            itemGroup.accept(BlockRegistry.BIRCH_CHAIR.asItem());
+            itemGroup.accept(BlockRegistry.SPRUCE_CHAIR.asItem());
+            itemGroup.accept(BlockRegistry.JUNGLE_CHAIR.asItem());
+            itemGroup.accept(BlockRegistry.ACACIA_CHAIR.asItem());
+            itemGroup.accept(BlockRegistry.DARK_OAK_CHAIR.asItem());
+            itemGroup.accept(BlockRegistry.CHERRY_CHAIR.asItem());
+            itemGroup.accept(BlockRegistry.MANGROVE_CHAIR.asItem());
+            itemGroup.accept(BlockRegistry.PALE_OAK_CHAIR.asItem());
+            itemGroup.accept(BlockRegistry.BAMBOO_CHAIR.asItem());
+            itemGroup.accept(BlockRegistry.CRIMSON_CHAIR.asItem());
+            itemGroup.accept(BlockRegistry.WARPED_CHAIR.asItem());
+
             // Hammer Set
             itemGroup.accept(WOODEN_HAMMER);
             itemGroup.accept(STONE_HAMMER);

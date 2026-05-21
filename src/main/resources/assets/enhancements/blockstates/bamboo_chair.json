@@ -1,0 +1,23 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "enhancements:block/bamboo_chair",
+      "uvlock": false,
+      "y": 270
+    },
+    "facing=east": {
+      "model": "enhancements:block/bamboo_chair",
+      "uvlock": true
+    },
+    "facing=south": {
+      "model": "enhancements:block/bamboo_chair",
+      "uvlock": false,
+      "y": 90
+    },
+    "facing=west": {
+      "model": "enhancements:block/bamboo_chair",
+      "uvlock": false,
+      "y": 180
+    }
+  }
+}
