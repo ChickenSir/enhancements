@@ -169,6 +169,24 @@ public class ItemRegistry {
             // Table Set
             itemGroup.accept(BlockRegistry.OAK_TABLE.asItem());
 
+            // Table Cloth Set
+            itemGroup.accept(BlockRegistry.RED_TABLE_CLOTH.asItem());
+            itemGroup.accept(BlockRegistry.BLUE_TABLE_CLOTH.asItem());
+            itemGroup.accept(BlockRegistry.YELLOW_TABLE_CLOTH.asItem());
+            itemGroup.accept(BlockRegistry.GREEN_TABLE_CLOTH.asItem());
+            itemGroup.accept(BlockRegistry.LIME_TABLE_CLOTH.asItem());
+            itemGroup.accept(BlockRegistry.CYAN_TABLE_CLOTH.asItem());
+            itemGroup.accept(BlockRegistry.LIGHT_BLUE_TABLE_CLOTH.asItem());
+            itemGroup.accept(BlockRegistry.ORANGE_TABLE_CLOTH.asItem());
+            itemGroup.accept(BlockRegistry.MAGENTA_TABLE_CLOTH.asItem());
+            itemGroup.accept(BlockRegistry.PURPLE_TABLE_CLOTH.asItem());
+            itemGroup.accept(BlockRegistry.PINK_TABLE_CLOTH.asItem());
+            itemGroup.accept(BlockRegistry.BROWN_TABLE_CLOTH.asItem());
+            itemGroup.accept(BlockRegistry.LIGHT_GRAY_TABLE_CLOTH.asItem());
+            itemGroup.accept(BlockRegistry.GRAY_TABLE_CLOTH.asItem());
+            itemGroup.accept(BlockRegistry.BLACK_TABLE_CLOTH.asItem());
+            itemGroup.accept(BlockRegistry.CRAFTING_TABLE_CLOTH.asItem());
+
             // Hammer Set
             itemGroup.accept(WOODEN_HAMMER);
             itemGroup.accept(STONE_HAMMER);

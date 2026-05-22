@@ -5,6 +5,7 @@ import java.util.function.Function;
 import com.enhancements.Enhancements;
 import com.enhancements.block.MobHeadBlock;
 import com.enhancements.block.TableBlock;
+import com.enhancements.block.TableClothBlock;
 import com.enhancements.block.ArmChairBlock;
 import com.enhancements.block.ChairBlock;
 import com.enhancements.block.LogStackBlock;
@@ -148,6 +149,24 @@ public class BlockRegistry {
 
     // Table Set
     public static final Block OAK_TABLE = register(TableBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).noOcclusion(), "oak_table", true);
+
+    // Table Cloth Set
+    public static final Block RED_TABLE_CLOTH = register(TableClothBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.RED_WOOL).noOcclusion(), "red_table_cloth", true);
+    public static final Block BLUE_TABLE_CLOTH = register(TableClothBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.BLUE_WOOL).noOcclusion(), "blue_table_cloth", true);
+    public static final Block YELLOW_TABLE_CLOTH = register(TableClothBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.YELLOW_WOOL).noOcclusion(), "yellow_table_cloth", true);
+    public static final Block GREEN_TABLE_CLOTH = register(TableClothBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.GREEN_WOOL).noOcclusion(), "green_table_cloth", true);
+    public static final Block LIME_TABLE_CLOTH = register(TableClothBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.LIME_WOOL).noOcclusion(), "lime_table_cloth", true);
+    public static final Block LIGHT_BLUE_TABLE_CLOTH = register(TableClothBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_BLUE_WOOL).noOcclusion(), "light_blue_table_cloth", true);
+    public static final Block CYAN_TABLE_CLOTH = register(TableClothBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.CYAN_WOOL).noOcclusion(), "cyan_table_cloth", true);
+    public static final Block ORANGE_TABLE_CLOTH = register(TableClothBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.ORANGE_WOOL).noOcclusion(), "orange_table_cloth", true);
+    public static final Block MAGENTA_TABLE_CLOTH = register(TableClothBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.MAGENTA_WOOL).noOcclusion(), "magenta_table_cloth", true);
+    public static final Block PURPLE_TABLE_CLOTH = register(TableClothBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.PURPLE_WOOL).noOcclusion(), "purple_table_cloth", true);
+    public static final Block PINK_TABLE_CLOTH = register(TableClothBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.PINK_WOOL).noOcclusion(), "pink_table_cloth", true);
+    public static final Block BROWN_TABLE_CLOTH = register(TableClothBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.BROWN_WOOL).noOcclusion(), "brown_table_cloth", true);
+    public static final Block LIGHT_GRAY_TABLE_CLOTH = register(TableClothBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_GRAY_WOOL).noOcclusion(), "light_gray_table_cloth", true);
+    public static final Block GRAY_TABLE_CLOTH = register(TableClothBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.GRAY_WOOL).noOcclusion(), "gray_table_cloth", true);
+    public static final Block BLACK_TABLE_CLOTH = register(TableClothBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.BLACK_WOOL).noOcclusion(), "black_table_cloth", true);
+    public static final Block CRAFTING_TABLE_CLOTH = register(TableClothBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.BROWN_WOOL).noOcclusion(), "crafting_table_cloth", true);
     
     public static Block register(Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties settings, String name, boolean registerItem) {
         // Create block resource key

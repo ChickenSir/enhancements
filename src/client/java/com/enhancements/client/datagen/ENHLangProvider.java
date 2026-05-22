@@ -130,6 +130,24 @@ public class ENHLangProvider extends FabricLanguageProvider {
         // Table Set
         translationBuilder.add("item.enhancements.oak_table", "Oak Table");
 
+        // Table Cloth Set
+        translationBuilder.add("item.enhancements.red_table_cloth", "Red Table Cloth");
+        translationBuilder.add("item.enhancements.blue_table_cloth", "Blue Table Cloth");
+        translationBuilder.add("item.enhancements.yellow_table_cloth", "Yellow Table Cloth");
+        translationBuilder.add("item.enhancements.green_table_cloth", "Green Table Cloth");
+        translationBuilder.add("item.enhancements.lime_table_cloth", "Lime Table Cloth");
+        translationBuilder.add("item.enhancements.cyan_table_cloth", "Cyan Table Cloth");
+        translationBuilder.add("item.enhancements.light_blue_table_cloth", "Light Blue Table Cloth");
+        translationBuilder.add("item.enhancements.orange_table_cloth", "Orange Table Cloth");
+        translationBuilder.add("item.enhancements.magenta_table_cloth", "Magenta Table Cloth");
+        translationBuilder.add("item.enhancements.purple_table_cloth", "Purple Table Cloth");
+        translationBuilder.add("item.enhancements.pink_table_cloth", "Pink Table Cloth");
+        translationBuilder.add("item.enhancements.brown_table_cloth", "Brown Table Cloth");
+        translationBuilder.add("item.enhancements.light_gray_table_cloth", "Light Gray Table Cloth");
+        translationBuilder.add("item.enhancements.gray_table_cloth", "Gray Table Cloth");
+        translationBuilder.add("item.enhancements.black_table_cloth", "Black Table Cloth");
+        translationBuilder.add("item.enhancements.crafting_table_cloth", "Crafting Table Cloth");
+
         // Hammer Set
         translationBuilder.add("item.enhancements.wooden_hammer", "Wooden Hammer");
         translationBuilder.add("item.enhancements.stone_hammer", "Stone Hammer");
