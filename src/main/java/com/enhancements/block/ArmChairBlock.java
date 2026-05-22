@@ -18,11 +18,11 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class ChairBlock extends Block {
-    public static final VoxelShape blockShape = Block.box(4, 0, 4, 12, 16, 12);
+public class ArmChairBlock extends Block {
+    public static final VoxelShape blockShape = Block.box(2, 0, 2, 14, 16, 14);
     public static final EnumProperty<Direction> FACING;
 
-    public ChairBlock(Properties properties) {
+    public ArmChairBlock(Properties properties) {
         super(properties);
         this.registerDefaultState((BlockState)((BlockState)this.stateDefinition.any()).setValue(FACING, Direction.NORTH));
     }

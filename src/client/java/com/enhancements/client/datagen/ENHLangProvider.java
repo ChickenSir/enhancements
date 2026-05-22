@@ -125,6 +125,11 @@ public class ENHLangProvider extends FabricLanguageProvider {
         translationBuilder.add("item.enhancements.crimson_chair", "Crimson Chair");
         translationBuilder.add("item.enhancements.warped_chair", "Warped Chair");
 
+        translationBuilder.add("item.enhancements.oak_armchair", "Oak Arm Chair");
+
+        // Table Set
+        translationBuilder.add("item.enhancements.oak_table", "Oak Table");
+
         // Hammer Set
         translationBuilder.add("item.enhancements.wooden_hammer", "Wooden Hammer");
         translationBuilder.add("item.enhancements.stone_hammer", "Stone Hammer");

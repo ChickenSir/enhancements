@@ -164,6 +164,11 @@ public class ItemRegistry {
             itemGroup.accept(BlockRegistry.CRIMSON_CHAIR.asItem());
             itemGroup.accept(BlockRegistry.WARPED_CHAIR.asItem());
 
+            itemGroup.accept(BlockRegistry.OAK_ARMCHAIR.asItem());
+
+            // Table Set
+            itemGroup.accept(BlockRegistry.OAK_TABLE.asItem());
+
             // Hammer Set
             itemGroup.accept(WOODEN_HAMMER);
             itemGroup.accept(STONE_HAMMER);

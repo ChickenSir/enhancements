@@ -4,6 +4,8 @@ import java.util.function.Function;
 
 import com.enhancements.Enhancements;
 import com.enhancements.block.MobHeadBlock;
+import com.enhancements.block.TableBlock;
+import com.enhancements.block.ArmChairBlock;
 import com.enhancements.block.ChairBlock;
 import com.enhancements.block.LogStackBlock;
 
@@ -141,6 +143,11 @@ public class BlockRegistry {
     public static final Block BAMBOO_CHAIR = register(ChairBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.BAMBOO_PLANKS), "bamboo_chair", true);
     public static final Block CRIMSON_CHAIR = register(ChairBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.CRIMSON_PLANKS), "crimson_chair", true);
     public static final Block WARPED_CHAIR = register(ChairBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_PLANKS), "warped_chair", true);
+
+    public static final Block OAK_ARMCHAIR = register(ArmChairBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS), "oak_armchair", true);
+
+    // Table Set
+    public static final Block OAK_TABLE = register(TableBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).noOcclusion(), "oak_table", true);
     
     public static Block register(Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties settings, String name, boolean registerItem) {
         // Create block resource key

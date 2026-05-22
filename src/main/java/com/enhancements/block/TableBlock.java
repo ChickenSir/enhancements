@@ -18,11 +18,11 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class ChairBlock extends Block {
-    public static final VoxelShape blockShape = Block.box(4, 0, 4, 12, 16, 12);
+public class TableBlock extends Block {
+    public static final VoxelShape blockShape = Block.box(0, 0, 0, 16, 16, 16);
     public static final EnumProperty<Direction> FACING;
 
-    public ChairBlock(Properties properties) {
+    public TableBlock(Properties properties) {
         super(properties);
         this.registerDefaultState((BlockState)((BlockState)this.stateDefinition.any()).setValue(FACING, Direction.NORTH));
     }
@@ -34,7 +34,7 @@ public class ChairBlock extends Block {
     
     public BlockState getStateForPlacement(BlockPlaceContext blockPlaceContext) {
         // Returns the block state from the blocks placement direction
-        return (BlockState)this.defaultBlockState().setValue(FACING, blockPlaceContext.getHorizontalDirection().getOpposite().getClockWise());
+        return (BlockState)this.defaultBlockState().setValue(FACING, blockPlaceContext.getHorizontalDirection().getClockWise());
     }
     
     protected VoxelShape getShape(BlockState state, BlockGetter getter, BlockPos pos, CollisionContext collisionContext) {
@@ -54,4 +54,5 @@ public class ChairBlock extends Block {
     static {
         FACING = HorizontalDirectionalBlock.FACING;
     }
+    
 }
