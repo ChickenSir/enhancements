@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "enhancements:cobbled_granite",
-  "result": {
-    "count": 1,
-    "id": "enhancements:smooth_granite"
-  }
-}

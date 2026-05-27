@@ -21,18 +21,30 @@ public class ENHTagProvider extends FabricTagProvider<Block> {
     @Override
     protected void addTags(Provider wrapperLookup) {
         getOrCreateTagBuilder(BlockTags.STAIRS)
-            .add(BlockRegistry.COBBLED_GRANITE_STAIRS)
-            .add(BlockRegistry.COBBLED_DIORITE_STAIRS)
-            .add(BlockRegistry.COBBLED_ANDESITE_STAIRS)
+            .add(BlockRegistry.SMOOTH_GRANITE_STAIRS)
+            .add(BlockRegistry.GRANITE_BRICK_STAIRS)
+            .add(BlockRegistry.SMOOTH_DIORITE_STAIRS)
+            .add(BlockRegistry.DIORITE_BRICK_STAIRS)
+            .add(BlockRegistry.SMOOTH_ANDESITE_STAIRS)
+            .add(BlockRegistry.ANDESITE_BRICK_STAIRS)
             .add(BlockRegistry.COBBLESTONE_BRICK_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.SLABS)
-            .add(BlockRegistry.COBBLED_GRANITE_SLAB)
-            .add(BlockRegistry.COBBLED_DIORITE_SLAB)
-            .add(BlockRegistry.COBBLED_ANDESITE_SLAB)
+            .add(BlockRegistry.SMOOTH_GRANITE_SLAB)
+            .add(BlockRegistry.GRANITE_BRICK_SLAB)
+            .add(BlockRegistry.SMOOTH_DIORITE_STAIRS)
+            .add(BlockRegistry.DIORITE_BRICK_STAIRS)
+            .add(BlockRegistry.SMOOTH_ANDESITE_STAIRS)
+            .add(BlockRegistry.ANDESITE_BRICK_STAIRS)
             .add(BlockRegistry.COBBLESTONE_BRICK_SLAB);
 
         getOrCreateTagBuilder(BlockTags.WALLS)
+            .add(BlockRegistry.SMOOTH_GRANITE_WALL)
+            .add(BlockRegistry.GRANITE_BRICK_WALL)
+            .add(BlockRegistry.SMOOTH_DIORITE_WALL)
+            .add(BlockRegistry.DIORITE_BRICK_WALL)
+            .add(BlockRegistry.SMOOTH_ANDESITE_WALL)
+            .add(BlockRegistry.ANDESITE_BRICK_WALL)
             .add(BlockRegistry.COBBLESTONE_BRICK_WALL);
     }
     

@@ -1,8 +1,11 @@
 {
   "values": [
-    "enhancements:cobbled_granite_stairs",
-    "enhancements:cobbled_diorite_stairs",
-    "enhancements:cobbled_andesite_stairs",
+    "enhancements:smooth_granite_stairs",
+    "enhancements:granite_brick_stairs",
+    "enhancements:smooth_diorite_stairs",
+    "enhancements:diorite_brick_stairs",
+    "enhancements:smooth_andesite_stairs",
+    "enhancements:andesite_brick_stairs",
     "enhancements:cobblestone_brick_stairs"
   ]
 }

@@ -39,10 +39,12 @@ public class BlockRegistry {
     public static final Block SMOOTH_GRANITE = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.GRANITE), "smooth_granite", true);
     public static final Block SMOOTH_GRANITE_STAIRS = registerStair(SMOOTH_GRANITE, "smooth_granite_stairs");
     public static final Block SMOOTH_GRANITE_SLAB = register(SlabBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.GRANITE_SLAB), "smooth_granite_slab", true);
+    public static final Block SMOOTH_GRANITE_WALL = register(WallBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.GRANITE), "smooth_granite_wall", true);
 
     public static final Block GRANITE_BRICKS = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.GRANITE), "granite_bricks", true);
     public static final Block GRANITE_BRICK_STAIRS = registerStair(GRANITE_BRICKS, "granite_brick_stairs");
     public static final Block GRANITE_BRICK_SLAB = register(SlabBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.GRANITE_SLAB), "granite_brick_slab", true);
+    public static final Block GRANITE_BRICK_WALL = register(WallBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.GRANITE), "granite_brick_wall", true);
 
     // Diorite Set
     public static final Block COBBLED_DIORITE = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.DIORITE), "cobbled_diorite", true);
@@ -52,10 +54,12 @@ public class BlockRegistry {
     public static final Block SMOOTH_DIORITE = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.DIORITE), "smooth_diorite", true);
     public static final Block SMOOTH_DIORITE_STAIRS = registerStair(SMOOTH_DIORITE, "smooth_diorite_stairs");
     public static final Block SMOOTH_DIORITE_SLAB = register(SlabBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.DIORITE_SLAB), "smooth_diorite_slab", true);
+    public static final Block SMOOTH_DIORITE_WALL = register(WallBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.DIORITE), "smooth_diorite_wall", true);
 
     public static final Block DIORITE_BRICKS = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.DIORITE), "diorite_bricks", true);
     public static final Block DIORITE_BRICK_STAIRS = registerStair(DIORITE_BRICKS, "diorite_brick_stairs");
     public static final Block DIORITE_BRICK_SLAB = register(SlabBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.DIORITE_SLAB), "diorite_brick_slab", true);
+    public static final Block DIORITE_BRICK_WALL = register(WallBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.DIORITE), "diorite_brick_wall", true);
 
     // Andesite Set
     public static final Block COBBLED_ANDESITE = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.ANDESITE), "cobbled_andesite", true);
@@ -65,10 +69,12 @@ public class BlockRegistry {
     public static final Block SMOOTH_ANDESITE = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.ANDESITE), "smooth_andesite", true);
     public static final Block SMOOTH_ANDESITE_STAIRS = registerStair(SMOOTH_ANDESITE, "smooth_andesite_stairs");
     public static final Block SMOOTH_ANDESITE_SLAB = register(SlabBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.ANDESITE_SLAB), "smooth_andesite_slab", true);
+    public static final Block SMOOTH_ANDESITE_WALL = register(WallBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.ANDESITE), "smooth_andesite_wall", true);
 
     public static final Block ANDESITE_BRICKS = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.ANDESITE), "andesite_bricks", true);
     public static final Block ANDESITE_BRICK_STAIRS = registerStair(ANDESITE_BRICKS, "andesite_brick_stairs");
     public static final Block ANDESITE_BRICK_SLAB = register(SlabBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.ANDESITE_SLAB), "andesite_brick_slab", true);
+    public static final Block ANDESITE_BRICK_WALL = register(WallBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.ANDESITE), "andesite_brick_wall", true);
 
     // Log Stack Set
     public static final Block OAK_LOG_STACK = register(LogStackBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).noOcclusion(), "oak_log_stack", true);

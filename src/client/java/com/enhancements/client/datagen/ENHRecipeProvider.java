@@ -37,18 +37,6 @@ public class ENHRecipeProvider extends FabricRecipeProvider {
                 HolderLookup.RegistryLookup<Item> itemLookup = registries.lookupOrThrow(Registries.ITEM);
 
                 // Granite Set
-                shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.COBBLED_GRANITE_SLAB.asItem(), 6)
-                    .pattern("ggg")
-                    .define('g', BlockRegistry.COBBLED_GRANITE.asItem())
-                    .unlockedBy(getHasName(BlockRegistry.COBBLED_GRANITE.asItem()), has(BlockRegistry.COBBLED_GRANITE.asItem()))
-                    .save(output);
-                shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.COBBLED_GRANITE_STAIRS.asItem(), 4)
-                    .pattern("g  ")
-                    .pattern("gg ")
-                    .pattern("ggg")
-                    .define('g', BlockRegistry.COBBLED_GRANITE.asItem())
-                    .unlockedBy(getHasName(BlockRegistry.COBBLED_GRANITE.asItem()), has(BlockRegistry.COBBLED_GRANITE.asItem()))
-                    .save(output);
                 shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.SMOOTH_GRANITE_SLAB.asItem(), 6)
                     .pattern("sss")
                     .define('s', BlockRegistry.SMOOTH_GRANITE.asItem())
@@ -74,33 +62,20 @@ public class ENHRecipeProvider extends FabricRecipeProvider {
                     .unlockedBy(getHasName(BlockRegistry.GRANITE_BRICKS.asItem()), has(BlockRegistry.GRANITE_BRICKS.asItem()))
                     .save(output);
                 
-                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, Blocks.GRANITE.asItem(), BlockRegistry.COBBLED_GRANITE.asItem());
-                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.SMOOTH_GRANITE.asItem(), BlockRegistry.COBBLED_GRANITE.asItem());
-                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.GRANITE_BRICKS.asItem(), BlockRegistry.COBBLED_GRANITE.asItem());
-                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.COBBLED_GRANITE_SLAB.asItem(), BlockRegistry.COBBLED_GRANITE.asItem(), 2);
-                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.COBBLED_GRANITE_STAIRS.asItem(), BlockRegistry.COBBLED_GRANITE.asItem());
-                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.SMOOTH_GRANITE_SLAB.asItem(), BlockRegistry.COBBLED_GRANITE.asItem(), 2);
-                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.SMOOTH_GRANITE_STAIRS.asItem(), BlockRegistry.COBBLED_GRANITE.asItem());
-                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.GRANITE_BRICK_SLAB.asItem(), BlockRegistry.COBBLED_GRANITE.asItem(), 2);
-                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.GRANITE_BRICK_STAIRS.asItem(), BlockRegistry.COBBLED_GRANITE.asItem());
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.SMOOTH_GRANITE.asItem(), Blocks.GRANITE.asItem());
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.GRANITE_BRICKS.asItem(), Blocks.GRANITE.asItem());
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.COBBLED_GRANITE_SLAB.asItem(), Blocks.GRANITE.asItem(), 2);
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.COBBLED_GRANITE_STAIRS.asItem(), Blocks.GRANITE.asItem());
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.SMOOTH_GRANITE_SLAB.asItem(), Blocks.GRANITE.asItem(), 2);
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.SMOOTH_GRANITE_STAIRS.asItem(), Blocks.GRANITE.asItem());
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.GRANITE_BRICK_SLAB.asItem(), Blocks.GRANITE.asItem(), 2);
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.GRANITE_BRICK_STAIRS.asItem(), Blocks.GRANITE.asItem());
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.SMOOTH_GRANITE_SLAB.asItem(), BlockRegistry.SMOOTH_GRANITE.asItem(), 2);
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.SMOOTH_GRANITE_STAIRS.asItem(), BlockRegistry.SMOOTH_GRANITE.asItem());
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.GRANITE_BRICK_SLAB.asItem(), BlockRegistry.GRANITE_BRICKS.asItem(), 2);
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.GRANITE_BRICK_STAIRS.asItem(), BlockRegistry.GRANITE_BRICKS.asItem());
 
                 // Diorite Set
-                shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.COBBLED_DIORITE_SLAB.asItem(), 6)
-                    .pattern("ddd")
-                    .define('d', BlockRegistry.COBBLED_DIORITE.asItem())
-                    .unlockedBy(getHasName(BlockRegistry.COBBLED_DIORITE.asItem()), has(BlockRegistry.COBBLED_DIORITE.asItem()))
-                    .save(output);
-                shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.COBBLED_DIORITE_STAIRS.asItem(), 4)
-                    .pattern("d  ")
-                    .pattern("dd ")
-                    .pattern("ddd")
-                    .define('d', BlockRegistry.COBBLED_DIORITE.asItem())
-                    .unlockedBy(getHasName(BlockRegistry.COBBLED_DIORITE.asItem()), has(BlockRegistry.COBBLED_DIORITE.asItem()))
-                    .save(output);
                 shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.SMOOTH_DIORITE_SLAB.asItem(), 6)
                     .pattern("sss")
                     .define('s', BlockRegistry.SMOOTH_DIORITE.asItem())
@@ -126,33 +101,20 @@ public class ENHRecipeProvider extends FabricRecipeProvider {
                     .unlockedBy(getHasName(BlockRegistry.DIORITE_BRICKS.asItem()), has(BlockRegistry.DIORITE_BRICKS.asItem()))
                     .save(output);
 
-                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, Blocks.DIORITE.asItem(), BlockRegistry.COBBLED_DIORITE.asItem());
-                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.SMOOTH_DIORITE.asItem(), BlockRegistry.COBBLED_DIORITE.asItem());
-                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.DIORITE_BRICKS.asItem(), BlockRegistry.COBBLED_DIORITE.asItem());
-                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.COBBLED_DIORITE_SLAB.asItem(), BlockRegistry.COBBLED_DIORITE.asItem(), 2);
-                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.COBBLED_DIORITE_STAIRS.asItem(), BlockRegistry.COBBLED_DIORITE.asItem());
-                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.SMOOTH_DIORITE_SLAB.asItem(), BlockRegistry.COBBLED_DIORITE.asItem(), 2);
-                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.SMOOTH_DIORITE_STAIRS.asItem(), BlockRegistry.COBBLED_DIORITE.asItem());
-                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.DIORITE_BRICK_SLAB.asItem(), BlockRegistry.COBBLED_DIORITE.asItem(), 2);
-                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.DIORITE_BRICK_STAIRS.asItem(), BlockRegistry.COBBLED_DIORITE.asItem());
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.SMOOTH_DIORITE.asItem(), Blocks.DIORITE.asItem());
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.DIORITE_BRICKS.asItem(), Blocks.DIORITE.asItem());
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.COBBLED_DIORITE_SLAB.asItem(), Blocks.DIORITE.asItem(), 2);
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.COBBLED_DIORITE_STAIRS.asItem(), Blocks.DIORITE.asItem());
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.SMOOTH_DIORITE_SLAB.asItem(), Blocks.DIORITE.asItem(), 2);
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.SMOOTH_DIORITE_STAIRS.asItem(), Blocks.DIORITE.asItem());
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.DIORITE_BRICK_SLAB.asItem(), Blocks.DIORITE.asItem(), 2);
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.DIORITE_BRICK_STAIRS.asItem(), Blocks.DIORITE.asItem());
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.SMOOTH_DIORITE_SLAB.asItem(), BlockRegistry.SMOOTH_DIORITE.asItem(), 2);
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.SMOOTH_DIORITE_STAIRS.asItem(), BlockRegistry.SMOOTH_DIORITE.asItem());
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.DIORITE_BRICK_SLAB.asItem(), BlockRegistry.DIORITE_BRICKS.asItem(), 2);
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.DIORITE_BRICK_STAIRS.asItem(), BlockRegistry.DIORITE_BRICKS.asItem());
 
                 // Andesite Set
-                shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.COBBLED_ANDESITE_SLAB.asItem(), 6)
-                    .pattern("aaa")
-                    .define('a', BlockRegistry.COBBLED_ANDESITE.asItem())
-                    .unlockedBy(getHasName(BlockRegistry.COBBLED_ANDESITE.asItem()), has(BlockRegistry.COBBLED_ANDESITE.asItem()))
-                    .save(output);
-                shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.COBBLED_ANDESITE_STAIRS.asItem(), 4)
-                    .pattern("a  ")
-                    .pattern("aa ")
-                    .pattern("aaa")
-                    .define('a', BlockRegistry.COBBLED_ANDESITE.asItem())
-                    .unlockedBy(getHasName(BlockRegistry.COBBLED_ANDESITE.asItem()), has(BlockRegistry.COBBLED_ANDESITE.asItem()))
-                    .save(output);
                 shaped(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.SMOOTH_ANDESITE_SLAB.asItem(), 6)
                     .pattern("sss")
                     .define('s', BlockRegistry.SMOOTH_ANDESITE.asItem())
@@ -178,15 +140,14 @@ public class ENHRecipeProvider extends FabricRecipeProvider {
                     .unlockedBy(getHasName(BlockRegistry.ANDESITE_BRICKS.asItem()), has(BlockRegistry.ANDESITE_BRICKS.asItem()))
                     .save(output);
 
-                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, Blocks.ANDESITE.asItem(), BlockRegistry.COBBLED_ANDESITE.asItem());
-                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.SMOOTH_ANDESITE.asItem(), BlockRegistry.COBBLED_ANDESITE.asItem());
-                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.ANDESITE_BRICKS.asItem(), BlockRegistry.COBBLED_ANDESITE.asItem());
-                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.COBBLED_ANDESITE_SLAB.asItem(), BlockRegistry.COBBLED_ANDESITE.asItem(), 2);
-                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.COBBLED_ANDESITE_STAIRS.asItem(), BlockRegistry.COBBLED_ANDESITE.asItem());
-                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.SMOOTH_ANDESITE_SLAB.asItem(), BlockRegistry.COBBLED_ANDESITE.asItem(), 2);
-                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.SMOOTH_ANDESITE_STAIRS.asItem(), BlockRegistry.COBBLED_ANDESITE.asItem());
-                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.ANDESITE_BRICK_SLAB.asItem(), BlockRegistry.COBBLED_ANDESITE.asItem(), 2);
-                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.ANDESITE_BRICK_STAIRS.asItem(), BlockRegistry.COBBLED_ANDESITE.asItem());
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.SMOOTH_ANDESITE.asItem(), Blocks.ANDESITE.asItem());
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.ANDESITE_BRICKS.asItem(), Blocks.ANDESITE.asItem());
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.COBBLED_ANDESITE_SLAB.asItem(), Blocks.ANDESITE.asItem(), 2);
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.COBBLED_ANDESITE_STAIRS.asItem(), Blocks.ANDESITE.asItem());
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.SMOOTH_ANDESITE_SLAB.asItem(), Blocks.ANDESITE.asItem(), 2);
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.SMOOTH_ANDESITE_STAIRS.asItem(), Blocks.ANDESITE.asItem());
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.ANDESITE_BRICK_SLAB.asItem(), Blocks.ANDESITE.asItem(), 2);
+                stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.ANDESITE_BRICK_STAIRS.asItem(), Blocks.ANDESITE.asItem());
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.SMOOTH_ANDESITE_SLAB.asItem(), BlockRegistry.SMOOTH_ANDESITE.asItem(), 2);
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.SMOOTH_ANDESITE_STAIRS.asItem(), BlockRegistry.SMOOTH_ANDESITE.asItem());
                 stonecutterResultFromBase(RecipeCategory.BUILDING_BLOCKS, BlockRegistry.ANDESITE_BRICK_SLAB.asItem(), BlockRegistry.ANDESITE_BRICKS.asItem(), 2);

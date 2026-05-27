@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "enhancements:cobbled_andesite",
-  "result": {
-    "count": 1,
-    "id": "minecraft:andesite"
-  }
-}

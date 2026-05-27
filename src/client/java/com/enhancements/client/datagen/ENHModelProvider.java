@@ -22,11 +22,13 @@ public class ENHModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.family(BlockRegistry.SMOOTH_GRANITE)
             .stairs(BlockRegistry.SMOOTH_GRANITE_STAIRS)
-            .slab(BlockRegistry.SMOOTH_GRANITE_SLAB);
+            .slab(BlockRegistry.SMOOTH_GRANITE_SLAB)
+            .wall(BlockRegistry.SMOOTH_GRANITE_WALL);
 
         blockStateModelGenerator.family(BlockRegistry.GRANITE_BRICKS)
             .stairs(BlockRegistry.GRANITE_BRICK_STAIRS)
-            .slab(BlockRegistry.GRANITE_BRICK_SLAB);
+            .slab(BlockRegistry.GRANITE_BRICK_SLAB)
+            .wall(BlockRegistry.GRANITE_BRICK_WALL);
 
         // Diorite Set
         blockStateModelGenerator.family(BlockRegistry.COBBLED_DIORITE)
@@ -35,11 +37,13 @@ public class ENHModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.family(BlockRegistry.SMOOTH_DIORITE)
             .stairs(BlockRegistry.SMOOTH_DIORITE_STAIRS)
-            .slab(BlockRegistry.SMOOTH_DIORITE_SLAB);
+            .slab(BlockRegistry.SMOOTH_DIORITE_SLAB)
+            .wall(BlockRegistry.SMOOTH_DIORITE_WALL);
 
         blockStateModelGenerator.family(BlockRegistry.DIORITE_BRICKS)
             .stairs(BlockRegistry.DIORITE_BRICK_STAIRS)
-            .slab(BlockRegistry.DIORITE_BRICK_SLAB);
+            .slab(BlockRegistry.DIORITE_BRICK_SLAB)
+            .wall(BlockRegistry.DIORITE_BRICK_WALL);
 
         // Andesite Set
         blockStateModelGenerator.family(BlockRegistry.COBBLED_ANDESITE)
@@ -48,11 +52,13 @@ public class ENHModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.family(BlockRegistry.SMOOTH_ANDESITE)
             .stairs(BlockRegistry.SMOOTH_ANDESITE_STAIRS)
-            .slab(BlockRegistry.SMOOTH_ANDESITE_SLAB);
+            .slab(BlockRegistry.SMOOTH_ANDESITE_SLAB)
+            .wall(BlockRegistry.SMOOTH_ANDESITE_WALL);
 
         blockStateModelGenerator.family(BlockRegistry.ANDESITE_BRICKS)
             .stairs(BlockRegistry.ANDESITE_BRICK_STAIRS)
-            .slab(BlockRegistry.ANDESITE_BRICK_SLAB);
+            .slab(BlockRegistry.ANDESITE_BRICK_SLAB)
+            .wall(BlockRegistry.ANDESITE_BRICK_WALL);
 
         // Crate Set
         blockStateModelGenerator.createTrivialCube(BlockRegistry.OAK_CRATE);

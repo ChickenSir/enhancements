@@ -1,5 +1,11 @@
 {
   "values": [
+    "enhancements:smooth_granite_wall",
+    "enhancements:granite_brick_wall",
+    "enhancements:smooth_diorite_wall",
+    "enhancements:diorite_brick_wall",
+    "enhancements:smooth_andesite_wall",
+    "enhancements:andesite_brick_wall",
     "enhancements:cobblestone_brick_wall"
   ]
 }

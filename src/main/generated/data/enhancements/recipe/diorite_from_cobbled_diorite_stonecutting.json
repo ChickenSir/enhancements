@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": "enhancements:cobbled_diorite",
-  "result": {
-    "count": 1,
-    "id": "minecraft:diorite"
-  }
-}
