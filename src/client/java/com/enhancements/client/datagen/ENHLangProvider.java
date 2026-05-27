@@ -97,6 +97,12 @@ public class ENHLangProvider extends FabricLanguageProvider {
         translationBuilder.add("item.enhancements.cobbled_sandstone", "Cobbled Sandstone");
         translationBuilder.add("item.enhancements.cobbled_red_sandstone", "Cobbled Red Sandstone");
 
+        // Cobblestone Bricks Set
+        translationBuilder.add("item.enhancements.cobblestone_bricks", "Cobblestone Bricks");
+        translationBuilder.add("item.enhancements.cobblestone_brick_stairs", "Cobblestone Brick Stairs");
+        translationBuilder.add("item.enhancements.cobblestone_brick_slab", "Cobblestone Brick Slab");
+        translationBuilder.add("item.enhancements.cobblestone_brick_wall", "Cobblestone Brick Wall");
+
         // Reinforced Planks Set
         translationBuilder.add("item.enhancements.reinforced_oak_planks", "Reinforced Oak Planks");
         translationBuilder.add("item.enhancements.reinforced_birch_planks", "Reinforced Birch Planks");

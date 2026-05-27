@@ -72,6 +72,12 @@ public class ENHModelProvider extends FabricModelProvider {
         blockStateModelGenerator.createTrivialCube(BlockRegistry.COBBLED_SANDSTONE);
         blockStateModelGenerator.createTrivialCube(BlockRegistry.COBBLED_RED_SANDSTONE);
 
+        // Cobblestone Bricks Set
+        blockStateModelGenerator.family(BlockRegistry.COBBLESTONE_BRICKS)
+            .stairs(BlockRegistry.COBBLESTONE_BRICK_STAIRS)
+            .slab(BlockRegistry.COBBLESTONE_BRICK_SLAB)
+            .wall(BlockRegistry.COBBLESTONE_BRICK_WALL);
+
         // Reinforced Planks Set
         blockStateModelGenerator.createTrivialCube(BlockRegistry.REINFORCED_OAK_PLANKS);
         blockStateModelGenerator.createTrivialCube(BlockRegistry.REINFORCED_BIRCH_PLANKS);

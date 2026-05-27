@@ -23,6 +23,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.WallBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
@@ -116,6 +117,12 @@ public class BlockRegistry {
     // Sandstone Set
     public static final Block COBBLED_SANDSTONE = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.SANDSTONE), "cobbled_sandstone", true);
     public static final Block COBBLED_RED_SANDSTONE = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.RED_SANDSTONE), "cobbled_red_sandstone", true);
+
+    // Cobblestone Bricks Set
+    public static final Block COBBLESTONE_BRICKS = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLESTONE), "cobblestone_bricks", true);
+    public static final Block COBBLESTONE_BRICK_STAIRS = registerStair(COBBLESTONE_BRICKS, "cobblestone_brick_stairs");
+    public static final Block COBBLESTONE_BRICK_SLAB = register(SlabBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLESTONE), "cobblestone_brick_slab", true);
+    public static final Block COBBLESTONE_BRICK_WALL = register(WallBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLESTONE), "cobblestone_brick_wall", true);
 
     // Reinforced Planks Set
     public static final Block REINFORCED_OAK_PLANKS = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS), "reinforced_oak_planks", true);

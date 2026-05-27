@@ -136,6 +136,12 @@ public class ItemRegistry {
             itemGroup.accept(BlockRegistry.COBBLED_SANDSTONE.asItem());
             itemGroup.accept(BlockRegistry.COBBLED_RED_SANDSTONE.asItem());
 
+            // Cobblestone Bricks Set
+            itemGroup.accept(BlockRegistry.COBBLESTONE_BRICKS.asItem());
+            itemGroup.accept(BlockRegistry.COBBLESTONE_BRICK_STAIRS.asItem());
+            itemGroup.accept(BlockRegistry.COBBLESTONE_BRICK_SLAB.asItem());
+            itemGroup.accept(BlockRegistry.COBBLESTONE_BRICK_WALL.asItem());
+
             // Reinforced Planks Set
             itemGroup.accept(BlockRegistry.REINFORCED_OAK_PLANKS.asItem());
             itemGroup.accept(BlockRegistry.REINFORCED_BIRCH_PLANKS.asItem());

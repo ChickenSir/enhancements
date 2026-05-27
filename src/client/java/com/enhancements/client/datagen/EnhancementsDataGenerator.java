@@ -11,5 +11,6 @@ public class EnhancementsDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ENHModelProvider::new);
 		pack.addProvider(ENHLangProvider::new);
 		pack.addProvider(ENHRecipeProvider::new);
+		pack.addProvider(ENHTagProvider::new);
 	}
 }
