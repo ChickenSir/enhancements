@@ -1,0 +1,6 @@
+{
+  "parent": "enhancements:block/center_stair",
+  "textures": {
+    "all": "enhancements:block/smooth_diorite"
+  }
+}

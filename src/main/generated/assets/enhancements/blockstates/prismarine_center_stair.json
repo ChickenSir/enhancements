@@ -1,0 +1,172 @@
+{
+  "variants": {
+    "facing=east,half=bottom,shape=back": {
+      "model": "enhancements:block/prismarine_center_stair_back",
+      "uvlock": true,
+      "y": 90
+    },
+    "facing=east,half=bottom,shape=cross": {
+      "model": "enhancements:block/prismarine_center_stair_cross",
+      "uvlock": true,
+      "y": 90
+    },
+    "facing=east,half=bottom,shape=front": {
+      "model": "enhancements:block/prismarine_center_stair_front",
+      "uvlock": true,
+      "y": 90
+    },
+    "facing=east,half=bottom,shape=straight": {
+      "model": "enhancements:block/prismarine_center_stair",
+      "uvlock": true,
+      "y": 90
+    },
+    "facing=east,half=top,shape=back": {
+      "model": "enhancements:block/prismarine_center_stair_front",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "facing=east,half=top,shape=cross": {
+      "model": "enhancements:block/prismarine_center_stair_cross",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "facing=east,half=top,shape=front": {
+      "model": "enhancements:block/prismarine_center_stair_back",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "facing=east,half=top,shape=straight": {
+      "model": "enhancements:block/prismarine_center_stair",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "facing=north,half=bottom,shape=back": {
+      "model": "enhancements:block/prismarine_center_stair_back",
+      "uvlock": true
+    },
+    "facing=north,half=bottom,shape=cross": {
+      "model": "enhancements:block/prismarine_center_stair_cross",
+      "uvlock": true
+    },
+    "facing=north,half=bottom,shape=front": {
+      "model": "enhancements:block/prismarine_center_stair_front",
+      "uvlock": true
+    },
+    "facing=north,half=bottom,shape=straight": {
+      "model": "enhancements:block/prismarine_center_stair",
+      "uvlock": true
+    },
+    "facing=north,half=top,shape=back": {
+      "model": "enhancements:block/prismarine_center_stair_front",
+      "uvlock": true,
+      "x": 180
+    },
+    "facing=north,half=top,shape=cross": {
+      "model": "enhancements:block/prismarine_center_stair_cross",
+      "uvlock": true,
+      "x": 180
+    },
+    "facing=north,half=top,shape=front": {
+      "model": "enhancements:block/prismarine_center_stair_back",
+      "uvlock": true,
+      "x": 180
+    },
+    "facing=north,half=top,shape=straight": {
+      "model": "enhancements:block/prismarine_center_stair",
+      "uvlock": true,
+      "x": 180
+    },
+    "facing=south,half=bottom,shape=back": {
+      "model": "enhancements:block/prismarine_center_stair_back",
+      "uvlock": true,
+      "y": 180
+    },
+    "facing=south,half=bottom,shape=cross": {
+      "model": "enhancements:block/prismarine_center_stair_cross",
+      "uvlock": true,
+      "y": 180
+    },
+    "facing=south,half=bottom,shape=front": {
+      "model": "enhancements:block/prismarine_center_stair_front",
+      "uvlock": true,
+      "y": 180
+    },
+    "facing=south,half=bottom,shape=straight": {
+      "model": "enhancements:block/prismarine_center_stair",
+      "uvlock": true,
+      "y": 180
+    },
+    "facing=south,half=top,shape=back": {
+      "model": "enhancements:block/prismarine_center_stair_front",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "facing=south,half=top,shape=cross": {
+      "model": "enhancements:block/prismarine_center_stair_cross",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "facing=south,half=top,shape=front": {
+      "model": "enhancements:block/prismarine_center_stair_back",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "facing=south,half=top,shape=straight": {
+      "model": "enhancements:block/prismarine_center_stair",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "facing=west,half=bottom,shape=back": {
+      "model": "enhancements:block/prismarine_center_stair_back",
+      "uvlock": true,
+      "y": 270
+    },
+    "facing=west,half=bottom,shape=cross": {
+      "model": "enhancements:block/prismarine_center_stair_cross",
+      "uvlock": true,
+      "y": 270
+    },
+    "facing=west,half=bottom,shape=front": {
+      "model": "enhancements:block/prismarine_center_stair_front",
+      "uvlock": true,
+      "y": 270
+    },
+    "facing=west,half=bottom,shape=straight": {
+      "model": "enhancements:block/prismarine_center_stair",
+      "uvlock": true,
+      "y": 270
+    },
+    "facing=west,half=top,shape=back": {
+      "model": "enhancements:block/prismarine_center_stair_front",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "facing=west,half=top,shape=cross": {
+      "model": "enhancements:block/prismarine_center_stair_cross",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "facing=west,half=top,shape=front": {
+      "model": "enhancements:block/prismarine_center_stair_back",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "facing=west,half=top,shape=straight": {
+      "model": "enhancements:block/prismarine_center_stair",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    }
+  }
+}

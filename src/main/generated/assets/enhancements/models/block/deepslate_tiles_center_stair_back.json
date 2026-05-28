@@ -1,0 +1,6 @@
+{
+  "parent": "enhancements:block/center_stair_back",
+  "textures": {
+    "all": "minecraft:block/deepslate_tiles"
+  }
+}

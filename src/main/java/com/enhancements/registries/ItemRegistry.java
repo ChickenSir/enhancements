@@ -153,6 +153,55 @@ public class ItemRegistry {
             itemGroup.accept(BlockRegistry.REINFORCED_CRIMSON_PLANKS.asItem());
             itemGroup.accept(BlockRegistry.REINFORCED_WARPED_PLANKS.asItem());
 
+            // Center Stair Set
+            itemGroup.accept(BlockRegistry.STONE_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.SMOOTH_STONE_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.STONE_BRICK_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.COBBLESTONE_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.MOSSY_COBBLESTONE_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.GRANITE_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.POLISHED_GRANITE_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.SMOOTH_GRANITE_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.GRANITE_BRICK_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.DIORITE_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.POLISHED_DIORITE_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.SMOOTH_DIORITE_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.DIORITE_BRICK_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.ANDESITE_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.POLISHED_ANDESITE_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.SMOOTH_ANDESITE_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.ANDESITE_BRICK_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.DEEPSLATE_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.COBBLED_DEEPSLATE_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.POLISHED_DEEPSLATE_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.DEEPSLATE_BRICK_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.DEEPSLATE_TILES_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.SANDSTONE_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.COBBLED_SANDSTONE_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.RED_SANDSTONE_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.COBBLED_RED_SANDSTONE_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.PRISMARINE_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.PRISMARINE_BRICK_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.DARK_PRISMARINE_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.NETHER_BRICK_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.BLACKSTONE_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.POLISHED_BLACKSTONE_BRICK_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.POLISHED_BLACKSTONE_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.QUARTZ_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.QUARTZ_BRICK_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.OAK_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.BIRCH_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.SPRUCE_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.JUNGLE_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.ACACIA_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.DARK_OAK_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.CHERRY_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.MANGROVE_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.PALE_OAK_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.BAMBOO_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.CRIMSON_CENTER_STAIR.asItem());
+            itemGroup.accept(BlockRegistry.WARPED_CENTER_STAIR.asItem());
+
             // Chair Set
             itemGroup.accept(BlockRegistry.OAK_CHAIR.asItem());
             itemGroup.accept(BlockRegistry.BIRCH_CHAIR.asItem());

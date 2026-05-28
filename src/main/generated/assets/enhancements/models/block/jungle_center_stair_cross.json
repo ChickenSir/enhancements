@@ -1,0 +1,6 @@
+{
+  "parent": "enhancements:block/center_stair_cross",
+  "textures": {
+    "all": "minecraft:block/jungle_planks"
+  }
+}

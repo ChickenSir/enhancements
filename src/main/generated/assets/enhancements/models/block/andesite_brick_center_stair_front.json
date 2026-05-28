@@ -1,0 +1,6 @@
+{
+  "parent": "enhancements:block/center_stair_front",
+  "textures": {
+    "all": "enhancements:block/andesite_bricks"
+  }
+}

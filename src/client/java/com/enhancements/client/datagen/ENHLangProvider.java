@@ -114,6 +114,55 @@ public class ENHLangProvider extends FabricLanguageProvider {
         translationBuilder.add("item.enhancements.reinforced_crimson_planks", "Reinforced Crimson Planks");
         translationBuilder.add("item.enhancements.reinforced_warped_planks", "Reinforced Warped Planks");
 
+        // Center Stair Set
+        translationBuilder.add("item.enhancements.stone_center_stair", "Stone Center Stair");
+        translationBuilder.add("item.enhancements.smooth_stone_center_stair", "Smooth Stone Center Stair");
+        translationBuilder.add("item.enhancements.stone_brick_center_stair", "Stone Brick Center Stair");
+        translationBuilder.add("item.enhancements.cobblestone_center_stair", "Cobblestone Center Stair");
+        translationBuilder.add("item.enhancements.mossy_cobblestone_center_stair", "Mossy Cobblestone Center Stair");
+        translationBuilder.add("item.enhancements.granite_center_stair", "Granite Center Stair");
+        translationBuilder.add("item.enhancements.polished_granite_center_stair", "Polished Granite Center Stair");
+        translationBuilder.add("item.enhancements.smooth_granite_center_stair", "Smooth Granite Center Stair");
+        translationBuilder.add("item.enhancements.granite_brick_center_stair", "Granite Brick Center Stair");
+        translationBuilder.add("item.enhancements.diorite_center_stair", "Diorite Center Stair");
+        translationBuilder.add("item.enhancements.polished_diorite_center_stair", "Polished Diorite Center Stair");
+        translationBuilder.add("item.enhancements.smooth_diorite_center_stair", "Smooth Diorite Center Stair");
+        translationBuilder.add("item.enhancements.diorite_brick_center_stair", "Diorite Brick Center Stair");
+        translationBuilder.add("item.enhancements.andesite_center_stair", "Andesite Center Stair");
+        translationBuilder.add("item.enhancements.polished_andesite_center_stair", "Polished Andesite Center Stair");
+        translationBuilder.add("item.enhancements.smooth_andesite_center_stair", "Smooth Andesite Center Stair");
+        translationBuilder.add("item.enhancements.andesite_brick_center_stair", "Andesite Brick Center Stair");
+        translationBuilder.add("item.enhancements.deepslate_center_stair", "Deepslate Center Stair");
+        translationBuilder.add("item.enhancements.cobbled_deepslate_center_stair", "Cobbled Deepslate Center Stair");
+        translationBuilder.add("item.enhancements.polished_deepslate_center_stair", "Polished Deepslate Center Stair");
+        translationBuilder.add("item.enhancements.deepslate_brick_center_stair", "Deepslate Brick Center Stair");
+        translationBuilder.add("item.enhancements.deepslate_tiles_center_stair", "Deepslate Tiles Center Stair");
+        translationBuilder.add("item.enhancements.sandstone_center_stair", "Sandstone Center Stair");
+        translationBuilder.add("item.enhancements.cobbled_sandstone_center_stair", "Cobbled Sandstone Center Stair");
+        translationBuilder.add("item.enhancements.red_sandstone_center_stair", "Red Sandstone Center Stair");
+        translationBuilder.add("item.enhancements.cobbled_red_sandstone_center_stair", "Cobbled Red Sandstone Center Stair");
+        translationBuilder.add("item.enhancements.prismarine_center_stair", "Prismarine Center Stair");
+        translationBuilder.add("item.enhancements.prismarine_brick_center_stair", "Prismarine Brick Center Stair");
+        translationBuilder.add("item.enhancements.dark_prismarine_center_stair", "Dark Prismarine Center Stair");
+        translationBuilder.add("item.enhancements.nether_brick_center_stair", "Nether Brick Center Stair");
+        translationBuilder.add("item.enhancements.blackstone_center_stair", "Blackstone Center Stair");
+        translationBuilder.add("item.enhancements.polished_blackstone_brick_center_stair", "Polished Blackstone Brick Center Stair");
+        translationBuilder.add("item.enhancements.polished_blackstone_center_stair", "Polished Blackstone Center Stair");
+        translationBuilder.add("item.enhancements.quartz_center_stair", "Quartz Center Stair");
+        translationBuilder.add("item.enhancements.quartz_brick_center_stair", "Quartz Brick Center Stair");
+        translationBuilder.add("item.enhancements.oak_center_stair", "Oak Center Stair");
+        translationBuilder.add("item.enhancements.birch_center_stair", "Birch Center Stair");
+        translationBuilder.add("item.enhancements.spruce_center_stair", "Spruce Center Stair");
+        translationBuilder.add("item.enhancements.jungle_center_stair", "Jungle Center Stair");
+        translationBuilder.add("item.enhancements.acacia_center_stair", "Acacia Center Stair");
+        translationBuilder.add("item.enhancements.dark_oak_center_stair", "Dark Oak Center Stair");
+        translationBuilder.add("item.enhancements.cherry_center_stair", "Cherry Center Stair");
+        translationBuilder.add("item.enhancements.mangrove_center_stair", "Mangrove Center Stair");
+        translationBuilder.add("item.enhancements.pale_oak_center_stair", "Pale Oak Center Stair");
+        translationBuilder.add("item.enhancements.bamboo_center_stair", "Bamboo Center Stair");
+        translationBuilder.add("item.enhancements.crimson_center_stair", "Crimson Center Stair");
+        translationBuilder.add("item.enhancements.warped_center_stair", "Warped Center Stair");
+
         // Chair Set
         translationBuilder.add("item.enhancements.oak_chair", "Oak Chair");
         translationBuilder.add("item.enhancements.birch_chair", "Birch Chair");
