@@ -1,0 +1,6 @@
+{
+  "parent": "enhancements:block/table_cloth",
+  "textures": {
+    "all": "enhancements:block/brown_table_cloth"
+  }
+}

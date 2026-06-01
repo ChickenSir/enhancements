@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "enhancements:block/bamboo_stack",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "enhancements:block/bamboo_stack",
+      "uvlock": true
+    },
+    "facing=south": {
+      "model": "enhancements:block/bamboo_stack",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "enhancements:block/bamboo_stack",
+      "y": 270
+    }
+  }
+}

@@ -147,6 +147,78 @@ public class ENHModelProvider extends FabricModelProvider {
         ENHCustomModelGenerator.registerCenterStair(blockStateModelGenerator, BlockRegistry.BAMBOO_CENTER_STAIR, Blocks.BAMBOO_PLANKS);
         ENHCustomModelGenerator.registerCenterStair(blockStateModelGenerator, BlockRegistry.CRIMSON_CENTER_STAIR, Blocks.CRIMSON_PLANKS);
         ENHCustomModelGenerator.registerCenterStair(blockStateModelGenerator, BlockRegistry.WARPED_CENTER_STAIR, Blocks.WARPED_PLANKS);
+
+        // Log Stack Set
+        ENHCustomModelGenerator.registerLogStack(blockStateModelGenerator, BlockRegistry.OAK_LOG_STACK, "oak_log_stack");
+        ENHCustomModelGenerator.registerLogStack(blockStateModelGenerator, BlockRegistry.BIRCH_LOG_STACK, "birch_log_stack");
+        ENHCustomModelGenerator.registerLogStack(blockStateModelGenerator, BlockRegistry.SPRUCE_LOG_STACK, "spruce_log_stack");
+        ENHCustomModelGenerator.registerLogStack(blockStateModelGenerator, BlockRegistry.JUNGLE_LOG_STACK, "jungle_log_stack");
+        ENHCustomModelGenerator.registerLogStack(blockStateModelGenerator, BlockRegistry.ACACIA_LOG_STACK, "acacia_log_stack");
+        ENHCustomModelGenerator.registerLogStack(blockStateModelGenerator, BlockRegistry.DARK_OAK_LOG_STACK, "dark_oak_log_stack");
+        ENHCustomModelGenerator.registerLogStack(blockStateModelGenerator, BlockRegistry.CHERRY_LOG_STACK, "cherry_log_stack");
+        ENHCustomModelGenerator.registerLogStack(blockStateModelGenerator, BlockRegistry.MANGROVE_LOG_STACK, "mangrove_log_stack");
+        ENHCustomModelGenerator.registerLogStack(blockStateModelGenerator, BlockRegistry.PALE_OAK_LOG_STACK, "pale_oak_log_stack");
+        ENHCustomModelGenerator.registerLogStack(blockStateModelGenerator, BlockRegistry.BAMBOO_STACK, "bamboo_stack");
+        ENHCustomModelGenerator.registerLogStack(blockStateModelGenerator, BlockRegistry.CRIMSON_STEM_STACK, "crimson_stem_stack");
+        ENHCustomModelGenerator.registerLogStack(blockStateModelGenerator, BlockRegistry.WARPED_STEM_STACK, "warped_stem_stack");
+
+        // Chair Set
+        ENHCustomModelGenerator.registerChair(blockStateModelGenerator, BlockRegistry.OAK_CHAIR, "reinforced_oak_planks");
+        ENHCustomModelGenerator.registerChair(blockStateModelGenerator, BlockRegistry.BIRCH_CHAIR, "reinforced_birch_planks");
+        ENHCustomModelGenerator.registerChair(blockStateModelGenerator, BlockRegistry.SPRUCE_CHAIR, "reinforced_spruce_planks");
+        ENHCustomModelGenerator.registerChair(blockStateModelGenerator, BlockRegistry.JUNGLE_CHAIR, "reinforced_jungle_planks");
+        ENHCustomModelGenerator.registerChair(blockStateModelGenerator, BlockRegistry.ACACIA_CHAIR, "reinforced_acacia_planks");
+        ENHCustomModelGenerator.registerChair(blockStateModelGenerator, BlockRegistry.DARK_OAK_CHAIR, "reinforced_dark_oak_planks");
+        ENHCustomModelGenerator.registerChair(blockStateModelGenerator, BlockRegistry.CHERRY_CHAIR, "reinforced_cherry_planks");
+        ENHCustomModelGenerator.registerChair(blockStateModelGenerator, BlockRegistry.MANGROVE_CHAIR, "reinforced_mangrove_planks");
+        ENHCustomModelGenerator.registerChair(blockStateModelGenerator, BlockRegistry.PALE_OAK_CHAIR, "reinforced_pale_oak_planks");
+        ENHCustomModelGenerator.registerChair(blockStateModelGenerator, BlockRegistry.BAMBOO_CHAIR, "reinforced_bamboo_planks");
+        ENHCustomModelGenerator.registerChair(blockStateModelGenerator, BlockRegistry.CRIMSON_CHAIR, "reinforced_crimson_planks");
+        ENHCustomModelGenerator.registerChair(blockStateModelGenerator, BlockRegistry.WARPED_CHAIR, "reinforced_warped_planks");
+
+        ENHCustomModelGenerator.registerArmchair(blockStateModelGenerator, BlockRegistry.OAK_ARMCHAIR, "reinforced_oak_planks");
+        ENHCustomModelGenerator.registerArmchair(blockStateModelGenerator, BlockRegistry.BIRCH_ARMCHAIR, "reinforced_birch_planks");
+        ENHCustomModelGenerator.registerArmchair(blockStateModelGenerator, BlockRegistry.SPRUCE_ARMCHAIR, "reinforced_spruce_planks");
+        ENHCustomModelGenerator.registerArmchair(blockStateModelGenerator, BlockRegistry.JUNGLE_ARMCHAIR, "reinforced_jungle_planks");
+        ENHCustomModelGenerator.registerArmchair(blockStateModelGenerator, BlockRegistry.ACACIA_ARMCHAIR, "reinforced_acacia_planks");
+        ENHCustomModelGenerator.registerArmchair(blockStateModelGenerator, BlockRegistry.DARK_OAK_ARMCHAIR, "reinforced_dark_oak_planks");
+        ENHCustomModelGenerator.registerArmchair(blockStateModelGenerator, BlockRegistry.CHERRY_ARMCHAIR, "reinforced_cherry_planks");
+        ENHCustomModelGenerator.registerArmchair(blockStateModelGenerator, BlockRegistry.MANGROVE_ARMCHAIR, "reinforced_mangrove_planks");
+        ENHCustomModelGenerator.registerArmchair(blockStateModelGenerator, BlockRegistry.PALE_OAK_ARMCHAIR, "reinforced_pale_oak_planks");
+        ENHCustomModelGenerator.registerArmchair(blockStateModelGenerator, BlockRegistry.BAMBOO_ARMCHAIR, "reinforced_bamboo_planks");
+        ENHCustomModelGenerator.registerArmchair(blockStateModelGenerator, BlockRegistry.CRIMSON_ARMCHAIR, "reinforced_crimson_planks");
+        ENHCustomModelGenerator.registerArmchair(blockStateModelGenerator, BlockRegistry.WARPED_ARMCHAIR, "reinforced_warped_planks");
+
+        // Table Set
+        ENHCustomModelGenerator.registerTable(blockStateModelGenerator, BlockRegistry.OAK_TABLE, "reinforced_oak_planks");
+        ENHCustomModelGenerator.registerTable(blockStateModelGenerator, BlockRegistry.BIRCH_TABLE, "reinforced_birch_planks");
+        ENHCustomModelGenerator.registerTable(blockStateModelGenerator, BlockRegistry.SPRUCE_TABLE, "reinforced_spruce_planks");
+        ENHCustomModelGenerator.registerTable(blockStateModelGenerator, BlockRegistry.JUNGLE_TABLE, "reinforced_jungle_planks");
+        ENHCustomModelGenerator.registerTable(blockStateModelGenerator, BlockRegistry.ACACIA_TABLE, "reinforced_acacia_planks");
+        ENHCustomModelGenerator.registerTable(blockStateModelGenerator, BlockRegistry.DARK_OAK_TABLE, "reinforced_dark_oak_planks");
+        ENHCustomModelGenerator.registerTable(blockStateModelGenerator, BlockRegistry.CHERRY_TABLE, "reinforced_cherry_planks");
+        ENHCustomModelGenerator.registerTable(blockStateModelGenerator, BlockRegistry.MANGROVE_TABLE, "reinforced_mangrove_planks");
+        ENHCustomModelGenerator.registerTable(blockStateModelGenerator, BlockRegistry.PALE_OAK_TABLE, "reinforced_pale_oak_planks");
+        ENHCustomModelGenerator.registerTable(blockStateModelGenerator, BlockRegistry.BAMBOO_TABLE, "reinforced_bamboo_planks");
+        ENHCustomModelGenerator.registerTable(blockStateModelGenerator, BlockRegistry.CRIMSON_TABLE, "reinforced_crimson_planks");
+        ENHCustomModelGenerator.registerTable(blockStateModelGenerator, BlockRegistry.WARPED_TABLE, "reinforced_warped_planks");
+
+        ENHCustomModelGenerator.registerTableCloth(blockStateModelGenerator, BlockRegistry.RED_TABLE_CLOTH, "red_table_cloth");
+        ENHCustomModelGenerator.registerTableCloth(blockStateModelGenerator, BlockRegistry.BLUE_TABLE_CLOTH, "blue_table_cloth");
+        ENHCustomModelGenerator.registerTableCloth(blockStateModelGenerator, BlockRegistry.YELLOW_TABLE_CLOTH, "yellow_table_cloth");
+        ENHCustomModelGenerator.registerTableCloth(blockStateModelGenerator, BlockRegistry.GREEN_TABLE_CLOTH, "green_table_cloth");
+        ENHCustomModelGenerator.registerTableCloth(blockStateModelGenerator, BlockRegistry.LIME_TABLE_CLOTH, "lime_table_cloth");
+        ENHCustomModelGenerator.registerTableCloth(blockStateModelGenerator, BlockRegistry.CYAN_TABLE_CLOTH, "cyan_table_cloth");
+        ENHCustomModelGenerator.registerTableCloth(blockStateModelGenerator, BlockRegistry.LIGHT_BLUE_TABLE_CLOTH, "light_blue_table_cloth");
+        ENHCustomModelGenerator.registerTableCloth(blockStateModelGenerator, BlockRegistry.ORANGE_TABLE_CLOTH, "orange_table_cloth");
+        ENHCustomModelGenerator.registerTableCloth(blockStateModelGenerator, BlockRegistry.MAGENTA_TABLE_CLOTH, "magenta_table_cloth");
+        ENHCustomModelGenerator.registerTableCloth(blockStateModelGenerator, BlockRegistry.PURPLE_TABLE_CLOTH, "purple_table_cloth");
+        ENHCustomModelGenerator.registerTableCloth(blockStateModelGenerator, BlockRegistry.PINK_TABLE_CLOTH, "pink_table_cloth");
+        ENHCustomModelGenerator.registerTableCloth(blockStateModelGenerator, BlockRegistry.BROWN_TABLE_CLOTH, "brown_table_cloth");
+        ENHCustomModelGenerator.registerTableCloth(blockStateModelGenerator, BlockRegistry.LIGHT_GRAY_TABLE_CLOTH, "light_gray_table_cloth");
+        ENHCustomModelGenerator.registerTableCloth(blockStateModelGenerator, BlockRegistry.GRAY_TABLE_CLOTH, "gray_table_cloth");
+        ENHCustomModelGenerator.registerTableCloth(blockStateModelGenerator, BlockRegistry.BLACK_TABLE_CLOTH, "black_table_cloth");
+        ENHCustomModelGenerator.registerTableCloth(blockStateModelGenerator, BlockRegistry.CRAFTING_TABLE_CLOTH, "crafting_table_cloth");
     }
 
     @Override

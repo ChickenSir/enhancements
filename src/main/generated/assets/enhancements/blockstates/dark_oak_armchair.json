@@ -1,0 +1,23 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "enhancements:block/dark_oak_armchair",
+      "uvlock": true
+    },
+    "facing=north": {
+      "model": "enhancements:block/dark_oak_armchair",
+      "uvlock": true,
+      "y": 270
+    },
+    "facing=south": {
+      "model": "enhancements:block/dark_oak_armchair",
+      "uvlock": true,
+      "y": 90
+    },
+    "facing=west": {
+      "model": "enhancements:block/dark_oak_armchair",
+      "uvlock": true,
+      "y": 180
+    }
+  }
+}

@@ -217,9 +217,31 @@ public class ItemRegistry {
             itemGroup.accept(BlockRegistry.WARPED_CHAIR.asItem());
 
             itemGroup.accept(BlockRegistry.OAK_ARMCHAIR.asItem());
+            itemGroup.accept(BlockRegistry.BIRCH_ARMCHAIR.asItem());
+            itemGroup.accept(BlockRegistry.SPRUCE_ARMCHAIR.asItem());
+            itemGroup.accept(BlockRegistry.JUNGLE_ARMCHAIR.asItem());
+            itemGroup.accept(BlockRegistry.ACACIA_ARMCHAIR.asItem());
+            itemGroup.accept(BlockRegistry.DARK_OAK_ARMCHAIR.asItem());
+            itemGroup.accept(BlockRegistry.CHERRY_ARMCHAIR.asItem());
+            itemGroup.accept(BlockRegistry.MANGROVE_ARMCHAIR.asItem());
+            itemGroup.accept(BlockRegistry.PALE_OAK_ARMCHAIR.asItem());
+            itemGroup.accept(BlockRegistry.BAMBOO_ARMCHAIR.asItem());
+            itemGroup.accept(BlockRegistry.CRIMSON_ARMCHAIR.asItem());
+            itemGroup.accept(BlockRegistry.WARPED_ARMCHAIR.asItem());
 
             // Table Set
             itemGroup.accept(BlockRegistry.OAK_TABLE.asItem());
+            itemGroup.accept(BlockRegistry.BIRCH_TABLE.asItem());
+            itemGroup.accept(BlockRegistry.SPRUCE_TABLE.asItem());
+            itemGroup.accept(BlockRegistry.JUNGLE_TABLE.asItem());
+            itemGroup.accept(BlockRegistry.ACACIA_TABLE.asItem());
+            itemGroup.accept(BlockRegistry.DARK_OAK_TABLE.asItem());
+            itemGroup.accept(BlockRegistry.CHERRY_TABLE.asItem());
+            itemGroup.accept(BlockRegistry.MANGROVE_TABLE.asItem());
+            itemGroup.accept(BlockRegistry.PALE_OAK_TABLE.asItem());
+            itemGroup.accept(BlockRegistry.BAMBOO_TABLE.asItem());
+            itemGroup.accept(BlockRegistry.CRIMSON_TABLE.asItem());
+            itemGroup.accept(BlockRegistry.WARPED_TABLE.asItem());
 
             // Table Cloth Set
             itemGroup.accept(BlockRegistry.RED_TABLE_CLOTH.asItem());

@@ -178,9 +178,31 @@ public class ENHLangProvider extends FabricLanguageProvider {
         translationBuilder.add("item.enhancements.warped_chair", "Warped Chair");
 
         translationBuilder.add("item.enhancements.oak_armchair", "Oak Arm Chair");
+        translationBuilder.add("item.enhancements.birch_armchair", "Birch Arm Chair");
+        translationBuilder.add("item.enhancements.spruce_armchair", "Spruce Arm Chair");
+        translationBuilder.add("item.enhancements.jungle_armchair", "Jungle Arm Chair");
+        translationBuilder.add("item.enhancements.acacia_armchair", "Acacia Arm Chair");
+        translationBuilder.add("item.enhancements.dark_oak_armchair", "Dark Oak Arm Chair");
+        translationBuilder.add("item.enhancements.cherry_armchair", "Cherry Arm Chair");
+        translationBuilder.add("item.enhancements.mangrove_armchair", "Mangrove Arm Chair");
+        translationBuilder.add("item.enhancements.pale_oak_armchair", "Pale Oak Arm Chair");
+        translationBuilder.add("item.enhancements.bamboo_armchair", "Bamboo Arm Chair");
+        translationBuilder.add("item.enhancements.crimson_armchair", "Crimson Arm Chair");
+        translationBuilder.add("item.enhancements.warped_armchair", "Warped Arm Chair");
 
         // Table Set
         translationBuilder.add("item.enhancements.oak_table", "Oak Table");
+        translationBuilder.add("item.enhancements.birch_table", "Birch Table");
+        translationBuilder.add("item.enhancements.spruce_table", "Spruce Table");
+        translationBuilder.add("item.enhancements.jungle_table", "Jungle Table");
+        translationBuilder.add("item.enhancements.acacia_table", "Acacia Table");
+        translationBuilder.add("item.enhancements.dark_oak_table", "Dark Oak Table");
+        translationBuilder.add("item.enhancements.cherry_table", "Cherry Table");
+        translationBuilder.add("item.enhancements.mangrove_table", "Mangrove Table");
+        translationBuilder.add("item.enhancements.pale_oak_table", "Pale Oak Table");
+        translationBuilder.add("item.enhancements.bamboo_table", "Bamboo Table");
+        translationBuilder.add("item.enhancements.crimson_table", "Crimson Table");
+        translationBuilder.add("item.enhancements.warped_table", "Warped Table");
 
         // Table Cloth Set
         translationBuilder.add("item.enhancements.red_table_cloth", "Red Table Cloth");

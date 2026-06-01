@@ -160,9 +160,31 @@ public class BlockRegistry {
     public static final Block WARPED_CHAIR = register(ChairBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_PLANKS), "warped_chair", true);
 
     public static final Block OAK_ARMCHAIR = register(ArmChairBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS), "oak_armchair", true);
+    public static final Block BIRCH_ARMCHAIR = register(ArmChairBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.BIRCH_PLANKS), "birch_armchair", true);
+    public static final Block SPRUCE_ARMCHAIR = register(ArmChairBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_PLANKS), "spruce_armchair", true);
+    public static final Block JUNGLE_ARMCHAIR = register(ArmChairBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.JUNGLE_PLANKS), "jungle_armchair", true);
+    public static final Block ACACIA_ARMCHAIR = register(ArmChairBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_PLANKS), "acacia_armchair", true);
+    public static final Block DARK_OAK_ARMCHAIR = register(ArmChairBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.DARK_OAK_PLANKS), "dark_oak_armchair", true);
+    public static final Block CHERRY_ARMCHAIR = register(ArmChairBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_PLANKS), "cherry_armchair", true);
+    public static final Block MANGROVE_ARMCHAIR = register(ArmChairBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.MANGROVE_PLANKS), "mangrove_armchair", true);
+    public static final Block PALE_OAK_ARMCHAIR = register(ArmChairBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.PALE_OAK_PLANKS), "pale_oak_armchair", true);
+    public static final Block BAMBOO_ARMCHAIR = register(ArmChairBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.BAMBOO_PLANKS), "bamboo_armchair", true);
+    public static final Block CRIMSON_ARMCHAIR = register(ArmChairBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.CRIMSON_PLANKS), "crimson_armchair", true);
+    public static final Block WARPED_ARMCHAIR = register(ArmChairBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_PLANKS), "warped_armchair", true);
 
     // Table Set
     public static final Block OAK_TABLE = register(TableBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).noOcclusion(), "oak_table", true);
+    public static final Block BIRCH_TABLE = register(TableBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.BIRCH_PLANKS).noOcclusion(), "birch_table", true);
+    public static final Block SPRUCE_TABLE = register(TableBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_PLANKS).noOcclusion(), "spruce_table", true);
+    public static final Block JUNGLE_TABLE = register(TableBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.JUNGLE_PLANKS).noOcclusion(), "jungle_table", true);
+    public static final Block ACACIA_TABLE = register(TableBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.ACACIA_PLANKS).noOcclusion(), "acacia_table", true);
+    public static final Block DARK_OAK_TABLE = register(TableBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.DARK_OAK_PLANKS).noOcclusion(), "dark_oak_table", true);
+    public static final Block CHERRY_TABLE = register(TableBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_PLANKS).noOcclusion(), "cherry_table", true);
+    public static final Block MANGROVE_TABLE = register(TableBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.MANGROVE_PLANKS).noOcclusion(), "mangrove_table", true);
+    public static final Block PALE_OAK_TABLE = register(TableBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.PALE_OAK_PLANKS).noOcclusion(), "pale_oak_table", true);
+    public static final Block BAMBOO_TABLE = register(TableBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.BAMBOO_PLANKS).noOcclusion(), "bamboo_table", true);
+    public static final Block CRIMSON_TABLE = register(TableBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.CRIMSON_PLANKS).noOcclusion(), "crimson_table", true);
+    public static final Block WARPED_TABLE = register(TableBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_PLANKS).noOcclusion(), "warped_table", true);
 
     // Table Cloth Set
     public static final Block RED_TABLE_CLOTH = register(TableClothBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.RED_WOOL).noOcclusion(), "red_table_cloth", true);

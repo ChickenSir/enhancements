@@ -1,0 +1,6 @@
+{
+  "parent": "enhancements:block/log_stack",
+  "textures": {
+    "all": "enhancements:block/jungle_log_stack"
+  }
+}

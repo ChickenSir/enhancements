@@ -1,0 +1,6 @@
+{
+  "parent": "enhancements:block/chair",
+  "textures": {
+    "all": "enhancements:block/reinforced_bamboo_planks"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "enhancements:block/jungle_armchair",
+      "uvlock": true
+    },
+    "facing=north": {
+      "model": "enhancements:block/jungle_armchair",
+      "uvlock": true,
+      "y": 270
+    },
+    "facing=south": {
+      "model": "enhancements:block/jungle_armchair",
+      "uvlock": true,
+      "y": 90
+    },
+    "facing=west": {
+      "model": "enhancements:block/jungle_armchair",
+      "uvlock": true,
+      "y": 180
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "enhancements:block/crimson_armchair",
+      "uvlock": true
+    },
+    "facing=north": {
+      "model": "enhancements:block/crimson_armchair",
+      "uvlock": true,
+      "y": 270
+    },
+    "facing=south": {
+      "model": "enhancements:block/crimson_armchair",
+      "uvlock": true,
+      "y": 90
+    },
+    "facing=west": {
+      "model": "enhancements:block/crimson_armchair",
+      "uvlock": true,
+      "y": 180
+    }
+  }
+}

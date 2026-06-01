@@ -1,0 +1,23 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "enhancements:block/acacia_table",
+      "uvlock": true,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "enhancements:block/acacia_table",
+      "uvlock": true
+    },
+    "facing=south": {
+      "model": "enhancements:block/acacia_table",
+      "uvlock": true,
+      "y": 180
+    },
+    "facing=west": {
+      "model": "enhancements:block/acacia_table",
+      "uvlock": true,
+      "y": 270
+    }
+  }
+}

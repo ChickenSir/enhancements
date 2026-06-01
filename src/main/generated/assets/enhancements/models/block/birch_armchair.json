@@ -1,0 +1,6 @@
+{
+  "parent": "enhancements:block/armchair",
+  "textures": {
+    "all": "enhancements:block/reinforced_birch_planks"
+  }
+}

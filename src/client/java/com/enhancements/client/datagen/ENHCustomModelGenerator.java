@@ -2,13 +2,17 @@ package com.enhancements.client.datagen;
 
 import java.util.Optional;
 
+import org.apache.logging.log4j.core.config.Property;
+
 import com.enhancements.Enhancements;
 import com.enhancements.block.CenterStairBlock;
+import com.enhancements.block.LogStackBlock;
 import com.enhancements.property.CenterStairShape;
 
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.MultiVariant;
 import net.minecraft.client.data.models.blockstates.BlockModelDefinitionGenerator;
+import net.minecraft.client.data.models.blockstates.MultiPartGenerator;
 import net.minecraft.client.data.models.blockstates.MultiVariantGenerator;
 import net.minecraft.client.data.models.blockstates.PropertyDispatch;
 import net.minecraft.client.data.models.model.ModelTemplate;
@@ -21,10 +25,22 @@ import net.minecraft.world.level.block.state.properties.Half;
 
 public class ENHCustomModelGenerator {
 
+    // Center Stair Set
     public static final ModelTemplate CENTER_STAIR = block("center_stair", TextureSlot.ALL);
     public static final ModelTemplate CENTER_STAIR_FRONT = block("center_stair_front", "_front", TextureSlot.ALL);
     public static final ModelTemplate CENTER_STAIR_BACK = block("center_stair_back", "_back", TextureSlot.ALL);
     public static final ModelTemplate CENTER_STAIR_CROSS = block("center_stair_cross", "_cross", TextureSlot.ALL);
+
+    // Log Stack Set
+    public static final ModelTemplate LOG_STACK = block("log_stack", TextureSlot.ALL);
+
+    // Chair Set
+    public static final ModelTemplate CHAIR = block("chair", TextureSlot.ALL);
+    public static final ModelTemplate ARMCHAIR = block("armchair", TextureSlot.ALL);
+
+    // Table Set
+    public static final ModelTemplate TABLE = block("table", TextureSlot.ALL);
+    public static final ModelTemplate TABLE_CLOTH = block("table_cloth", TextureSlot.ALL);
     
     public static void registerCenterStair(BlockModelGenerators generator, Block centerStairBlock, Block baseBlock) {
         ResourceLocation centerStairModel = CENTER_STAIR.create(centerStairBlock, TextureMapping.cube(baseBlock), generator.modelOutput);
@@ -43,6 +59,41 @@ public class ENHCustomModelGenerator {
         ResourceLocation centerStairCrossModel = CENTER_STAIR_CROSS.create(centerStairBlock, TextureMapping.cube(baseTexture), generator.modelOutput);
         generator.blockStateOutput.accept(createCenterStairBlockStates(centerStairBlock, centerStairModel, centerStairFrontModel, centerStairBackModel, centerStairCrossModel));
         generator.registerSimpleItemModel(centerStairBlock, centerStairModel);
+    }
+
+    public static void registerLogStack(BlockModelGenerators generator, Block logStackBlock, String texture) {
+        ResourceLocation baseTexture = ResourceLocation.fromNamespaceAndPath(Enhancements.modID, "block/" + texture);
+        ResourceLocation logStackModel = LOG_STACK.create(logStackBlock, TextureMapping.cube(baseTexture), generator.modelOutput);
+        generator.blockStateOutput.accept(createLogStackBlockStates(logStackBlock, logStackModel));
+        generator.registerSimpleItemModel(logStackBlock, logStackModel);
+    }
+
+    public static void registerChair(BlockModelGenerators generator, Block chairBlock, String texture) {
+        ResourceLocation baseTexture = ResourceLocation.fromNamespaceAndPath(Enhancements.modID, "block/" + texture);
+        ResourceLocation chairModel = CHAIR.create(chairBlock, TextureMapping.cube(baseTexture), generator.modelOutput);
+        generator.blockStateOutput.accept(createChairBlockStates(chairBlock, chairModel));
+        generator.registerSimpleItemModel(chairBlock, chairModel);
+    }
+
+    public static void registerArmchair(BlockModelGenerators generator, Block armchairBlock, String texture) {
+        ResourceLocation baseTexture = ResourceLocation.fromNamespaceAndPath(Enhancements.modID, "block/" + texture);
+        ResourceLocation armchairModel = ARMCHAIR.create(armchairBlock, TextureMapping.cube(baseTexture), generator.modelOutput);
+        generator.blockStateOutput.accept(createArmchairBlockStates(armchairBlock, armchairModel));
+        generator.registerSimpleItemModel(armchairBlock, armchairModel);
+    }
+
+    public static void registerTable(BlockModelGenerators generator, Block tableBlock, String texture) {
+        ResourceLocation baseTexture = ResourceLocation.fromNamespaceAndPath(Enhancements.modID, "block/" + texture);
+        ResourceLocation tableModel = TABLE.create(tableBlock, TextureMapping.cube(baseTexture), generator.modelOutput);
+        generator.blockStateOutput.accept(createTableBlockStates(tableBlock, tableModel));
+        generator.registerSimpleItemModel(tableBlock, tableModel);
+    }
+
+    public static void registerTableCloth(BlockModelGenerators generator, Block tableclothBlock, String texture) {
+        ResourceLocation baseTexture = ResourceLocation.fromNamespaceAndPath(Enhancements.modID, "block/" + texture);
+        ResourceLocation tableclothModel = TABLE_CLOTH.create(tableclothBlock, TextureMapping.cube(baseTexture), generator.modelOutput);
+        generator.blockStateOutput.accept(createTableClothBlockStates(tableclothBlock, tableclothModel));
+        generator.registerSimpleItemModel(tableclothBlock, tableclothModel);
     }
 
     private static BlockModelDefinitionGenerator createCenterStairBlockStates(Block centerStair, ResourceLocation centerStairId, ResourceLocation centerStairFrontId, ResourceLocation centerStairBackId, ResourceLocation centerStairCrossId) {
@@ -85,6 +136,55 @@ public class ENHCustomModelGenerator {
                 .select(Direction.SOUTH, Half.TOP, CenterStairShape.CROSS, centerStairCrossModel.with(BlockModelGenerators.UV_LOCK).with(BlockModelGenerators.Y_ROT_180).with(BlockModelGenerators.X_ROT_180))
                 .select(Direction.WEST, Half.TOP, CenterStairShape.CROSS, centerStairCrossModel.with(BlockModelGenerators.UV_LOCK).with(BlockModelGenerators.Y_ROT_270).with(BlockModelGenerators.X_ROT_180))
             );
+    }
+
+    private static BlockModelDefinitionGenerator createLogStackBlockStates(Block logStack, ResourceLocation logStackId) {
+        MultiVariant logStackModel = BlockModelGenerators.plainVariant(logStackId);
+        return MultiVariantGenerator.dispatch(logStack)
+            .with(PropertyDispatch.initial(LogStackBlock.FACING)
+                .select(Direction.NORTH, logStackModel.with(BlockModelGenerators.UV_LOCK))
+                .select(Direction.EAST, logStackModel.with(BlockModelGenerators.Y_ROT_90))
+                .select(Direction.SOUTH, logStackModel.with(BlockModelGenerators.Y_ROT_180))
+                .select(Direction.WEST, logStackModel.with(BlockModelGenerators.Y_ROT_270))
+        );
+    }
+
+    private static BlockModelDefinitionGenerator createChairBlockStates(Block chair, ResourceLocation chairId) {
+        MultiVariant chairModel = BlockModelGenerators.plainVariant(chairId);
+        return MultiVariantGenerator.dispatch(chair)
+            .with(PropertyDispatch.initial(LogStackBlock.FACING)
+                .select(Direction.NORTH, chairModel.with(BlockModelGenerators.UV_LOCK).with(BlockModelGenerators.Y_ROT_270))
+                .select(Direction.EAST, chairModel.with(BlockModelGenerators.UV_LOCK))
+                .select(Direction.SOUTH, chairModel.with(BlockModelGenerators.UV_LOCK).with(BlockModelGenerators.Y_ROT_90))
+                .select(Direction.WEST, chairModel.with(BlockModelGenerators.UV_LOCK).with(BlockModelGenerators.Y_ROT_180))
+        );
+    }
+
+    private static BlockModelDefinitionGenerator createArmchairBlockStates(Block armchair, ResourceLocation armchairId) {
+        MultiVariant armchairModel = BlockModelGenerators.plainVariant(armchairId);
+        return MultiVariantGenerator.dispatch(armchair)
+            .with(PropertyDispatch.initial(LogStackBlock.FACING)
+                .select(Direction.NORTH, armchairModel.with(BlockModelGenerators.UV_LOCK).with(BlockModelGenerators.Y_ROT_270))
+                .select(Direction.EAST, armchairModel.with(BlockModelGenerators.UV_LOCK))
+                .select(Direction.SOUTH, armchairModel.with(BlockModelGenerators.UV_LOCK).with(BlockModelGenerators.Y_ROT_90))
+                .select(Direction.WEST, armchairModel.with(BlockModelGenerators.UV_LOCK).with(BlockModelGenerators.Y_ROT_180))
+        );
+    }
+
+    private static BlockModelDefinitionGenerator createTableBlockStates(Block table, ResourceLocation tableId) {
+        MultiVariant tableModel = BlockModelGenerators.plainVariant(tableId);
+        return MultiVariantGenerator.dispatch(table)
+            .with(PropertyDispatch.initial(LogStackBlock.FACING)
+                .select(Direction.NORTH, tableModel.with(BlockModelGenerators.UV_LOCK))
+                .select(Direction.EAST, tableModel.with(BlockModelGenerators.UV_LOCK).with(BlockModelGenerators.Y_ROT_90))
+                .select(Direction.SOUTH, tableModel.with(BlockModelGenerators.UV_LOCK).with(BlockModelGenerators.Y_ROT_180))
+                .select(Direction.WEST, tableModel.with(BlockModelGenerators.UV_LOCK).with(BlockModelGenerators.Y_ROT_270))
+        );
+    }
+
+    private static BlockModelDefinitionGenerator createTableClothBlockStates(Block tableCloth, ResourceLocation tableClothId) {
+        MultiVariant tableClothModel = BlockModelGenerators.plainVariant(tableClothId);
+        return MultiVariantGenerator.dispatch(tableCloth, tableClothModel);
     }
 
     private static ModelTemplate block(String parent, TextureSlot... requiredTextureKeys) {

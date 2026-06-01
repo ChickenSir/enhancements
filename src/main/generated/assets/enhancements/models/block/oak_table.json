@@ -1,0 +1,6 @@
+{
+  "parent": "enhancements:block/table",
+  "textures": {
+    "all": "enhancements:block/reinforced_oak_planks"
+  }
+}
