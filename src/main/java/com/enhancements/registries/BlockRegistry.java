@@ -9,6 +9,7 @@ import com.enhancements.block.TableClothBlock;
 import com.enhancements.block.ArmChairBlock;
 import com.enhancements.block.CenterStairBlock;
 import com.enhancements.block.ChairBlock;
+import com.enhancements.block.ChimneyBlock;
 import com.enhancements.block.LogStackBlock;
 
 import net.minecraft.core.Registry;
@@ -252,6 +253,35 @@ public class BlockRegistry {
     public static final Block BAMBOO_CENTER_STAIR = register(CenterStairBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.BAMBOO_PLANKS).noOcclusion(), "bamboo_center_stair", true);
     public static final Block CRIMSON_CENTER_STAIR = register(CenterStairBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.CRIMSON_PLANKS).noOcclusion(), "crimson_center_stair", true);
     public static final Block WARPED_CENTER_STAIR = register(CenterStairBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.WARPED_PLANKS).noOcclusion(), "warped_center_stair", true);
+
+    // Chimney Set
+    public static final Block STONE_CHIMNEY = register(ChimneyBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).noOcclusion(), "stone_chimney", true);
+    public static final Block COBBLESTONE_CHIMNEY = register(ChimneyBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLESTONE).noOcclusion(), "cobblestone_chimney", true);
+    public static final Block STONE_BRICK_CHIMNEY = register(ChimneyBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICKS).noOcclusion(), "stone_brick_chimney", true);
+    public static final Block SMOOTH_STONE_CHIMNEY = register(ChimneyBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_STONE).noOcclusion(), "smooth_stone_chimney", true);
+    public static final Block GRANITE_CHIMNEY = register(ChimneyBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.GRANITE).noOcclusion(), "granite_chimney", true);
+    public static final Block POLISHED_GRANITE_CHIMNEY = register(ChimneyBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_GRANITE).noOcclusion(), "polished_granite_chimney", true);
+    public static final Block SMOOTH_GRANITE_CHIMNEY = register(ChimneyBlock::new, BlockBehaviour.Properties.ofFullCopy(BlockRegistry.SMOOTH_GRANITE).noOcclusion(), "smooth_granite_chimney", true);
+    public static final Block GRANITE_BRICK_CHIMNEY = register(ChimneyBlock::new, BlockBehaviour.Properties.ofFullCopy(BlockRegistry.GRANITE_BRICKS).noOcclusion(), "granite_brick_chimney", true);
+    public static final Block DIORITE_CHIMNEY = register(ChimneyBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.DIORITE).noOcclusion(), "diorite_chimney", true);
+    public static final Block POLISHED_DIORITE_CHIMNEY = register(ChimneyBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_DIORITE).noOcclusion(), "polished_diorite_chimney", true);
+    public static final Block SMOOTH_DIORITE_CHIMNEY = register(ChimneyBlock::new, BlockBehaviour.Properties.ofFullCopy(BlockRegistry.SMOOTH_DIORITE).noOcclusion(), "smooth_diorite_chimney", true);
+    public static final Block DIORITE_BRICK_CHIMNEY = register(ChimneyBlock::new, BlockBehaviour.Properties.ofFullCopy(BlockRegistry.DIORITE_BRICKS).noOcclusion(), "diorite_brick_chimney", true);
+    public static final Block ANDESITE_CHIMNEY = register(ChimneyBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.ANDESITE).noOcclusion(), "andesite_chimney", true);
+    public static final Block POLISHED_ANDESITE_CHIMNEY = register(ChimneyBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_ANDESITE).noOcclusion(), "polished_andesite_chimney", true);
+    public static final Block SMOOTH_ANDESITE_CHIMNEY = register(ChimneyBlock::new, BlockBehaviour.Properties.ofFullCopy(BlockRegistry.SMOOTH_ANDESITE).noOcclusion(), "smooth_andesite_chimney", true);
+    public static final Block ANDESITE_BRICK_CHIMNEY = register(ChimneyBlock::new, BlockBehaviour.Properties.ofFullCopy(BlockRegistry.ANDESITE_BRICKS).noOcclusion(), "andesite_brick_chimney", true);
+    public static final Block SANDSTONE_CHIMNEY = register(ChimneyBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.SANDSTONE).noOcclusion(), "sandstone_chimney", true);
+    public static final Block SMOOTH_SANDSTONE_CHIMNEY = register(ChimneyBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_SANDSTONE).noOcclusion(), "smooth_sandstone_chimney", true);
+    public static final Block COBBLED_SANDSTONE_CHIMNEY = register(ChimneyBlock::new, BlockBehaviour.Properties.ofFullCopy(BlockRegistry.COBBLED_SANDSTONE).noOcclusion(), "cobbled_sandstone_chimney", true);
+    public static final Block RED_SANDSTONE_CHIMNEY = register(ChimneyBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.RED_SANDSTONE).noOcclusion(), "red_sandstone_chimney", true);
+    public static final Block SMOOTH_RED_SANDSTONE_CHIMNEY = register(ChimneyBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_RED_SANDSTONE).noOcclusion(), "smooth_red_sandstone_chimney", true);
+    public static final Block COBBLED_RED_SANDSTONE_CHIMNEY = register(ChimneyBlock::new, BlockBehaviour.Properties.ofFullCopy(BlockRegistry.COBBLED_RED_SANDSTONE).noOcclusion(), "cobbled_red_sandstone_chimney", true);
+    public static final Block DEEPSLATE_CHIMNEY = register(ChimneyBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE).noOcclusion(), "deepslate_chimney", true);
+    public static final Block COBBLED_DEEPSLATE_CHIMNEY = register(ChimneyBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLED_DEEPSLATE).noOcclusion(), "cobbled_deepslate_chimney", true);
+    public static final Block POLISHED_DEEPSLATE_CHIMNEY = register(ChimneyBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_DEEPSLATE).noOcclusion(), "polished_deepslate_chimney", true);
+    public static final Block DEEPSLATE_BRICK_CHIMNEY = register(ChimneyBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_BRICKS).noOcclusion(), "deepslate_brick_chimney", true);
+    public static final Block DEEPSLATE_TILE_CHIMNEY = register(ChimneyBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_TILES).noOcclusion(), "deepslate_tile_chimney", true);
     
     public static Block register(Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties settings, String name, boolean registerItem) {
         // Create block resource key

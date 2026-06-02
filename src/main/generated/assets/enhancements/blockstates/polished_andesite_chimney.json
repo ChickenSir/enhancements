@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "section=bottom": {
+      "model": "enhancements:block/polished_andesite_chimney_bottom"
+    },
+    "section=top": {
+      "model": "enhancements:block/polished_andesite_chimney"
+    }
+  }
+}

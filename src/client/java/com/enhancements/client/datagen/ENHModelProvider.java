@@ -219,6 +219,35 @@ public class ENHModelProvider extends FabricModelProvider {
         ENHCustomModelGenerator.registerTableCloth(blockStateModelGenerator, BlockRegistry.GRAY_TABLE_CLOTH, "gray_table_cloth");
         ENHCustomModelGenerator.registerTableCloth(blockStateModelGenerator, BlockRegistry.BLACK_TABLE_CLOTH, "black_table_cloth");
         ENHCustomModelGenerator.registerTableCloth(blockStateModelGenerator, BlockRegistry.CRAFTING_TABLE_CLOTH, "crafting_table_cloth");
+
+        // Chimney Set
+        ENHCustomModelGenerator.registerChimney(blockStateModelGenerator, BlockRegistry.STONE_CHIMNEY, Blocks.STONE);
+        ENHCustomModelGenerator.registerChimney(blockStateModelGenerator, BlockRegistry.COBBLESTONE_CHIMNEY, Blocks.COBBLESTONE);
+        ENHCustomModelGenerator.registerChimney(blockStateModelGenerator, BlockRegistry.STONE_BRICK_CHIMNEY, Blocks.STONE_BRICKS);
+        ENHCustomModelGenerator.registerChimney(blockStateModelGenerator, BlockRegistry.SMOOTH_STONE_CHIMNEY, Blocks.SMOOTH_STONE);
+        ENHCustomModelGenerator.registerChimney(blockStateModelGenerator, BlockRegistry.GRANITE_CHIMNEY, Blocks.GRANITE);
+        ENHCustomModelGenerator.registerChimney(blockStateModelGenerator, BlockRegistry.POLISHED_GRANITE_CHIMNEY, Blocks.POLISHED_GRANITE);
+        ENHCustomModelGenerator.registerChimney(blockStateModelGenerator, BlockRegistry.SMOOTH_GRANITE_CHIMNEY, BlockRegistry.SMOOTH_GRANITE);
+        ENHCustomModelGenerator.registerChimney(blockStateModelGenerator, BlockRegistry.GRANITE_BRICK_CHIMNEY, BlockRegistry.GRANITE_BRICKS);
+        ENHCustomModelGenerator.registerChimney(blockStateModelGenerator, BlockRegistry.DIORITE_CHIMNEY, Blocks.DIORITE);
+        ENHCustomModelGenerator.registerChimney(blockStateModelGenerator, BlockRegistry.POLISHED_DIORITE_CHIMNEY, Blocks.POLISHED_DIORITE);
+        ENHCustomModelGenerator.registerChimney(blockStateModelGenerator, BlockRegistry.SMOOTH_DIORITE_CHIMNEY, BlockRegistry.SMOOTH_DIORITE);
+        ENHCustomModelGenerator.registerChimney(blockStateModelGenerator, BlockRegistry.DIORITE_BRICK_CHIMNEY, BlockRegistry.DIORITE_BRICKS);
+        ENHCustomModelGenerator.registerChimney(blockStateModelGenerator, BlockRegistry.ANDESITE_CHIMNEY, Blocks.ANDESITE);
+        ENHCustomModelGenerator.registerChimney(blockStateModelGenerator, BlockRegistry.POLISHED_ANDESITE_CHIMNEY, Blocks.POLISHED_ANDESITE);
+        ENHCustomModelGenerator.registerChimney(blockStateModelGenerator, BlockRegistry.SMOOTH_ANDESITE_CHIMNEY, BlockRegistry.SMOOTH_ANDESITE);
+        ENHCustomModelGenerator.registerChimney(blockStateModelGenerator, BlockRegistry.ANDESITE_BRICK_CHIMNEY, BlockRegistry.ANDESITE_BRICKS);
+        ENHCustomModelGenerator.registerChimney(blockStateModelGenerator, BlockRegistry.SANDSTONE_CHIMNEY, Blocks.SANDSTONE);
+        ENHCustomModelGenerator.registerChimney(blockStateModelGenerator, BlockRegistry.SMOOTH_SANDSTONE_CHIMNEY, "sandstone_top");
+        ENHCustomModelGenerator.registerChimney(blockStateModelGenerator, BlockRegistry.COBBLED_SANDSTONE_CHIMNEY, BlockRegistry.COBBLED_SANDSTONE);
+        ENHCustomModelGenerator.registerChimney(blockStateModelGenerator, BlockRegistry.RED_SANDSTONE_CHIMNEY, Blocks.RED_SANDSTONE);
+        ENHCustomModelGenerator.registerChimney(blockStateModelGenerator, BlockRegistry.SMOOTH_RED_SANDSTONE_CHIMNEY, "red_sandstone_top");
+        ENHCustomModelGenerator.registerChimney(blockStateModelGenerator, BlockRegistry.COBBLED_RED_SANDSTONE_CHIMNEY, BlockRegistry.COBBLED_RED_SANDSTONE);
+        ENHCustomModelGenerator.registerChimney(blockStateModelGenerator, BlockRegistry.DEEPSLATE_CHIMNEY, Blocks.DEEPSLATE);
+        ENHCustomModelGenerator.registerChimney(blockStateModelGenerator, BlockRegistry.COBBLED_DEEPSLATE_CHIMNEY, Blocks.COBBLED_DEEPSLATE);
+        ENHCustomModelGenerator.registerChimney(blockStateModelGenerator, BlockRegistry.POLISHED_DEEPSLATE_CHIMNEY, Blocks.POLISHED_DEEPSLATE);
+        ENHCustomModelGenerator.registerChimney(blockStateModelGenerator, BlockRegistry.DEEPSLATE_BRICK_CHIMNEY, Blocks.DEEPSLATE_BRICKS);
+        ENHCustomModelGenerator.registerChimney(blockStateModelGenerator, BlockRegistry.DEEPSLATE_TILE_CHIMNEY, Blocks.DEEPSLATE_TILES);
     }
 
     @Override

@@ -1,0 +1,6 @@
+{
+  "parent": "enhancements:block/chimney",
+  "textures": {
+    "all": "enhancements:block/smooth_andesite"
+  }
+}

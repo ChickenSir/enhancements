@@ -1,0 +1,6 @@
+{
+  "parent": "enhancements:block/chimney",
+  "textures": {
+    "all": "minecraft:block/cobblestone"
+  }
+}

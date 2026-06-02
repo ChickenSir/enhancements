@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "section=bottom": {
+      "model": "enhancements:block/granite_brick_chimney_bottom"
+    },
+    "section=top": {
+      "model": "enhancements:block/granite_brick_chimney"
+    }
+  }
+}

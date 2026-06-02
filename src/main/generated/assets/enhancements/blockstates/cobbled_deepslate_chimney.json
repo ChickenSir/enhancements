@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "section=bottom": {
+      "model": "enhancements:block/cobbled_deepslate_chimney_bottom"
+    },
+    "section=top": {
+      "model": "enhancements:block/cobbled_deepslate_chimney"
+    }
+  }
+}

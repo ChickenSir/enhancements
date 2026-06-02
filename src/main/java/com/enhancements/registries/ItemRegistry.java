@@ -261,6 +261,35 @@ public class ItemRegistry {
             itemGroup.accept(BlockRegistry.BLACK_TABLE_CLOTH.asItem());
             itemGroup.accept(BlockRegistry.CRAFTING_TABLE_CLOTH.asItem());
 
+            // Chimeny Set
+            itemGroup.accept(BlockRegistry.STONE_CHIMNEY.asItem());
+            itemGroup.accept(BlockRegistry.COBBLESTONE_CHIMNEY.asItem());
+            itemGroup.accept(BlockRegistry.STONE_BRICK_CHIMNEY.asItem());
+            itemGroup.accept(BlockRegistry.SMOOTH_STONE_CHIMNEY.asItem());
+            itemGroup.accept(BlockRegistry.GRANITE_CHIMNEY.asItem());
+            itemGroup.accept(BlockRegistry.POLISHED_GRANITE_CHIMNEY.asItem());
+            itemGroup.accept(BlockRegistry.SMOOTH_GRANITE_CHIMNEY.asItem());
+            itemGroup.accept(BlockRegistry.GRANITE_BRICK_CHIMNEY.asItem());
+            itemGroup.accept(BlockRegistry.DIORITE_CHIMNEY.asItem());
+            itemGroup.accept(BlockRegistry.POLISHED_DIORITE_CHIMNEY.asItem());
+            itemGroup.accept(BlockRegistry.SMOOTH_DIORITE_CHIMNEY.asItem());
+            itemGroup.accept(BlockRegistry.DIORITE_BRICK_CHIMNEY.asItem());
+            itemGroup.accept(BlockRegistry.ANDESITE_CHIMNEY.asItem());
+            itemGroup.accept(BlockRegistry.POLISHED_ANDESITE_CHIMNEY.asItem());
+            itemGroup.accept(BlockRegistry.SMOOTH_ANDESITE_CHIMNEY.asItem());
+            itemGroup.accept(BlockRegistry.ANDESITE_BRICK_CHIMNEY.asItem());
+            itemGroup.accept(BlockRegistry.SANDSTONE_CHIMNEY.asItem());
+            itemGroup.accept(BlockRegistry.SMOOTH_SANDSTONE_CHIMNEY.asItem());
+            itemGroup.accept(BlockRegistry.COBBLED_SANDSTONE_CHIMNEY.asItem());
+            itemGroup.accept(BlockRegistry.RED_SANDSTONE_CHIMNEY.asItem());
+            itemGroup.accept(BlockRegistry.SMOOTH_RED_SANDSTONE_CHIMNEY.asItem());
+            itemGroup.accept(BlockRegistry.COBBLED_RED_SANDSTONE_CHIMNEY.asItem());
+            itemGroup.accept(BlockRegistry.DEEPSLATE_CHIMNEY.asItem());
+            itemGroup.accept(BlockRegistry.COBBLED_DEEPSLATE_CHIMNEY.asItem());
+            itemGroup.accept(BlockRegistry.POLISHED_DEEPSLATE_CHIMNEY.asItem());
+            itemGroup.accept(BlockRegistry.DEEPSLATE_BRICK_CHIMNEY.asItem());
+            itemGroup.accept(BlockRegistry.DEEPSLATE_TILE_CHIMNEY.asItem());
+
             // Hammer Set
             itemGroup.accept(WOODEN_HAMMER);
             itemGroup.accept(STONE_HAMMER);

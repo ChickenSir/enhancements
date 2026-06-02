@@ -2,17 +2,19 @@ package com.enhancements.client.datagen;
 
 import java.util.Optional;
 
-import org.apache.logging.log4j.core.config.Property;
-
 import com.enhancements.Enhancements;
+import com.enhancements.block.ArmChairBlock;
 import com.enhancements.block.CenterStairBlock;
+import com.enhancements.block.ChairBlock;
+import com.enhancements.block.ChimneyBlock;
 import com.enhancements.block.LogStackBlock;
+import com.enhancements.block.TableBlock;
 import com.enhancements.property.CenterStairShape;
+import com.enhancements.property.ChimneySection;
 
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.MultiVariant;
 import net.minecraft.client.data.models.blockstates.BlockModelDefinitionGenerator;
-import net.minecraft.client.data.models.blockstates.MultiPartGenerator;
 import net.minecraft.client.data.models.blockstates.MultiVariantGenerator;
 import net.minecraft.client.data.models.blockstates.PropertyDispatch;
 import net.minecraft.client.data.models.model.ModelTemplate;
@@ -41,6 +43,10 @@ public class ENHCustomModelGenerator {
     // Table Set
     public static final ModelTemplate TABLE = block("table", TextureSlot.ALL);
     public static final ModelTemplate TABLE_CLOTH = block("table_cloth", TextureSlot.ALL);
+
+    // Chimney Set
+    public static final ModelTemplate CHIMNEY = block("chimney", TextureSlot.ALL);
+    public static final ModelTemplate CHIMNEY_BOTTOM = block("chimney_bottom", "_bottom", TextureSlot.ALL);
     
     public static void registerCenterStair(BlockModelGenerators generator, Block centerStairBlock, Block baseBlock) {
         ResourceLocation centerStairModel = CENTER_STAIR.create(centerStairBlock, TextureMapping.cube(baseBlock), generator.modelOutput);
@@ -94,6 +100,21 @@ public class ENHCustomModelGenerator {
         ResourceLocation tableclothModel = TABLE_CLOTH.create(tableclothBlock, TextureMapping.cube(baseTexture), generator.modelOutput);
         generator.blockStateOutput.accept(createTableClothBlockStates(tableclothBlock, tableclothModel));
         generator.registerSimpleItemModel(tableclothBlock, tableclothModel);
+    }
+
+    public static void registerChimney(BlockModelGenerators generator, Block chimneyBlock, Block baseBlock) {
+        ResourceLocation chimneyModel = CHIMNEY.create(chimneyBlock, TextureMapping.cube(baseBlock), generator.modelOutput);
+        ResourceLocation chimneyBottomModel = CHIMNEY_BOTTOM.create(chimneyBlock, TextureMapping.cube(baseBlock), generator.modelOutput);
+        generator.blockStateOutput.accept(createChimneyBlockStates(chimneyBlock, chimneyModel, chimneyBottomModel));
+        generator.registerSimpleItemModel(chimneyBlock, chimneyModel);
+    }
+
+    public static void registerChimney(BlockModelGenerators generator, Block chimneyBlock, String texture) {
+        ResourceLocation baseTexture = ResourceLocation.withDefaultNamespace("block/" + texture);
+        ResourceLocation chimneyModel = CHIMNEY.create(chimneyBlock, TextureMapping.cube(baseTexture), generator.modelOutput);
+        ResourceLocation chimneyBottomModel = CHIMNEY_BOTTOM.create(chimneyBlock, TextureMapping.cube(baseTexture), generator.modelOutput);
+        generator.blockStateOutput.accept(createChimneyBlockStates(chimneyBlock, chimneyModel, chimneyBottomModel));
+        generator.registerSimpleItemModel(chimneyBlock, chimneyModel);
     }
 
     private static BlockModelDefinitionGenerator createCenterStairBlockStates(Block centerStair, ResourceLocation centerStairId, ResourceLocation centerStairFrontId, ResourceLocation centerStairBackId, ResourceLocation centerStairCrossId) {
@@ -152,7 +173,7 @@ public class ENHCustomModelGenerator {
     private static BlockModelDefinitionGenerator createChairBlockStates(Block chair, ResourceLocation chairId) {
         MultiVariant chairModel = BlockModelGenerators.plainVariant(chairId);
         return MultiVariantGenerator.dispatch(chair)
-            .with(PropertyDispatch.initial(LogStackBlock.FACING)
+            .with(PropertyDispatch.initial(ChairBlock.FACING)
                 .select(Direction.NORTH, chairModel.with(BlockModelGenerators.UV_LOCK).with(BlockModelGenerators.Y_ROT_270))
                 .select(Direction.EAST, chairModel.with(BlockModelGenerators.UV_LOCK))
                 .select(Direction.SOUTH, chairModel.with(BlockModelGenerators.UV_LOCK).with(BlockModelGenerators.Y_ROT_90))
@@ -163,7 +184,7 @@ public class ENHCustomModelGenerator {
     private static BlockModelDefinitionGenerator createArmchairBlockStates(Block armchair, ResourceLocation armchairId) {
         MultiVariant armchairModel = BlockModelGenerators.plainVariant(armchairId);
         return MultiVariantGenerator.dispatch(armchair)
-            .with(PropertyDispatch.initial(LogStackBlock.FACING)
+            .with(PropertyDispatch.initial(ArmChairBlock.FACING)
                 .select(Direction.NORTH, armchairModel.with(BlockModelGenerators.UV_LOCK).with(BlockModelGenerators.Y_ROT_270))
                 .select(Direction.EAST, armchairModel.with(BlockModelGenerators.UV_LOCK))
                 .select(Direction.SOUTH, armchairModel.with(BlockModelGenerators.UV_LOCK).with(BlockModelGenerators.Y_ROT_90))
@@ -174,7 +195,7 @@ public class ENHCustomModelGenerator {
     private static BlockModelDefinitionGenerator createTableBlockStates(Block table, ResourceLocation tableId) {
         MultiVariant tableModel = BlockModelGenerators.plainVariant(tableId);
         return MultiVariantGenerator.dispatch(table)
-            .with(PropertyDispatch.initial(LogStackBlock.FACING)
+            .with(PropertyDispatch.initial(TableBlock.FACING)
                 .select(Direction.NORTH, tableModel.with(BlockModelGenerators.UV_LOCK))
                 .select(Direction.EAST, tableModel.with(BlockModelGenerators.UV_LOCK).with(BlockModelGenerators.Y_ROT_90))
                 .select(Direction.SOUTH, tableModel.with(BlockModelGenerators.UV_LOCK).with(BlockModelGenerators.Y_ROT_180))
@@ -185,6 +206,16 @@ public class ENHCustomModelGenerator {
     private static BlockModelDefinitionGenerator createTableClothBlockStates(Block tableCloth, ResourceLocation tableClothId) {
         MultiVariant tableClothModel = BlockModelGenerators.plainVariant(tableClothId);
         return MultiVariantGenerator.dispatch(tableCloth, tableClothModel);
+    }
+
+    private static BlockModelDefinitionGenerator createChimneyBlockStates(Block chimney, ResourceLocation chimneyId, ResourceLocation chimneyBottomId) {
+        MultiVariant chimneyModel = BlockModelGenerators.plainVariant(chimneyId);
+        MultiVariant chimneyBottomModel = BlockModelGenerators.plainVariant(chimneyBottomId);
+        return MultiVariantGenerator.dispatch(chimney)
+            .with(PropertyDispatch.initial(ChimneyBlock.SECTION)
+                .select(ChimneySection.TOP, chimneyModel)
+                .select(ChimneySection.BOTTOM, chimneyBottomModel)
+        );
     }
 
     private static ModelTemplate block(String parent, TextureSlot... requiredTextureKeys) {

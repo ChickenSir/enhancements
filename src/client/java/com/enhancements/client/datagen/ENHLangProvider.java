@@ -222,6 +222,35 @@ public class ENHLangProvider extends FabricLanguageProvider {
         translationBuilder.add("item.enhancements.black_table_cloth", "Black Table Cloth");
         translationBuilder.add("item.enhancements.crafting_table_cloth", "Crafting Table Cloth");
 
+        // Chimney Set
+        translationBuilder.add("item.enhancements.stone_chimney", "Stone Chimney");
+        translationBuilder.add("item.enhancements.cobblestone_chimney", "Cobblestone Chimney");
+        translationBuilder.add("item.enhancements.stone_brick_chimney", "Stone Brick Chimney");
+        translationBuilder.add("item.enhancements.smooth_stone_chimney", "Smooth Stone Chimney");
+        translationBuilder.add("item.enhancements.granite_chimney", "Granite Chimney");
+        translationBuilder.add("item.enhancements.polished_granite_chimney", "Polished Granite Chimney");
+        translationBuilder.add("item.enhancements.smooth_granite_chimney", "Smooth Granite Chimney");
+        translationBuilder.add("item.enhancements.granite_brick_chimney", "Granite Brick Chimney");
+        translationBuilder.add("item.enhancements.diorite_chimney", "Diorite Chimney");
+        translationBuilder.add("item.enhancements.polished_diorite_chimney", "Polished Diorite Chimney");
+        translationBuilder.add("item.enhancements.smooth_diorite_chimney", "Smooth Diorite Chimney");
+        translationBuilder.add("item.enhancements.diorite_brick_chimney", "Diorite Brick Chimney");
+        translationBuilder.add("item.enhancements.andesite_chimney", "Andesite Chimney");
+        translationBuilder.add("item.enhancements.polished_andesite_chimney", "Polished Andesite Chimney");
+        translationBuilder.add("item.enhancements.smooth_andesite_chimney", "Smooth Andesite Chimney");
+        translationBuilder.add("item.enhancements.andesite_brick_chimney", "Andesite Brick Chimney");
+        translationBuilder.add("item.enhancements.sandstone_chimney", "Sandstone Chimney");
+        translationBuilder.add("item.enhancements.smooth_sandstone_chimney", "Smooth Sandstone Chimney");
+        translationBuilder.add("item.enhancements.cobbled_sandstone_chimney", "Cobbled Sandstone Chimney");
+        translationBuilder.add("item.enhancements.red_sandstone_chimney", "Red Sandstone Chimney");
+        translationBuilder.add("item.enhancements.smooth_red_sandstone_chimney", "Smooth Red Sandstone Chimney");
+        translationBuilder.add("item.enhancements.cobbled_red_sandstone_chimney", "Cobbled Red Sandstone Chimney");
+        translationBuilder.add("item.enhancements.deepslate_chimney", "Deepslate Chimney");
+        translationBuilder.add("item.enhancements.cobbled_deepslate_chimney", "Cobbled Deepslate Chimney");
+        translationBuilder.add("item.enhancements.polished_deepslate_chimney", "Polished Deepslate Chimney");
+        translationBuilder.add("item.enhancements.deepslate_brick_chimney", "Deepslate Brick Chimney");
+        translationBuilder.add("item.enhancements.deepslate_tile_chimney", "Deepslate Tile Chimney");
+
         // Hammer Set
         translationBuilder.add("item.enhancements.wooden_hammer", "Wooden Hammer");
         translationBuilder.add("item.enhancements.stone_hammer", "Stone Hammer");

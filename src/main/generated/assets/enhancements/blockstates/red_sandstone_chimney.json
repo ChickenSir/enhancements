@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "section=bottom": {
+      "model": "enhancements:block/red_sandstone_chimney_bottom"
+    },
+    "section=top": {
+      "model": "enhancements:block/red_sandstone_chimney"
+    }
+  }
+}
