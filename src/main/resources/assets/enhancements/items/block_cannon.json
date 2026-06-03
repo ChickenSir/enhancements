@@ -1,0 +1,23 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "cases": [
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "enhancements:item/block_cannon_inventory"
+        },
+        "when": [
+          "gui",
+          "ground",
+          "fixed"
+        ]
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "enhancements:item/block_cannon"
+    },
+    "property": "minecraft:display_context"
+  }
+}

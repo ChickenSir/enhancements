@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.enhancements.component.ENHDataComponents;
 import com.enhancements.registries.BlockRegistry;
 import com.enhancements.registries.ItemRegistry;
 
@@ -22,5 +23,9 @@ public class Enhancements implements ModInitializer {
 		// Register Items
 		ItemRegistry.registerItems();
 		LOGGER.info("Registering Items!");
+
+		// Register Components
+		ENHDataComponents.registerComponents();
+		LOGGER.info("Registering Components!");
 	}
 }

@@ -258,6 +258,9 @@ public class ENHLangProvider extends FabricLanguageProvider {
         translationBuilder.add("item.enhancements.golden_hammer", "Golden Hammer");
         translationBuilder.add("item.enhancements.diamond_hammer", "Diamond Hammer");
         translationBuilder.add("item.enhancements.netherite_hammer", "Netherite Hammer");
+
+        // Block Cannon Set
+        translationBuilder.add("item.enhancements.block_cannon", "Block Cannon");
     }
     
 }

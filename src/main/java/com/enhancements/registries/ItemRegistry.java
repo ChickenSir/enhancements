@@ -3,6 +3,7 @@ package com.enhancements.registries;
 import java.util.function.Function;
 
 import com.enhancements.Enhancements;
+import com.enhancements.item.BlockCannonItem;
 import com.enhancements.item.CardboardBoxItem;
 import com.enhancements.item.HammerItem;
 
@@ -34,6 +35,9 @@ public class ItemRegistry {
     public static final Item GOLDEN_HAMMER = register((settings) -> new HammerItem(ToolMaterial.GOLD, 6.0f, -3.0f, settings), new Item.Properties(), "golden_hammer");
     public static final Item DIAMOND_HAMMER = register((settings) -> new HammerItem(ToolMaterial.DIAMOND, 5.0f, -3.0f, settings), new Item.Properties(), "diamond_hammer");
     public static final Item NETHERITE_HAMMER = register((settings) -> new HammerItem(ToolMaterial.NETHERITE, 5.0f, -3.0f, settings), new Item.Properties().fireResistant(), "netherite_hammer");
+
+    // Block Cannon Set
+    public static final Item BLOCK_CANNON = register((settings) -> new BlockCannonItem(settings), new Item.Properties(), "block_cannon");
 
     // Cardboard Set
     public static final Item CARDBOARD_BOX = register(CardboardBoxItem::new, new Item.Properties(), "cardboard_box");
@@ -297,6 +301,9 @@ public class ItemRegistry {
             itemGroup.accept(GOLDEN_HAMMER);
             itemGroup.accept(DIAMOND_HAMMER);
             itemGroup.accept(NETHERITE_HAMMER);
+
+            // Block Cannon Set
+            itemGroup.accept(BLOCK_CANNON);
         });
     }
 }
