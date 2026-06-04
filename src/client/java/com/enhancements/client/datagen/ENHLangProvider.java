@@ -261,6 +261,9 @@ public class ENHLangProvider extends FabricLanguageProvider {
 
         // Block Cannon Set
         translationBuilder.add("item.enhancements.block_cannon", "Block Cannon");
+
+        // Cardboard Set
+        translationBuilder.add("item.enhancements.cardboard_box", "Cardboard Box");
     }
     
 }

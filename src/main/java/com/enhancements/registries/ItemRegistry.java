@@ -304,6 +304,9 @@ public class ItemRegistry {
 
             // Block Cannon Set
             itemGroup.accept(BLOCK_CANNON);
+
+            // Cardboard Set
+            itemGroup.accept(CARDBOARD_BOX);
         });
     }
 }
