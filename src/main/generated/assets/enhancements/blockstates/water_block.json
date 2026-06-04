@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "enhancements:block/water_block"
+    }
+  }
+}

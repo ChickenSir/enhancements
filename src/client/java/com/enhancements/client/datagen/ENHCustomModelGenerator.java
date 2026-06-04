@@ -18,6 +18,7 @@ import net.minecraft.client.data.models.blockstates.BlockModelDefinitionGenerato
 import net.minecraft.client.data.models.blockstates.MultiVariantGenerator;
 import net.minecraft.client.data.models.blockstates.PropertyDispatch;
 import net.minecraft.client.data.models.model.ModelTemplate;
+import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.client.data.models.model.TextureMapping;
 import net.minecraft.client.data.models.model.TextureSlot;
 import net.minecraft.core.Direction;
@@ -115,6 +116,13 @@ public class ENHCustomModelGenerator {
         ResourceLocation chimneyBottomModel = CHIMNEY_BOTTOM.create(chimneyBlock, TextureMapping.cube(baseTexture), generator.modelOutput);
         generator.blockStateOutput.accept(createChimneyBlockStates(chimneyBlock, chimneyModel, chimneyBottomModel));
         generator.registerSimpleItemModel(chimneyBlock, chimneyModel);
+    }
+
+    public static void registerBlock(BlockModelGenerators generator, Block block, String texture) {
+        ResourceLocation baseTexture = ResourceLocation.withDefaultNamespace("block/" + texture);
+        ResourceLocation blockModel = ModelTemplates.CUBE_ALL.create(block, TextureMapping.cube(baseTexture), generator.modelOutput);
+        generator.blockStateOutput.accept(createBlockBlockStates(block, blockModel));
+        generator.registerSimpleItemModel(block, blockModel);
     }
 
     private static BlockModelDefinitionGenerator createCenterStairBlockStates(Block centerStair, ResourceLocation centerStairId, ResourceLocation centerStairFrontId, ResourceLocation centerStairBackId, ResourceLocation centerStairCrossId) {
@@ -216,6 +224,11 @@ public class ENHCustomModelGenerator {
                 .select(ChimneySection.TOP, chimneyModel)
                 .select(ChimneySection.BOTTOM, chimneyBottomModel)
         );
+    }
+
+    private static BlockModelDefinitionGenerator createBlockBlockStates(Block block, ResourceLocation blockId) {
+        MultiVariant blockModel = BlockModelGenerators.plainVariant(blockId);
+        return MultiVariantGenerator.dispatch(block, blockModel);
     }
 
     private static ModelTemplate block(String parent, TextureSlot... requiredTextureKeys) {

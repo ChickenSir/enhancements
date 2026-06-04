@@ -4,6 +4,9 @@ import com.enhancements.registries.BlockRegistry;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
+import net.fabricmc.fabric.impl.client.rendering.ColorProviderRegistryImpl;
+import net.minecraft.client.renderer.BiomeColors;
 import net.minecraft.client.renderer.RenderType;
 
 public class EnhancementsClient implements ClientModInitializer {
@@ -28,5 +31,7 @@ public class EnhancementsClient implements ClientModInitializer {
 		BlockRenderLayerMap.INSTANCE.putBlock(BlockRegistry.GRAY_TABLE_CLOTH, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(BlockRegistry.BLACK_TABLE_CLOTH, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(BlockRegistry.CRAFTING_TABLE_CLOTH, RenderType.cutout());
+
+		ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> BiomeColors.getAverageWaterColor(view, pos), BlockRegistry.WATER_BLOCK);
 	}
 }

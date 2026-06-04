@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 import com.enhancements.component.ENHDataComponents;
 import com.enhancements.registries.BlockRegistry;
 import com.enhancements.registries.ItemRegistry;
+import com.enhancements.registries.TagRegistry;
 
 public class Enhancements implements ModInitializer {
 	public static final String modID = "enhancements";
@@ -27,5 +28,9 @@ public class Enhancements implements ModInitializer {
 		// Register Components
 		ENHDataComponents.registerComponents();
 		LOGGER.info("Registering Components!");
+
+		// Register Tags
+		TagRegistry.createTags();
+		LOGGER.info("Registering Tags!");
 	}
 }

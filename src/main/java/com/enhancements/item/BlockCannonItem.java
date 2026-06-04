@@ -2,6 +2,7 @@ package com.enhancements.item;
 
 import com.enhancements.component.ENHDataComponents;
 import com.enhancements.projectile.BlockCannonProjectile;
+import com.enhancements.registries.TagRegistry;
 
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
@@ -18,6 +19,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ItemUseAnimation;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ToolMaterial;
 import net.minecraft.world.level.Level;
 
@@ -37,11 +39,16 @@ public class BlockCannonItem extends Item {
 
             // Player has item in off hand
             if (!offhandItem.isEmpty()) {
-                if (offhandItem.getItem() instanceof BlockItem) {
+                if (offhandItem.getItem() instanceof BlockItem || offhandItem.is(TagRegistry.BLOCK_CANNON_ITEM_AMMO)) {
                     if (!blockCannon.has(ENHDataComponents.BLOCK_CANNON_AMMO)) {
                         // Set ammo component to off hand item, remove from inventory
                         blockCannon.set(ENHDataComponents.BLOCK_CANNON_AMMO, offhandItem);
                         player.getInventory().removeItem(offhandItem);
+                        
+                        if (offhandItem.is(TagRegistry.BLOCK_CANNON_ITEM_AMMO)) {
+                            // Put empty bucket in off hand
+                            player.setItemInHand(InteractionHand.OFF_HAND, new ItemStack(Items.BUCKET));
+                        }
 
                         // Play loading sound
                         level.playSound(null, player.getOnPos().above(), SoundEvents.ITEM_FRAME_ADD_ITEM, SoundSource.PLAYERS, 1, 1);

@@ -282,6 +282,11 @@ public class BlockRegistry {
     public static final Block POLISHED_DEEPSLATE_CHIMNEY = register(ChimneyBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_DEEPSLATE).noOcclusion(), "polished_deepslate_chimney", true);
     public static final Block DEEPSLATE_BRICK_CHIMNEY = register(ChimneyBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_BRICKS).noOcclusion(), "deepslate_brick_chimney", true);
     public static final Block DEEPSLATE_TILE_CHIMNEY = register(ChimneyBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_TILES).noOcclusion(), "deepslate_tile_chimney", true);
+
+    // Block Cannon Ammo Set
+    public static final Block WATER_BLOCK = register(Block::new, BlockBehaviour.Properties.of(), "water_block", true);
+    public static final Block LAVA_BLOCK = register(Block::new, BlockBehaviour.Properties.of(), "lava_block", true);
+    public static final Block POWDERED_SNOW_BLOCK = register(Block::new, BlockBehaviour.Properties.of(), "powdered_snow_block", true);
     
     public static Block register(Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties settings, String name, boolean registerItem) {
         // Create block resource key

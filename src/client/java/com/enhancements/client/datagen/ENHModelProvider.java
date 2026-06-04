@@ -248,6 +248,11 @@ public class ENHModelProvider extends FabricModelProvider {
         ENHCustomModelGenerator.registerChimney(blockStateModelGenerator, BlockRegistry.POLISHED_DEEPSLATE_CHIMNEY, Blocks.POLISHED_DEEPSLATE);
         ENHCustomModelGenerator.registerChimney(blockStateModelGenerator, BlockRegistry.DEEPSLATE_BRICK_CHIMNEY, Blocks.DEEPSLATE_BRICKS);
         ENHCustomModelGenerator.registerChimney(blockStateModelGenerator, BlockRegistry.DEEPSLATE_TILE_CHIMNEY, Blocks.DEEPSLATE_TILES);
+
+        // Block Cannon Ammo Set
+        ENHCustomModelGenerator.registerBlock(blockStateModelGenerator, BlockRegistry.WATER_BLOCK, "water_still");
+        ENHCustomModelGenerator.registerBlock(blockStateModelGenerator, BlockRegistry.LAVA_BLOCK, "lava_still");
+        ENHCustomModelGenerator.registerBlock(blockStateModelGenerator, BlockRegistry.POWDERED_SNOW_BLOCK, "powder_snow");
     }
 
     @Override
