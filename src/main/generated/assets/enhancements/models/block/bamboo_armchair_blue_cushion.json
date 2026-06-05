@@ -1,0 +1,7 @@
+{
+  "parent": "enhancements:block/armchair_cushion",
+  "textures": {
+    "all": "enhancements:block/reinforced_bamboo_planks",
+    "wool": "minecraft:block/blue_wool"
+  }
+}

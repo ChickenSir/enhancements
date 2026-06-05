@@ -1,21 +1,325 @@
 {
   "variants": {
-    "facing=east": {
+    "cushion=black,facing=east": {
+      "model": "enhancements:block/warped_armchair_black_cushion",
+      "uvlock": true
+    },
+    "cushion=black,facing=north": {
+      "model": "enhancements:block/warped_armchair_black_cushion",
+      "uvlock": true,
+      "y": 270
+    },
+    "cushion=black,facing=south": {
+      "model": "enhancements:block/warped_armchair_black_cushion",
+      "uvlock": true,
+      "y": 90
+    },
+    "cushion=black,facing=west": {
+      "model": "enhancements:block/warped_armchair_black_cushion",
+      "uvlock": true,
+      "y": 180
+    },
+    "cushion=blue,facing=east": {
+      "model": "enhancements:block/warped_armchair_blue_cushion",
+      "uvlock": true
+    },
+    "cushion=blue,facing=north": {
+      "model": "enhancements:block/warped_armchair_blue_cushion",
+      "uvlock": true,
+      "y": 270
+    },
+    "cushion=blue,facing=south": {
+      "model": "enhancements:block/warped_armchair_blue_cushion",
+      "uvlock": true,
+      "y": 90
+    },
+    "cushion=blue,facing=west": {
+      "model": "enhancements:block/warped_armchair_blue_cushion",
+      "uvlock": true,
+      "y": 180
+    },
+    "cushion=brown,facing=east": {
+      "model": "enhancements:block/warped_armchair_brown_cushion",
+      "uvlock": true
+    },
+    "cushion=brown,facing=north": {
+      "model": "enhancements:block/warped_armchair_brown_cushion",
+      "uvlock": true,
+      "y": 270
+    },
+    "cushion=brown,facing=south": {
+      "model": "enhancements:block/warped_armchair_brown_cushion",
+      "uvlock": true,
+      "y": 90
+    },
+    "cushion=brown,facing=west": {
+      "model": "enhancements:block/warped_armchair_brown_cushion",
+      "uvlock": true,
+      "y": 180
+    },
+    "cushion=cyan,facing=east": {
+      "model": "enhancements:block/warped_armchair_cyan_cushion",
+      "uvlock": true
+    },
+    "cushion=cyan,facing=north": {
+      "model": "enhancements:block/warped_armchair_cyan_cushion",
+      "uvlock": true,
+      "y": 270
+    },
+    "cushion=cyan,facing=south": {
+      "model": "enhancements:block/warped_armchair_cyan_cushion",
+      "uvlock": true,
+      "y": 90
+    },
+    "cushion=cyan,facing=west": {
+      "model": "enhancements:block/warped_armchair_cyan_cushion",
+      "uvlock": true,
+      "y": 180
+    },
+    "cushion=gray,facing=east": {
+      "model": "enhancements:block/warped_armchair_gray_cushion",
+      "uvlock": true
+    },
+    "cushion=gray,facing=north": {
+      "model": "enhancements:block/warped_armchair_gray_cushion",
+      "uvlock": true,
+      "y": 270
+    },
+    "cushion=gray,facing=south": {
+      "model": "enhancements:block/warped_armchair_gray_cushion",
+      "uvlock": true,
+      "y": 90
+    },
+    "cushion=gray,facing=west": {
+      "model": "enhancements:block/warped_armchair_gray_cushion",
+      "uvlock": true,
+      "y": 180
+    },
+    "cushion=green,facing=east": {
+      "model": "enhancements:block/warped_armchair_green_cushion",
+      "uvlock": true
+    },
+    "cushion=green,facing=north": {
+      "model": "enhancements:block/warped_armchair_green_cushion",
+      "uvlock": true,
+      "y": 270
+    },
+    "cushion=green,facing=south": {
+      "model": "enhancements:block/warped_armchair_green_cushion",
+      "uvlock": true,
+      "y": 90
+    },
+    "cushion=green,facing=west": {
+      "model": "enhancements:block/warped_armchair_green_cushion",
+      "uvlock": true,
+      "y": 180
+    },
+    "cushion=light_blue,facing=east": {
+      "model": "enhancements:block/warped_armchair_light_blue_cushion",
+      "uvlock": true
+    },
+    "cushion=light_blue,facing=north": {
+      "model": "enhancements:block/warped_armchair_light_blue_cushion",
+      "uvlock": true,
+      "y": 270
+    },
+    "cushion=light_blue,facing=south": {
+      "model": "enhancements:block/warped_armchair_light_blue_cushion",
+      "uvlock": true,
+      "y": 90
+    },
+    "cushion=light_blue,facing=west": {
+      "model": "enhancements:block/warped_armchair_light_blue_cushion",
+      "uvlock": true,
+      "y": 180
+    },
+    "cushion=light_gray,facing=east": {
+      "model": "enhancements:block/warped_armchair_light_gray_cushion",
+      "uvlock": true
+    },
+    "cushion=light_gray,facing=north": {
+      "model": "enhancements:block/warped_armchair_light_gray_cushion",
+      "uvlock": true,
+      "y": 270
+    },
+    "cushion=light_gray,facing=south": {
+      "model": "enhancements:block/warped_armchair_light_gray_cushion",
+      "uvlock": true,
+      "y": 90
+    },
+    "cushion=light_gray,facing=west": {
+      "model": "enhancements:block/warped_armchair_light_gray_cushion",
+      "uvlock": true,
+      "y": 180
+    },
+    "cushion=lime,facing=east": {
+      "model": "enhancements:block/warped_armchair_lime_cushion",
+      "uvlock": true
+    },
+    "cushion=lime,facing=north": {
+      "model": "enhancements:block/warped_armchair_lime_cushion",
+      "uvlock": true,
+      "y": 270
+    },
+    "cushion=lime,facing=south": {
+      "model": "enhancements:block/warped_armchair_lime_cushion",
+      "uvlock": true,
+      "y": 90
+    },
+    "cushion=lime,facing=west": {
+      "model": "enhancements:block/warped_armchair_lime_cushion",
+      "uvlock": true,
+      "y": 180
+    },
+    "cushion=magenta,facing=east": {
+      "model": "enhancements:block/warped_armchair_magenta_cushion",
+      "uvlock": true
+    },
+    "cushion=magenta,facing=north": {
+      "model": "enhancements:block/warped_armchair_magenta_cushion",
+      "uvlock": true,
+      "y": 270
+    },
+    "cushion=magenta,facing=south": {
+      "model": "enhancements:block/warped_armchair_magenta_cushion",
+      "uvlock": true,
+      "y": 90
+    },
+    "cushion=magenta,facing=west": {
+      "model": "enhancements:block/warped_armchair_magenta_cushion",
+      "uvlock": true,
+      "y": 180
+    },
+    "cushion=none,facing=east": {
       "model": "enhancements:block/warped_armchair",
       "uvlock": true
     },
-    "facing=north": {
+    "cushion=none,facing=north": {
       "model": "enhancements:block/warped_armchair",
       "uvlock": true,
       "y": 270
     },
-    "facing=south": {
+    "cushion=none,facing=south": {
       "model": "enhancements:block/warped_armchair",
       "uvlock": true,
       "y": 90
     },
-    "facing=west": {
+    "cushion=none,facing=west": {
       "model": "enhancements:block/warped_armchair",
+      "uvlock": true,
+      "y": 180
+    },
+    "cushion=orange,facing=east": {
+      "model": "enhancements:block/warped_armchair_orange_cushion",
+      "uvlock": true
+    },
+    "cushion=orange,facing=north": {
+      "model": "enhancements:block/warped_armchair_orange_cushion",
+      "uvlock": true,
+      "y": 270
+    },
+    "cushion=orange,facing=south": {
+      "model": "enhancements:block/warped_armchair_orange_cushion",
+      "uvlock": true,
+      "y": 90
+    },
+    "cushion=orange,facing=west": {
+      "model": "enhancements:block/warped_armchair_orange_cushion",
+      "uvlock": true,
+      "y": 180
+    },
+    "cushion=pink,facing=east": {
+      "model": "enhancements:block/warped_armchair_pink_cushion",
+      "uvlock": true
+    },
+    "cushion=pink,facing=north": {
+      "model": "enhancements:block/warped_armchair_pink_cushion",
+      "uvlock": true,
+      "y": 270
+    },
+    "cushion=pink,facing=south": {
+      "model": "enhancements:block/warped_armchair_pink_cushion",
+      "uvlock": true,
+      "y": 90
+    },
+    "cushion=pink,facing=west": {
+      "model": "enhancements:block/warped_armchair_pink_cushion",
+      "uvlock": true,
+      "y": 180
+    },
+    "cushion=purple,facing=east": {
+      "model": "enhancements:block/warped_armchair_purple_cushion",
+      "uvlock": true
+    },
+    "cushion=purple,facing=north": {
+      "model": "enhancements:block/warped_armchair_purple_cushion",
+      "uvlock": true,
+      "y": 270
+    },
+    "cushion=purple,facing=south": {
+      "model": "enhancements:block/warped_armchair_purple_cushion",
+      "uvlock": true,
+      "y": 90
+    },
+    "cushion=purple,facing=west": {
+      "model": "enhancements:block/warped_armchair_purple_cushion",
+      "uvlock": true,
+      "y": 180
+    },
+    "cushion=red,facing=east": {
+      "model": "enhancements:block/warped_armchair_red_cushion",
+      "uvlock": true
+    },
+    "cushion=red,facing=north": {
+      "model": "enhancements:block/warped_armchair_red_cushion",
+      "uvlock": true,
+      "y": 270
+    },
+    "cushion=red,facing=south": {
+      "model": "enhancements:block/warped_armchair_red_cushion",
+      "uvlock": true,
+      "y": 90
+    },
+    "cushion=red,facing=west": {
+      "model": "enhancements:block/warped_armchair_red_cushion",
+      "uvlock": true,
+      "y": 180
+    },
+    "cushion=white,facing=east": {
+      "model": "enhancements:block/warped_armchair_white_cushion",
+      "uvlock": true
+    },
+    "cushion=white,facing=north": {
+      "model": "enhancements:block/warped_armchair_white_cushion",
+      "uvlock": true,
+      "y": 270
+    },
+    "cushion=white,facing=south": {
+      "model": "enhancements:block/warped_armchair_white_cushion",
+      "uvlock": true,
+      "y": 90
+    },
+    "cushion=white,facing=west": {
+      "model": "enhancements:block/warped_armchair_white_cushion",
+      "uvlock": true,
+      "y": 180
+    },
+    "cushion=yellow,facing=east": {
+      "model": "enhancements:block/warped_armchair_yellow_cushion",
+      "uvlock": true
+    },
+    "cushion=yellow,facing=north": {
+      "model": "enhancements:block/warped_armchair_yellow_cushion",
+      "uvlock": true,
+      "y": 270
+    },
+    "cushion=yellow,facing=south": {
+      "model": "enhancements:block/warped_armchair_yellow_cushion",
+      "uvlock": true,
+      "y": 90
+    },
+    "cushion=yellow,facing=west": {
+      "model": "enhancements:block/warped_armchair_yellow_cushion",
       "uvlock": true,
       "y": 180
     }
