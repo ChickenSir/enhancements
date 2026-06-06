@@ -27,6 +27,8 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.block.state.properties.Property;
+import net.minecraft.world.level.gameevent.GameEvent;
+import net.minecraft.world.level.gameevent.GameEvent.Context;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -100,8 +102,14 @@ public class ArmChairBlock extends Block {
                     // Get cushion colour
                     Cushion cushionColour = colours.get(itemName);
 
+                    // Set updated block state
+                    BlockState updatedBlockState = blockState.setValue(CUSHION, cushionColour);
+
                     // Set cushion property
-                    world.setBlockAndUpdate(pos, blockState.setValue(CUSHION, cushionColour));
+                    world.setBlockAndUpdate(pos, updatedBlockState);
+
+                    // Set game event
+                    world.gameEvent(GameEvent.BLOCK_CHANGE, pos, Context.of(player, updatedBlockState));
 
                     // Remove wool from player inventory
                     itemStack.consume(1, player);
@@ -109,15 +117,21 @@ public class ArmChairBlock extends Block {
                     // Play sound
                     world.playSound(null, pos, SoundEvents.WOOL_PLACE, SoundSource.PLAYERS, 1, 1);
 
-                    return InteractionResult.SUCCESS;
+                    return InteractionResult.CONSUME;
                 }
             }
             if (itemStack.is(Items.SHEARS) && blockState.getValue(CUSHION) != Cushion.NONE) {
                 // Get wool item from cushion
                 Item wool = cushionToWool.get(blockState.getValue(CUSHION));
 
+                // Set updated block state
+                BlockState updatedBlockState = blockState.setValue(CUSHION, Cushion.NONE);
+
                 // Set cushion property
-                world.setBlockAndUpdate(pos, blockState.setValue(CUSHION, Cushion.NONE));
+                world.setBlockAndUpdate(pos, updatedBlockState);
+
+                // Set game event
+                world.gameEvent(GameEvent.BLOCK_CHANGE, pos, Context.of(player, updatedBlockState));
 
                 // Give player wool item
                 player.getInventory().add(new ItemStack(wool));
