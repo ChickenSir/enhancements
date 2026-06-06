@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_top",
+  "textures": {
+    "side": "enhancements:block/block_of_paper_side",
+    "top": "enhancements:block/block_of_paper_top"
+  }
+}

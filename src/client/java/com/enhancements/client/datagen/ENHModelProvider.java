@@ -1,11 +1,13 @@
 package com.enhancements.client.datagen;
 
 import com.enhancements.registries.BlockRegistry;
+import com.enhancements.registries.ItemRegistry;
 
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
+import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.world.level.block.Blocks;
 
 public class ENHModelProvider extends FabricModelProvider {
@@ -249,6 +251,12 @@ public class ENHModelProvider extends FabricModelProvider {
         ENHCustomModelGenerator.registerChimney(blockStateModelGenerator, BlockRegistry.DEEPSLATE_BRICK_CHIMNEY, Blocks.DEEPSLATE_BRICKS);
         ENHCustomModelGenerator.registerChimney(blockStateModelGenerator, BlockRegistry.DEEPSLATE_TILE_CHIMNEY, Blocks.DEEPSLATE_TILES);
 
+        // Cardboard Set
+        ENHCustomModelGenerator.registerMaterialBlock(blockStateModelGenerator, BlockRegistry.CARDBOARD_BLOCK);
+
+        // Paper Set
+        ENHCustomModelGenerator.registerMaterialBlock(blockStateModelGenerator, BlockRegistry.PAPER_BLOCK);
+
         // Block Cannon Ammo Set
         ENHCustomModelGenerator.registerBlock(blockStateModelGenerator, BlockRegistry.WATER_BLOCK, "water_still");
         ENHCustomModelGenerator.registerBlock(blockStateModelGenerator, BlockRegistry.LAVA_BLOCK, "lava_still");
@@ -257,7 +265,8 @@ public class ENHModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerators itemModelGenerator) {
-        
+        // Cardboard Set
+        itemModelGenerator.generateFlatItem(ItemRegistry.CARDBOARD, ModelTemplates.FLAT_ITEM);
     }
     
 }

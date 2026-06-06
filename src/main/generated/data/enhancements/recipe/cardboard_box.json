@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": "enhancements:cardboard"
+  },
+  "pattern": [
+    "ccc",
+    "c c",
+    "ccc"
+  ],
+  "result": {
+    "count": 1,
+    "id": "enhancements:cardboard_box"
+  }
+}

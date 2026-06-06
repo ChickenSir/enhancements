@@ -41,6 +41,7 @@ public class ItemRegistry {
 
     // Cardboard Set
     public static final Item CARDBOARD_BOX = register(CardboardBoxItem::new, new Item.Properties(), "cardboard_box");
+    public static final Item CARDBOARD = register(Item::new, new Item.Properties(), "cardboard");
     
     public static Item register(Function<Item.Properties, Item> itemFactory, Item.Properties settings, String name) {
         // Create the item key
@@ -294,6 +295,9 @@ public class ItemRegistry {
             itemGroup.accept(BlockRegistry.DEEPSLATE_BRICK_CHIMNEY.asItem());
             itemGroup.accept(BlockRegistry.DEEPSLATE_TILE_CHIMNEY.asItem());
 
+            // Paper Set
+            itemGroup.accept(BlockRegistry.PAPER_BLOCK);
+
             // Hammer Set
             itemGroup.accept(WOODEN_HAMMER);
             itemGroup.accept(STONE_HAMMER);
@@ -307,6 +311,8 @@ public class ItemRegistry {
 
             // Cardboard Set
             itemGroup.accept(CARDBOARD_BOX);
+            itemGroup.accept(BlockRegistry.CARDBOARD_BLOCK.asItem());
+            itemGroup.accept(CARDBOARD);
         });
     }
 }

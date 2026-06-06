@@ -69,6 +69,9 @@ public class ENHCustomModelGenerator {
     // Chimney Set
     public static final ModelTemplate CHIMNEY = block("chimney", TextureSlot.ALL);
     public static final ModelTemplate CHIMNEY_BOTTOM = block("chimney_bottom", "_bottom", TextureSlot.ALL);
+
+    // Material Block Set
+    public static final ModelTemplate MATERIAL_BLOCK = defaultBlock("cube_top", TextureSlot.TOP, TextureSlot.SIDE);
     
     public static void registerCenterStair(BlockModelGenerators generator, Block centerStairBlock, Block baseBlock) {
         ResourceLocation centerStairModel = CENTER_STAIR.create(centerStairBlock, TextureMapping.cube(baseBlock), generator.modelOutput);
@@ -162,6 +165,12 @@ public class ENHCustomModelGenerator {
         ResourceLocation baseTexture = ResourceLocation.withDefaultNamespace("block/" + texture);
         ResourceLocation blockModel = ModelTemplates.CUBE_ALL.create(block, TextureMapping.cube(baseTexture), generator.modelOutput);
         generator.blockStateOutput.accept(createBlockBlockStates(block, blockModel));
+        generator.registerSimpleItemModel(block, blockModel);
+    }
+
+    public static void registerMaterialBlock(BlockModelGenerators generator, Block block) {
+        ResourceLocation blockModel = MATERIAL_BLOCK.create(block, TextureMapping.cubeTop(block), generator.modelOutput);
+        generator.blockStateOutput.accept(createMaterialBlockBlockStates(block, blockModel));
         generator.registerSimpleItemModel(block, blockModel);
     }
 
@@ -351,6 +360,11 @@ public class ENHCustomModelGenerator {
         return MultiVariantGenerator.dispatch(block, blockModel);
     }
 
+    private static BlockModelDefinitionGenerator createMaterialBlockBlockStates(Block block, ResourceLocation blockId) {
+        MultiVariant blockModel = BlockModelGenerators.plainVariant(blockId);
+        return MultiVariantGenerator.dispatch(block, blockModel);
+    }
+
     private static TextureMapping armChairCushionTextures(ResourceLocation baseTexture, Block wool) {
         return new TextureMapping()
             .put(TextureSlot.ALL, baseTexture)
@@ -363,5 +377,9 @@ public class ENHCustomModelGenerator {
 
     private static ModelTemplate block(String parent, String variant, TextureSlot... requiredTextureKeys) {
         return new ModelTemplate(Optional.of(ResourceLocation.fromNamespaceAndPath(Enhancements.modID, "block/" + parent)), Optional.of(variant), requiredTextureKeys);
+    }
+
+    private static ModelTemplate defaultBlock(String parent, TextureSlot... requiredTextureKeys) {
+        return new ModelTemplate(Optional.of(ResourceLocation.withDefaultNamespace("block/" + parent)), Optional.empty(), requiredTextureKeys);
     }
 }

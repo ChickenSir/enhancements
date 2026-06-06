@@ -251,6 +251,12 @@ public class ENHLangProvider extends FabricLanguageProvider {
         translationBuilder.add("item.enhancements.deepslate_brick_chimney", "Deepslate Brick Chimney");
         translationBuilder.add("item.enhancements.deepslate_tile_chimney", "Deepslate Tile Chimney");
 
+        // Cardboard Set
+        translationBuilder.add("item.enhancements.block_of_cardboard", "Block of Cardboard");
+
+        // Paper Set
+        translationBuilder.add("item.enhancements.block_of_paper", "Block of Paper");
+
         // Hammer Set
         translationBuilder.add("item.enhancements.wooden_hammer", "Wooden Hammer");
         translationBuilder.add("item.enhancements.stone_hammer", "Stone Hammer");
@@ -264,6 +270,7 @@ public class ENHLangProvider extends FabricLanguageProvider {
 
         // Cardboard Set
         translationBuilder.add("item.enhancements.cardboard_box", "Cardboard Box");
+        translationBuilder.add("item.enhancements.cardboard", "Cardboard");
     }
     
 }

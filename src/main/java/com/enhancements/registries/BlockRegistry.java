@@ -283,6 +283,12 @@ public class BlockRegistry {
     public static final Block DEEPSLATE_BRICK_CHIMNEY = register(ChimneyBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_BRICKS).noOcclusion(), "deepslate_brick_chimney", true);
     public static final Block DEEPSLATE_TILE_CHIMNEY = register(ChimneyBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_TILES).noOcclusion(), "deepslate_tile_chimney", true);
 
+    // Cardboard Set
+    public static final Block CARDBOARD_BLOCK = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).sound(SoundType.BAMBOO_WOOD).strength(0.5f), "block_of_cardboard", true);
+
+    // Paper Set
+    public static final Block PAPER_BLOCK = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).sound(SoundType.WOOL).strength(0.25f), "block_of_paper", true);
+
     // Block Cannon Ammo Set
     public static final Block WATER_BLOCK = register(Block::new, BlockBehaviour.Properties.of(), "water_block", true);
     public static final Block LAVA_BLOCK = register(Block::new, BlockBehaviour.Properties.of(), "lava_block", true);

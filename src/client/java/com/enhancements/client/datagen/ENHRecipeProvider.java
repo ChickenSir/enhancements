@@ -255,6 +255,7 @@ public class ENHRecipeProvider extends FabricRecipeProvider {
 
                 netheriteSmithing(ItemRegistry.DIAMOND_HAMMER, RecipeCategory.TOOLS, ItemRegistry.NETHERITE_HAMMER);
 
+                // Block Cannon Set
                 shaped(RecipeCategory.TOOLS, ItemRegistry.BLOCK_CANNON, 1)
                     .pattern("iid")
                     .pattern(" is")
@@ -263,6 +264,26 @@ public class ENHRecipeProvider extends FabricRecipeProvider {
                     .define('d', Items.DISPENSER)
                     .unlockedBy(getHasName(Items.IRON_INGOT.asItem()), has(Items.IRON_INGOT.asItem()))
                     .save(output);
+
+                // Cardboard Set
+                shaped(RecipeCategory.MISC, ItemRegistry.CARDBOARD, 3)
+                    .pattern("bbb")
+                    .define('b', Items.BAMBOO)
+                    .unlockedBy(getHasName(Items.BAMBOO.asItem()), has(Items.BAMBOO.asItem()))
+                    .save(output);
+
+                shaped(RecipeCategory.MISC, ItemRegistry.CARDBOARD_BOX, 1)
+                    .pattern("ccc")
+                    .pattern("c c")
+                    .pattern("ccc")
+                    .define('c', ItemRegistry.CARDBOARD)
+                    .unlockedBy(getHasName(ItemRegistry.CARDBOARD), has(ItemRegistry.CARDBOARD))
+                    .save(output);
+
+                createMaterialBlockRecipe(ItemRegistry.CARDBOARD, BlockRegistry.CARDBOARD_BLOCK);
+
+                // Paper Set
+                createMaterialBlockRecipe(Items.PAPER, BlockRegistry.PAPER_BLOCK);
             }
 
             private void createStairRecipe(Block inputBlock, Block outputBlock) {
@@ -360,6 +381,16 @@ public class ENHRecipeProvider extends FabricRecipeProvider {
                     .pattern("ccc")
                     .define('c', inputBlock.asItem())
                     .unlockedBy(getHasName(inputBlock.asItem()), has(inputBlock.asItem()))
+                    .save(output);
+            }
+
+            private void createMaterialBlockRecipe(Item inputItem, Block outputBlock) {
+                shaped(RecipeCategory.BUILDING_BLOCKS, outputBlock.asItem(), 1)
+                    .pattern("mmm")
+                    .pattern("mmm")
+                    .pattern("mmm")
+                    .define('m', inputItem)
+                    .unlockedBy(getHasName(inputItem), has(inputItem))
                     .save(output);
             }
         };
