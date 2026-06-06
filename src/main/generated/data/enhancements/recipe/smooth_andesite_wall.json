@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "m": "enhancements:smooth_andesite"
+  },
+  "pattern": [
+    "mmm",
+    "mmm"
+  ],
+  "result": {
+    "count": 6,
+    "id": "enhancements:smooth_andesite_wall"
+  }
+}

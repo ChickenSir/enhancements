@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "c": "minecraft:red_carpet"
+  },
+  "pattern": [
+    "ccc"
+  ],
+  "result": {
+    "count": 4,
+    "id": "enhancements:red_table_cloth"
+  }
+}

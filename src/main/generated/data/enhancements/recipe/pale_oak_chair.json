@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "p": "minecraft:pale_oak_planks"
+  },
+  "pattern": [
+    "p  ",
+    "ppp",
+    "p p"
+  ],
+  "result": {
+    "count": 4,
+    "id": "enhancements:pale_oak_chair"
+  }
+}

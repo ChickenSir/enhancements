@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "c": "minecraft:cyan_carpet"
+  },
+  "pattern": [
+    "ccc"
+  ],
+  "result": {
+    "count": 4,
+    "id": "enhancements:cyan_table_cloth"
+  }
+}

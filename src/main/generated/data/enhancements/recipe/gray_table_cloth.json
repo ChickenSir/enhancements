@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "c": "minecraft:gray_carpet"
+  },
+  "pattern": [
+    "ccc"
+  ],
+  "result": {
+    "count": 4,
+    "id": "enhancements:gray_table_cloth"
+  }
+}

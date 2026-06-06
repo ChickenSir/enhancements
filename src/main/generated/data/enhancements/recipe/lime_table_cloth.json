@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "c": "minecraft:lime_carpet"
+  },
+  "pattern": [
+    "ccc"
+  ],
+  "result": {
+    "count": 4,
+    "id": "enhancements:lime_table_cloth"
+  }
+}

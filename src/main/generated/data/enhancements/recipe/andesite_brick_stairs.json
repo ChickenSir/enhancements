@@ -2,12 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "a": "enhancements:andesite_bricks"
+    "m": "enhancements:andesite_bricks"
   },
   "pattern": [
-    "a  ",
-    "aa ",
-    "aaa"
+    "m  ",
+    "mm ",
+    "mmm"
   ],
   "result": {
     "count": 4,

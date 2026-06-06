@@ -2,10 +2,10 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "s": "enhancements:smooth_diorite"
+    "m": "enhancements:smooth_diorite"
   },
   "pattern": [
-    "sss"
+    "mmm"
   ],
   "result": {
     "count": 6,

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "p": "minecraft:acacia_planks"
+  },
+  "pattern": [
+    "p p",
+    "ppp",
+    "p p"
+  ],
+  "result": {
+    "count": 4,
+    "id": "enhancements:acacia_armchair"
+  }
+}

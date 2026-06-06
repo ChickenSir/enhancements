@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "p": "minecraft:crimson_planks"
+  },
+  "pattern": [
+    "ppp",
+    "p p",
+    "p p"
+  ],
+  "result": {
+    "count": 4,
+    "id": "enhancements:crimson_table"
+  }
+}

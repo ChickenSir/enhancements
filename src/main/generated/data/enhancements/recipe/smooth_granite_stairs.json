@@ -2,12 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "s": "enhancements:smooth_granite"
+    "m": "enhancements:smooth_granite"
   },
   "pattern": [
-    "s  ",
-    "ss ",
-    "sss"
+    "m  ",
+    "mm ",
+    "mmm"
   ],
   "result": {
     "count": 4,

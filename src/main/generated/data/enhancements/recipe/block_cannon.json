@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "d": "minecraft:dispenser",
+    "i": "minecraft:iron_ingot",
+    "s": "minecraft:stick"
+  },
+  "pattern": [
+    "iid",
+    " is"
+  ],
+  "result": {
+    "count": 1,
+    "id": "enhancements:block_cannon"
+  }
+}

@@ -2,10 +2,10 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "g": "enhancements:granite_bricks"
+    "m": "enhancements:granite_bricks"
   },
   "pattern": [
-    "ggg"
+    "mmm"
   ],
   "result": {
     "count": 6,

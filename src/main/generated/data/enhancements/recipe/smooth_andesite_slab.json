@@ -2,10 +2,10 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "s": "enhancements:smooth_andesite"
+    "m": "enhancements:smooth_andesite"
   },
   "pattern": [
-    "sss"
+    "mmm"
   ],
   "result": {
     "count": 6,

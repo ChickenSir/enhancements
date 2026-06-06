@@ -2,10 +2,10 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "d": "enhancements:diorite_bricks"
+    "m": "enhancements:diorite_bricks"
   },
   "pattern": [
-    "ddd"
+    "mmm"
   ],
   "result": {
     "count": 6,
