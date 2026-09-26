@@ -2,6 +2,7 @@ package com.enhancements.client.datagen;
 
 import java.util.concurrent.CompletableFuture;
 
+import com.enhancements.registries.ItemRegistry;
 import com.enhancements.registries.TagRegistry;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -23,6 +24,24 @@ public class ENHItemTagProvider extends FabricTagProvider<Item> {
             .add(Items.WATER_BUCKET)
             .add(Items.LAVA_BUCKET)
             .add(Items.POWDER_SNOW_BUCKET);
+
+        getOrCreateTagBuilder(TagRegistry.CUSHION)
+            .add(ItemRegistry.RED_CUSHION)
+            .add(ItemRegistry.BLUE_CUSHION)
+            .add(ItemRegistry.YELLOW_CUSHION)
+            .add(ItemRegistry.GREEN_CUSHION)
+            .add(ItemRegistry.LIME_CUSHION)
+            .add(ItemRegistry.CYAN_CUSHION)
+            .add(ItemRegistry.LIGHT_BLUE_CUSHION)
+            .add(ItemRegistry.ORANGE_CUSHION)
+            .add(ItemRegistry.MAGENTA_CUSHION)
+            .add(ItemRegistry.PURPLE_CUSHION)
+            .add(ItemRegistry.PINK_CUSHION)
+            .add(ItemRegistry.BROWN_CUSHION)
+            .add(ItemRegistry.LIGHT_GRAY_CUSHION)
+            .add(ItemRegistry.GRAY_CUSHION)
+            .add(ItemRegistry.BLACK_CUSHION)
+            .add(ItemRegistry.WHITE_CUSHION);
     }
     
 }

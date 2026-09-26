@@ -220,6 +220,7 @@ public class ENHLangProvider extends FabricLanguageProvider {
         translationBuilder.add("item.enhancements.light_gray_table_cloth", "Light Gray Table Cloth");
         translationBuilder.add("item.enhancements.gray_table_cloth", "Gray Table Cloth");
         translationBuilder.add("item.enhancements.black_table_cloth", "Black Table Cloth");
+        translationBuilder.add("item.enhancements.white_table_cloth", "White Table Cloth");
         translationBuilder.add("item.enhancements.crafting_table_cloth", "Crafting Table Cloth");
 
         // Chimney Set
@@ -267,6 +268,24 @@ public class ENHLangProvider extends FabricLanguageProvider {
 
         // Block Cannon Set
         translationBuilder.add("item.enhancements.block_cannon", "Block Cannon");
+
+        // Cushion Set
+        translationBuilder.add("item.enhancements.red_cushion", "Red Cushion");
+        translationBuilder.add("item.enhancements.blue_cushion", "Blue Cushion");
+        translationBuilder.add("item.enhancements.yellow_cushion", "Yellow Cushion");
+        translationBuilder.add("item.enhancements.green_cushion", "Green Cushion");
+        translationBuilder.add("item.enhancements.lime_cushion", "Lime Cushion");
+        translationBuilder.add("item.enhancements.cyan_cushion", "Cyan Cushion");
+        translationBuilder.add("item.enhancements.light_blue_cushion", "Light Blue Cushion");
+        translationBuilder.add("item.enhancements.orange_cushion", "Orange Cushion");
+        translationBuilder.add("item.enhancements.magenta_cushion", "Magenta Cushion");
+        translationBuilder.add("item.enhancements.purple_cushion", "Purple Cushion");
+        translationBuilder.add("item.enhancements.pink_cushion", "Pink Cushion");
+        translationBuilder.add("item.enhancements.brown_cushion", "Brown Cushion");
+        translationBuilder.add("item.enhancements.light_gray_cushion", "Light Gray Cushion");
+        translationBuilder.add("item.enhancements.gray_cushion", "Gray Cushion");
+        translationBuilder.add("item.enhancements.black_cushion", "Black Cushion");
+        translationBuilder.add("item.enhancements.white_cushion", "White Cushion");
 
         // Cardboard Set
         translationBuilder.add("item.enhancements.cardboard_box", "Cardboard Box");

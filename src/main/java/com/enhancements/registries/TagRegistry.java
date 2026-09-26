@@ -11,6 +11,9 @@ public class TagRegistry {
 
     // Block Cannon Tags
     public static final TagKey<Item> BLOCK_CANNON_ITEM_AMMO = TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Enhancements.modID, "block_cannon_item_ammo"));
+
+    // Cushion Tags
+    public static final TagKey<Item> CUSHION = TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Enhancements.modID, "cushion"));
     
     public static void createTags() {}
 }

@@ -5,12 +5,13 @@ import java.util.Map;
 
 import com.enhancements.property.Cushion;
 import com.enhancements.property.ENHBlockStateProperties;
+import com.enhancements.registries.ItemRegistry;
+import com.enhancements.registries.TagRegistry;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -39,41 +40,41 @@ public class ArmChairBlock extends Block {
     public static final EnumProperty<Cushion> CUSHION;
 
     private static final HashMap<String, Cushion> colours = new HashMap<String, Cushion>(Map.ofEntries(
-        Map.entry("Red Wool", Cushion.RED),
-        Map.entry("Blue Wool", Cushion.BLUE),
-        Map.entry("Yellow Wool", Cushion.YELLOW),
-        Map.entry("Green Wool", Cushion.GREEN),
-        Map.entry("Lime Wool", Cushion.LIME),
-        Map.entry("Cyan Wool", Cushion.CYAN),
-        Map.entry("Light Blue Wool", Cushion.LIGHT_BLUE),
-        Map.entry("Orange Wool", Cushion.ORANGE),
-        Map.entry("Purple Wool", Cushion.PURPLE),
-        Map.entry("Magenta Wool", Cushion.MAGENTA),
-        Map.entry("Pink Wool", Cushion.PINK),
-        Map.entry("Brown Wool", Cushion.BROWN),
-        Map.entry("Light Gray Wool", Cushion.LIGHT_GRAY),
-        Map.entry("Gray Wool", Cushion.GRAY),
-        Map.entry("Black Wool", Cushion.BLACK),
-        Map.entry("White Wool", Cushion.WHITE)
+        Map.entry("Red Cushion", Cushion.RED),
+        Map.entry("Blue Cushion", Cushion.BLUE),
+        Map.entry("Yellow Cushion", Cushion.YELLOW),
+        Map.entry("Green Cushion", Cushion.GREEN),
+        Map.entry("Lime Cushion", Cushion.LIME),
+        Map.entry("Cyan Cushion", Cushion.CYAN),
+        Map.entry("Light Blue Cushion", Cushion.LIGHT_BLUE),
+        Map.entry("Orange Cushion", Cushion.ORANGE),
+        Map.entry("Purple Cushion", Cushion.PURPLE),
+        Map.entry("Magenta Cushion", Cushion.MAGENTA),
+        Map.entry("Pink Cushion", Cushion.PINK),
+        Map.entry("Brown Cushion", Cushion.BROWN),
+        Map.entry("Light Gray Cushion", Cushion.LIGHT_GRAY),
+        Map.entry("Gray Cushion", Cushion.GRAY),
+        Map.entry("Black Cushion", Cushion.BLACK),
+        Map.entry("White Cushion", Cushion.WHITE)
     ));
 
-    private static final HashMap<Cushion, Item> cushionToWool = new HashMap<Cushion, Item>(Map.ofEntries(
-        Map.entry(Cushion.RED, Items.RED_WOOL),
-        Map.entry(Cushion.BLUE, Items.BLUE_WOOL),
-        Map.entry(Cushion.YELLOW, Items.YELLOW_WOOL),
-        Map.entry(Cushion.GREEN, Items.GREEN_WOOL),
-        Map.entry(Cushion.LIME, Items.LIME_WOOL),
-        Map.entry(Cushion.CYAN, Items.CYAN_WOOL),
-        Map.entry(Cushion.LIGHT_BLUE, Items.LIGHT_BLUE_WOOL),
-        Map.entry(Cushion.ORANGE, Items.ORANGE_WOOL),
-        Map.entry(Cushion.PURPLE, Items.PURPLE_WOOL),
-        Map.entry(Cushion.MAGENTA, Items.MAGENTA_WOOL),
-        Map.entry(Cushion.PINK, Items.PINK_WOOL),
-        Map.entry(Cushion.BROWN, Items.BROWN_WOOL),
-        Map.entry(Cushion.LIGHT_GRAY, Items.LIGHT_GRAY_WOOL),
-        Map.entry(Cushion.GRAY, Items.GRAY_WOOL),
-        Map.entry(Cushion.BLACK, Items.BLACK_WOOL),
-        Map.entry(Cushion.WHITE, Items.WHITE_WOOL)
+    private static final HashMap<Cushion, Item> cushionToItem = new HashMap<Cushion, Item>(Map.ofEntries(
+        Map.entry(Cushion.RED, ItemRegistry.RED_CUSHION),
+        Map.entry(Cushion.BLUE, ItemRegistry.BLUE_CUSHION),
+        Map.entry(Cushion.YELLOW, ItemRegistry.YELLOW_CUSHION),
+        Map.entry(Cushion.GREEN, ItemRegistry.GREEN_CUSHION),
+        Map.entry(Cushion.LIME, ItemRegistry.LIME_CUSHION),
+        Map.entry(Cushion.CYAN, ItemRegistry.CYAN_CUSHION),
+        Map.entry(Cushion.LIGHT_BLUE, ItemRegistry.LIGHT_BLUE_CUSHION),
+        Map.entry(Cushion.ORANGE, ItemRegistry.ORANGE_CUSHION),
+        Map.entry(Cushion.PURPLE, ItemRegistry.PURPLE_CUSHION),
+        Map.entry(Cushion.MAGENTA, ItemRegistry.MAGENTA_CUSHION),
+        Map.entry(Cushion.PINK, ItemRegistry.PINK_CUSHION),
+        Map.entry(Cushion.BROWN, ItemRegistry.BROWN_CUSHION),
+        Map.entry(Cushion.LIGHT_GRAY, ItemRegistry.LIGHT_GRAY_CUSHION),
+        Map.entry(Cushion.GRAY, ItemRegistry.GRAY_CUSHION),
+        Map.entry(Cushion.BLACK, ItemRegistry.BLACK_CUSHION),
+        Map.entry(Cushion.WHITE, ItemRegistry.WHITE_CUSHION)
     ));
 
     public ArmChairBlock(Properties properties) {
@@ -89,13 +90,13 @@ public class ArmChairBlock extends Block {
     @Override
     public InteractionResult useItemOn(ItemStack itemStack, BlockState blockState, Level world, BlockPos pos, Player player, InteractionHand interactionHand, BlockHitResult blockHitResult) {
         if (!world.isClientSide()) {
-            // Check if item is wool block
-            if (itemStack.is(ItemTags.WOOL)) {
-                // Get wool type on arm chair
-                Item wool = cushionToWool.get(blockState.getValue(CUSHION));
+            // Check if item is cushion
+            if (itemStack.is(TagRegistry.CUSHION)) {
+                // Get cushion type on arm chair
+                Item cushion = cushionToItem.get(blockState.getValue(CUSHION));
                 
-                // Wool on arm chair is a different wool colour
-                if (itemStack.getItem() != wool) {
+                // Cushion on arm chair is a different colour
+                if (itemStack.getItem() != cushion) {
                     // Get item name
                     String itemName = itemStack.getItem().getName().getString();
 
@@ -111,7 +112,7 @@ public class ArmChairBlock extends Block {
                     // Set game event
                     world.gameEvent(GameEvent.BLOCK_CHANGE, pos, Context.of(player, updatedBlockState));
 
-                    // Remove wool from player inventory
+                    // Remove cushion from player inventory
                     itemStack.consume(1, player);
 
                     // Play sound
@@ -121,8 +122,8 @@ public class ArmChairBlock extends Block {
                 }
             }
             if (itemStack.is(Items.SHEARS) && blockState.getValue(CUSHION) != Cushion.NONE) {
-                // Get wool item from cushion
-                Item wool = cushionToWool.get(blockState.getValue(CUSHION));
+                // Get cushion item from cushion
+                Item cushion = cushionToItem.get(blockState.getValue(CUSHION));
 
                 // Set updated block state
                 BlockState updatedBlockState = blockState.setValue(CUSHION, Cushion.NONE);
@@ -133,8 +134,8 @@ public class ArmChairBlock extends Block {
                 // Set game event
                 world.gameEvent(GameEvent.BLOCK_CHANGE, pos, Context.of(player, updatedBlockState));
 
-                // Give player wool item
-                player.getInventory().add(new ItemStack(wool));
+                // Give player cushion item
+                player.getInventory().add(new ItemStack(cushion));
 
                 // Play sound
                 world.playSound(null, pos, SoundEvents.WOOL_BREAK, SoundSource.PLAYERS, 1, 1);

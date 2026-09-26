@@ -220,6 +220,7 @@ public class ENHModelProvider extends FabricModelProvider {
         ENHCustomModelGenerator.registerTableCloth(blockStateModelGenerator, BlockRegistry.LIGHT_GRAY_TABLE_CLOTH, "light_gray_table_cloth");
         ENHCustomModelGenerator.registerTableCloth(blockStateModelGenerator, BlockRegistry.GRAY_TABLE_CLOTH, "gray_table_cloth");
         ENHCustomModelGenerator.registerTableCloth(blockStateModelGenerator, BlockRegistry.BLACK_TABLE_CLOTH, "black_table_cloth");
+        ENHCustomModelGenerator.registerTableCloth(blockStateModelGenerator, BlockRegistry.WHITE_TABLE_CLOTH, "white_table_cloth");
         ENHCustomModelGenerator.registerTableCloth(blockStateModelGenerator, BlockRegistry.CRAFTING_TABLE_CLOTH, "crafting_table_cloth");
 
         // Chimney Set
@@ -265,6 +266,24 @@ public class ENHModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerators itemModelGenerator) {
+        // Cushion Set
+        itemModelGenerator.generateFlatItem(ItemRegistry.RED_CUSHION, ModelTemplates.FLAT_ITEM);
+        itemModelGenerator.generateFlatItem(ItemRegistry.BLUE_CUSHION, ModelTemplates.FLAT_ITEM);
+        itemModelGenerator.generateFlatItem(ItemRegistry.YELLOW_CUSHION, ModelTemplates.FLAT_ITEM);
+        itemModelGenerator.generateFlatItem(ItemRegistry.GREEN_CUSHION, ModelTemplates.FLAT_ITEM);
+        itemModelGenerator.generateFlatItem(ItemRegistry.LIME_CUSHION, ModelTemplates.FLAT_ITEM);
+        itemModelGenerator.generateFlatItem(ItemRegistry.CYAN_CUSHION, ModelTemplates.FLAT_ITEM);
+        itemModelGenerator.generateFlatItem(ItemRegistry.LIGHT_BLUE_CUSHION, ModelTemplates.FLAT_ITEM);
+        itemModelGenerator.generateFlatItem(ItemRegistry.ORANGE_CUSHION, ModelTemplates.FLAT_ITEM);
+        itemModelGenerator.generateFlatItem(ItemRegistry.MAGENTA_CUSHION, ModelTemplates.FLAT_ITEM);
+        itemModelGenerator.generateFlatItem(ItemRegistry.PURPLE_CUSHION, ModelTemplates.FLAT_ITEM);
+        itemModelGenerator.generateFlatItem(ItemRegistry.PINK_CUSHION, ModelTemplates.FLAT_ITEM);
+        itemModelGenerator.generateFlatItem(ItemRegistry.BROWN_CUSHION, ModelTemplates.FLAT_ITEM);
+        itemModelGenerator.generateFlatItem(ItemRegistry.LIGHT_GRAY_CUSHION, ModelTemplates.FLAT_ITEM);
+        itemModelGenerator.generateFlatItem(ItemRegistry.GRAY_CUSHION, ModelTemplates.FLAT_ITEM);
+        itemModelGenerator.generateFlatItem(ItemRegistry.BLACK_CUSHION, ModelTemplates.FLAT_ITEM);
+        itemModelGenerator.generateFlatItem(ItemRegistry.WHITE_CUSHION, ModelTemplates.FLAT_ITEM);
+
         // Cardboard Set
         itemModelGenerator.generateFlatItem(ItemRegistry.CARDBOARD, ModelTemplates.FLAT_ITEM);
     }

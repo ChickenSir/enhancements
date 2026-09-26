@@ -39,6 +39,24 @@ public class ItemRegistry {
     // Block Cannon Set
     public static final Item BLOCK_CANNON = register((settings) -> new BlockCannonItem(settings), new Item.Properties(), "block_cannon");
 
+    // Cushion Set
+    public static final Item RED_CUSHION = register(Item::new, new Item.Properties(), "red_cushion");
+    public static final Item BLUE_CUSHION = register(Item::new, new Item.Properties(), "blue_cushion");
+    public static final Item YELLOW_CUSHION = register(Item::new, new Item.Properties(), "yellow_cushion");
+    public static final Item GREEN_CUSHION = register(Item::new, new Item.Properties(), "green_cushion");
+    public static final Item LIME_CUSHION = register(Item::new, new Item.Properties(), "lime_cushion");
+    public static final Item CYAN_CUSHION = register(Item::new, new Item.Properties(), "cyan_cushion");
+    public static final Item LIGHT_BLUE_CUSHION = register(Item::new, new Item.Properties(), "light_blue_cushion");
+    public static final Item ORANGE_CUSHION = register(Item::new, new Item.Properties(), "orange_cushion");
+    public static final Item MAGENTA_CUSHION = register(Item::new, new Item.Properties(), "magenta_cushion");
+    public static final Item PURPLE_CUSHION = register(Item::new, new Item.Properties(), "purple_cushion");
+    public static final Item PINK_CUSHION = register(Item::new, new Item.Properties(), "pink_cushion");
+    public static final Item BROWN_CUSHION = register(Item::new, new Item.Properties(), "brown_cushion");
+    public static final Item LIGHT_GRAY_CUSHION = register(Item::new, new Item.Properties(), "light_gray_cushion");
+    public static final Item GRAY_CUSHION = register(Item::new, new Item.Properties(), "gray_cushion");
+    public static final Item BLACK_CUSHION = register(Item::new, new Item.Properties(), "black_cushion");
+    public static final Item WHITE_CUSHION = register(Item::new, new Item.Properties(), "white_cushion");
+
     // Cardboard Set
     public static final Item CARDBOARD_BOX = register(CardboardBoxItem::new, new Item.Properties(), "cardboard_box");
     public static final Item CARDBOARD = register(Item::new, new Item.Properties(), "cardboard");
@@ -264,6 +282,7 @@ public class ItemRegistry {
             itemGroup.accept(BlockRegistry.LIGHT_GRAY_TABLE_CLOTH.asItem());
             itemGroup.accept(BlockRegistry.GRAY_TABLE_CLOTH.asItem());
             itemGroup.accept(BlockRegistry.BLACK_TABLE_CLOTH.asItem());
+            itemGroup.accept(BlockRegistry.WHITE_TABLE_CLOTH.asItem());
             itemGroup.accept(BlockRegistry.CRAFTING_TABLE_CLOTH.asItem());
 
             // Chimeny Set
@@ -308,6 +327,23 @@ public class ItemRegistry {
 
             // Block Cannon Set
             itemGroup.accept(BLOCK_CANNON);
+
+            // Cushion Set
+            itemGroup.accept(RED_CUSHION);
+            itemGroup.accept(BLUE_CUSHION);
+            itemGroup.accept(YELLOW_CUSHION);
+            itemGroup.accept(GREEN_CUSHION);
+            itemGroup.accept(LIME_CUSHION);
+            itemGroup.accept(CYAN_CUSHION);
+            itemGroup.accept(LIGHT_BLUE_CUSHION);
+            itemGroup.accept(ORANGE_CUSHION);
+            itemGroup.accept(MAGENTA_CUSHION);
+            itemGroup.accept(PURPLE_CUSHION);
+            itemGroup.accept(PINK_CUSHION);
+            itemGroup.accept(BROWN_CUSHION);
+            itemGroup.accept(LIGHT_GRAY_CUSHION);
+            itemGroup.accept(GRAY_CUSHION);
+            itemGroup.accept(BLACK_CUSHION);
 
             // Cardboard Set
             itemGroup.accept(CARDBOARD_BOX);

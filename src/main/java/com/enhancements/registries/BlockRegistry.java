@@ -203,6 +203,7 @@ public class BlockRegistry {
     public static final Block LIGHT_GRAY_TABLE_CLOTH = register(TableClothBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.LIGHT_GRAY_WOOL).noOcclusion(), "light_gray_table_cloth", true);
     public static final Block GRAY_TABLE_CLOTH = register(TableClothBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.GRAY_WOOL).noOcclusion(), "gray_table_cloth", true);
     public static final Block BLACK_TABLE_CLOTH = register(TableClothBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.BLACK_WOOL).noOcclusion(), "black_table_cloth", true);
+    public static final Block WHITE_TABLE_CLOTH = register(TableClothBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_WOOL).noOcclusion(), "white_table_cloth", true);
     public static final Block CRAFTING_TABLE_CLOTH = register(TableClothBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.BROWN_WOOL).noOcclusion(), "crafting_table_cloth", true);
 
     // Center Stair Set
