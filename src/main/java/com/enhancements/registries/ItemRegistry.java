@@ -348,6 +348,7 @@ public class ItemRegistry {
             itemGroup.accept(LIGHT_GRAY_CUSHION);
             itemGroup.accept(GRAY_CUSHION);
             itemGroup.accept(BLACK_CUSHION);
+            itemGroup.accept(WHITE_CUSHION);
 
             // Cardboard Set
             itemGroup.accept(CARDBOARD_BOX);
