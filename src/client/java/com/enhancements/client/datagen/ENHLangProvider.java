@@ -287,6 +287,9 @@ public class ENHLangProvider extends FabricLanguageProvider {
         translationBuilder.add("item.enhancements.black_cushion", "Black Cushion");
         translationBuilder.add("item.enhancements.white_cushion", "White Cushion");
 
+        // Large Bottle Set
+        translationBuilder.add("item.enhancements.large_glass_bottle", "Large Glass Bottle");
+
         // Cardboard Set
         translationBuilder.add("item.enhancements.cardboard_box", "Cardboard Box");
         translationBuilder.add("item.enhancements.cardboard", "Cardboard");

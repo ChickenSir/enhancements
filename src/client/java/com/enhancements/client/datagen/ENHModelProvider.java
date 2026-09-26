@@ -252,6 +252,9 @@ public class ENHModelProvider extends FabricModelProvider {
         ENHCustomModelGenerator.registerChimney(blockStateModelGenerator, BlockRegistry.DEEPSLATE_BRICK_CHIMNEY, Blocks.DEEPSLATE_BRICKS);
         ENHCustomModelGenerator.registerChimney(blockStateModelGenerator, BlockRegistry.DEEPSLATE_TILE_CHIMNEY, Blocks.DEEPSLATE_TILES);
 
+        // Large Glass Bottle Set
+        ENHCustomModelGenerator.registerLargeGlassBottle(blockStateModelGenerator, BlockRegistry.LARGE_GLASS_BOTTLE, "large_glass_bottle_block");
+
         // Cardboard Set
         ENHCustomModelGenerator.registerMaterialBlock(blockStateModelGenerator, BlockRegistry.CARDBOARD_BLOCK);
 

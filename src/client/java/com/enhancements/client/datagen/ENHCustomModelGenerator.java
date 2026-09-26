@@ -70,6 +70,9 @@ public class ENHCustomModelGenerator {
     public static final ModelTemplate CHIMNEY = block("chimney", TextureSlot.ALL);
     public static final ModelTemplate CHIMNEY_BOTTOM = block("chimney_bottom", "_bottom", TextureSlot.ALL);
 
+    // Large Glass Bottle Set
+    public static final ModelTemplate LARGE_GLASS_BOTTLE = block("large_glass_bottle_block", TextureSlot.ALL);
+
     // Material Block Set
     public static final ModelTemplate MATERIAL_BLOCK = defaultBlock("cube_top", TextureSlot.TOP, TextureSlot.SIDE);
     
@@ -159,6 +162,12 @@ public class ENHCustomModelGenerator {
         ResourceLocation chimneyBottomModel = CHIMNEY_BOTTOM.create(chimneyBlock, TextureMapping.cube(baseTexture), generator.modelOutput);
         generator.blockStateOutput.accept(createChimneyBlockStates(chimneyBlock, chimneyModel, chimneyBottomModel));
         generator.registerSimpleItemModel(chimneyBlock, chimneyModel);
+    }
+
+    public static void registerLargeGlassBottle(BlockModelGenerators generator, Block largeGlassBottleBlock, String texture) {
+        ResourceLocation baseTexture = ResourceLocation.fromNamespaceAndPath(Enhancements.modID, "block/" + texture);
+        ResourceLocation largeGlassBottleModel = LARGE_GLASS_BOTTLE.create(largeGlassBottleBlock, TextureMapping.cube(baseTexture), generator.modelOutput);
+        generator.blockStateOutput.accept(createLargeGlassBottleBlockStates(largeGlassBottleBlock, largeGlassBottleModel));
     }
 
     public static void registerBlock(BlockModelGenerators generator, Block block, String texture) {
@@ -353,6 +362,11 @@ public class ENHCustomModelGenerator {
                 .select(ChimneySection.TOP, chimneyModel)
                 .select(ChimneySection.BOTTOM, chimneyBottomModel)
         );
+    }
+
+    private static BlockModelDefinitionGenerator createLargeGlassBottleBlockStates(Block largeGlassBottle, ResourceLocation largeGlassBottleId) {
+        MultiVariant largeGlassBottleModel = BlockModelGenerators.plainVariant(largeGlassBottleId);
+        return MultiVariantGenerator.dispatch(largeGlassBottle, largeGlassBottleModel);
     }
 
     private static BlockModelDefinitionGenerator createBlockBlockStates(Block block, ResourceLocation blockId) {

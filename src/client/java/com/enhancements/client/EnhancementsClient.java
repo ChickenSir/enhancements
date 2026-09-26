@@ -32,6 +32,9 @@ public class EnhancementsClient implements ClientModInitializer {
 		BlockRenderLayerMap.INSTANCE.putBlock(BlockRegistry.WHITE_TABLE_CLOTH, RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(BlockRegistry.CRAFTING_TABLE_CLOTH, RenderType.cutout());
 
+		BlockRenderLayerMap.INSTANCE.putBlock(BlockRegistry.LARGE_GLASS_BOTTLE, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(BlockRegistry.LARGE_GLASS_BOTTLE, RenderType.translucent());
+
 		ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> BiomeColors.getAverageWaterColor(view, pos), BlockRegistry.WATER_BLOCK);
 	}
 }

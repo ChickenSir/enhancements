@@ -6,6 +6,7 @@ import com.enhancements.Enhancements;
 import com.enhancements.item.BlockCannonItem;
 import com.enhancements.item.CardboardBoxItem;
 import com.enhancements.item.HammerItem;
+import com.enhancements.item.LargeGlassBottleItem;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -60,6 +61,9 @@ public class ItemRegistry {
     // Cardboard Set
     public static final Item CARDBOARD_BOX = register(CardboardBoxItem::new, new Item.Properties(), "cardboard_box");
     public static final Item CARDBOARD = register(Item::new, new Item.Properties(), "cardboard");
+
+    // Large Bottle Set
+    public static final Item LARGE_GLASS_BOTTLE = register(LargeGlassBottleItem::new, new Item.Properties(), "large_glass_bottle");
     
     public static Item register(Function<Item.Properties, Item> itemFactory, Item.Properties settings, String name) {
         // Create the item key
@@ -349,6 +353,9 @@ public class ItemRegistry {
             itemGroup.accept(CARDBOARD_BOX);
             itemGroup.accept(BlockRegistry.CARDBOARD_BLOCK.asItem());
             itemGroup.accept(CARDBOARD);
+
+            // Large Bottle Set
+            itemGroup.accept(LARGE_GLASS_BOTTLE);
         });
     }
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "enhancements:block/large_glass_bottle_block",
+  "textures": {
+    "all": "enhancements:block/large_glass_bottle_block"
+  }
+}

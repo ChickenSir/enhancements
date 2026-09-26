@@ -10,6 +10,7 @@ import com.enhancements.block.ArmChairBlock;
 import com.enhancements.block.CenterStairBlock;
 import com.enhancements.block.ChairBlock;
 import com.enhancements.block.ChimneyBlock;
+import com.enhancements.block.LargeGlassBottleBlock;
 import com.enhancements.block.LogStackBlock;
 
 import net.minecraft.core.Registry;
@@ -289,6 +290,9 @@ public class BlockRegistry {
 
     // Paper Set
     public static final Block PAPER_BLOCK = register(Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).sound(SoundType.WOOL).strength(0.25f), "block_of_paper", true);
+
+    // Large Glass Bottle Set
+    public static final Block LARGE_GLASS_BOTTLE = register(LargeGlassBottleBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).noOcclusion(), "large_glass_bottle", false);
 
     // Block Cannon Ammo Set
     public static final Block WATER_BLOCK = register(Block::new, BlockBehaviour.Properties.of(), "water_block", true);
